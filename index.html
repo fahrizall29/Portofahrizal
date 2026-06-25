@@ -1,0 +1,542 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Muhammad Fahrizal — Business Development & System Analyst</title>
+<meta name="description" content="Portfolio Muhammad Fahrizal — Fresh Graduate Sistem Informasi UDINUS. Business Development, System Analyst, Business Analyst, IT Consultant." />
+<meta property="og:title" content="Muhammad Fahrizal — Portfolio" />
+<meta property="og:description" content="Menghubungkan kebutuhan bisnis dengan solusi teknologi melalui analisis proses bisnis dan pengembangan sistem." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+<style>
+:root{
+  --bg:#ffffff; --fg:#111111; --muted:#737373; --muted-bg:#fafafa;
+  --border:#e5e5e5; --silver:#c0c0c0; --accent:#e5e5e5;
+}
+*{box-sizing:border-box;margin:0;padding:0;border-color:var(--border)}
+html{scroll-behavior:smooth}
+body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased;line-height:1.5}
+a{color:inherit;text-decoration:none}
+img{max-width:100%;display:block}
+h1,h2,h3,h4,h5{letter-spacing:-0.02em;font-weight:700}
+ul,ol{list-style:none}
+
+.container{max-width:72rem;margin:0 auto;padding:0 1.5rem}
+.section-y{padding:6rem 0}
+.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted)}
+.silver{color:var(--silver)}
+
+/* Nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;height:4rem}
+.brand{font-size:.875rem;font-weight:700}
+.nav-links{display:none;gap:2rem;align-items:center}
+.nav-links a{font-size:.875rem;color:var(--muted);transition:color .15s}
+.nav-links a:hover{color:var(--fg)}
+.btn{display:inline-flex;align-items:center;gap:.5rem;border-radius:999px;padding:.75rem 1.5rem;font-size:.875rem;font-weight:500;border:1px solid transparent;cursor:pointer;transition:opacity .15s,background .15s,color .15s}
+.btn-primary{background:var(--fg);color:var(--bg)}
+.btn-primary:hover{opacity:.9}
+.btn-outline{border-color:var(--fg);color:var(--fg)}
+.btn-outline:hover{background:var(--fg);color:var(--bg)}
+.btn-ghost{color:var(--muted)}
+.btn-ghost:hover{color:var(--fg)}
+.btn-sm{padding:.5rem 1rem;font-size:.75rem}
+.nav .btn{display:none}
+@media(min-width:768px){.nav-links{display:flex}.nav .btn{display:inline-flex}}
+
+/* Hero */
+.hero{border-bottom:1px solid var(--border)}
+.hero-grid{display:grid;gap:4rem;padding:5rem 0;align-items:center}
+@media(min-width:768px){.hero-grid{grid-template-columns:1.4fr 1fr;padding:8rem 0}}
+.hero h1{font-size:3rem;line-height:1.05;margin-top:1.5rem}
+@media(min-width:768px){.hero h1{font-size:4.5rem}}
+.hero .lead{margin-top:1.5rem;font-size:1rem;color:var(--muted)}
+@media(min-width:768px){.hero .lead{font-size:1.125rem}}
+.role-row{margin-top:.75rem;display:flex;flex-wrap:wrap;gap:.25rem .75rem;font-size:.875rem;font-weight:500}
+.hero .desc{margin-top:2rem;max-width:36rem;color:var(--muted);font-size:1rem;line-height:1.7}
+.hero-cta{margin-top:2.5rem;display:flex;flex-wrap:wrap;gap:.75rem}
+.portrait-wrap{position:relative}
+.portrait{position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid var(--border);background:var(--muted-bg)}
+.portrait img{width:100%;height:100%;object-fit:cover}
+.badge-avail{display:none;position:absolute;left:-1rem;bottom:-1rem;border:1px solid var(--border);background:var(--bg);padding:.75rem 1rem;font-size:.75rem}
+.badge-avail strong{display:block}
+@media(min-width:768px){.badge-avail{display:block}}
+
+/* Section */
+.section{border-bottom:1px solid var(--border)}
+.section-grid{display:grid;gap:2.5rem}
+@media(min-width:768px){.section-grid{grid-template-columns:1fr 2fr}}
+.section h2{font-size:1.875rem;margin-top:1rem}
+@media(min-width:768px){.section h2{font-size:2.25rem}}
+.section-desc{margin-top:1rem;max-width:22rem;font-size:.875rem;color:var(--muted)}
+
+/* About */
+.about-text p{color:var(--muted);font-size:1rem;line-height:1.7;margin-bottom:1.5rem}
+@media(min-width:768px){.about-text p{font-size:1.125rem}}
+.about-text strong{color:var(--fg);font-weight:500}
+.grid-tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;border:1px solid var(--border);background:var(--border);margin-top:1rem;overflow:hidden}
+.grid-tiles>div{background:var(--bg);padding:1.25rem;font-size:.875rem;font-weight:500}
+.check{width:1rem;height:1rem;display:block;margin-bottom:.75rem}
+
+/* Expertise / Why / Certs grids */
+.grid-2{display:grid;gap:1px;background:var(--border);border:1px solid var(--border);overflow:hidden}
+@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}}
+.grid-2>div{background:var(--bg);padding:1.5rem}
+.exp-icon{width:1.25rem;height:1.25rem}
+.exp-title{margin-top:1rem;font-size:1.125rem;font-weight:600}
+.exp-list{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem;font-size:.875rem;color:var(--muted)}
+.exp-list li{display:flex;gap:.5rem;align-items:flex-start}
+.dash{display:block;width:.75rem;height:1px;background:var(--silver);margin-top:.5rem;flex-shrink:0}
+
+/* Projects */
+.projects{display:flex;flex-direction:column;gap:1px;background:var(--border)}
+.project{background:var(--bg);padding:1.5rem;transition:background .15s}
+@media(min-width:768px){.project{padding:2rem}}
+.project:hover{background:var(--muted-bg)}
+.project-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;align-items:baseline}
+.project-no{font-size:.75rem;font-weight:500;color:var(--silver);margin-right:1rem}
+.project h3{font-size:1.25rem}
+@media(min-width:768px){.project h3{font-size:1.5rem}}
+.project .role{margin-top:.25rem;font-size:.875rem;color:var(--muted)}
+.tags{display:flex;flex-wrap:wrap;gap:.375rem}
+.tag{border:1px solid var(--border);border-radius:999px;padding:.125rem .625rem;font-size:11px;font-weight:500;color:var(--muted)}
+.project-grid{margin-top:1.5rem;display:grid;gap:1.5rem;border-top:1px solid var(--border);padding-top:1.5rem}
+@media(min-width:768px){.project-grid{grid-template-columns:repeat(4,1fr)}}
+.detail-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em}
+.detail-val{margin-top:.5rem;font-size:.875rem;line-height:1.6;color:var(--muted)}
+
+/* Experience timeline */
+.timeline{position:relative;display:flex;flex-direction:column;gap:2.5rem;padding-left:2rem;border-left:1px solid var(--border)}
+.tl-item{position:relative}
+.tl-dot{position:absolute;left:-33px;top:6px;width:.5rem;height:.5rem;border-radius:50%;background:var(--fg);box-shadow:0 0 0 4px var(--bg)}
+.tl-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;align-items:baseline}
+.tl-head h3{font-size:1rem;font-weight:600}
+.tl-period{font-size:.75rem;color:var(--muted)}
+.tl-org{margin-top:.25rem;font-size:.875rem;font-weight:500;color:var(--muted)}
+.tl-bullets{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
+.tl-bullets li{display:flex;gap:.75rem;font-size:.875rem;line-height:1.6;color:var(--muted)}
+
+/* Education */
+.edu-card{border:1px solid var(--border);padding:1.5rem}
+@media(min-width:768px){.edu-card{padding:2rem}}
+.edu-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;align-items:baseline}
+.edu-head h3{font-size:1.25rem;font-weight:600}
+.stats{margin-top:1.5rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);overflow:hidden}
+@media(min-width:640px){.stats{grid-template-columns:repeat(3,1fr)}}
+.stat{background:var(--bg);padding:1.25rem}
+.stat-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+.stat-val{margin-top:.5rem;font-size:1.125rem;font-weight:700}
+
+/* Why */
+.why-item{display:flex;gap:1rem;background:var(--bg);padding:1.25rem}
+.why-num{font-size:.75rem;font-weight:600;color:var(--silver)}
+.why-text{font-size:.875rem;font-weight:500;line-height:1.6}
+
+/* Certs */
+.cert{background:var(--bg);padding:1.25rem}
+.cert .name{font-size:.875rem;font-weight:500;line-height:1.4}
+.cert .issuer{margin-top:.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+
+/* Contact */
+.contact{border-bottom:1px solid var(--border);background:var(--fg);color:var(--bg)}
+.contact-grid{display:grid;gap:3rem}
+@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
+.contact h2{font-size:2.25rem;margin-top:1rem}
+@media(min-width:768px){.contact h2{font-size:3rem}}
+.contact .eyebrow{color:rgba(255,255,255,.6)}
+.contact .lead{margin-top:1.5rem;max-width:28rem;color:rgba(255,255,255,.7)}
+.contact-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.875rem}
+.contact-row{display:flex;align-items:center;gap:1rem;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:.75rem}
+.contact-row svg{width:1rem;height:1rem;color:rgba(255,255,255,.6);flex-shrink:0}
+.contact-row .l{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.5)}
+.contact-row .v{font-size:.875rem}
+.form{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);padding:1.5rem;display:flex;flex-direction:column;gap:1.25rem}
+@media(min-width:768px){.form{padding:2rem}}
+.field label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.6)}
+.field input,.field textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);padding:.5rem 0;color:var(--bg);font-family:inherit;font-size:.875rem;margin-top:.5rem;outline:none;resize:none}
+.field input:focus,.field textarea:focus{border-color:var(--bg)}
+.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.4)}
+.btn-light{background:var(--bg);color:var(--fg);align-self:flex-start}
+
+/* Footer */
+footer{border-top:1px solid var(--border)}
+.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:2rem 0;font-size:.75rem;color:var(--muted)}
+
+svg.i{width:1rem;height:1rem;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="container nav-inner">
+    <a href="#top" class="brand">M. Fahrizal<span class="muted">.</span></a>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#projects">Projects</a>
+      <a href="#experience">Experience</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-primary btn-sm">Contact Me →</a>
+  </div>
+</header>
+
+<main>
+<!-- HERO -->
+<section id="top" class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">Portfolio · 2026</p>
+      <h1>Muhammad<br/>Fahrizal<span class="silver">.</span></h1>
+      <p class="lead">Fresh Graduate Sistem Informasi</p>
+      <div class="role-row">
+        <span>Business Development</span><span class="silver">·</span>
+        <span>System Analyst</span><span class="silver">·</span>
+        <span>Digital Solutions Enthusiast</span>
+      </div>
+      <p class="desc">Menghubungkan kebutuhan bisnis dengan solusi teknologi melalui analisis proses bisnis, pengembangan sistem informasi, dan kolaborasi stakeholder.</p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects →</a>
+        <a href="#contact" class="btn btn-outline">Contact Me</a>
+      </div>
+    </div>
+    <div class="portrait-wrap">
+      <div class="portrait">
+        <img src="portrait-formal.jpg" alt="Muhammad Fahrizal" width="1024" height="1024" />
+      </div>
+      <div class="badge-avail">
+        <strong>Available for opportunities</strong>
+        <span class="muted">Full-time · Remote · Onsite</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container section-y">
+    <div class="section-grid">
+      <div>
+        <p class="eyebrow">01 · About</p>
+        <h2>Bridging business and technology.</h2>
+        <p class="section-desc">Profil singkat tentang latar belakang, ketertarikan karier, dan nilai yang dibawa.</p>
+      </div>
+      <div class="about-text">
+        <p>Saya adalah lulusan S1 Sistem Informasi <strong>Universitas Dian Nuswantoro</strong> dengan IPK 3.54/4.00. Fokus karier saya berada di persimpangan antara <strong>pengembangan bisnis</strong> dan <strong>analisis sistem</strong> — membantu organisasi memetakan proses, mengidentifikasi peluang, dan menerjemahkannya ke dalam solusi digital yang terukur.</p>
+        <p>Dengan pengalaman menangani client acquisition, koordinasi vendor & stakeholder, hingga pemodelan proses bisnis (BPMN, BPR), saya terbiasa berkomunikasi lintas peran — dari tim teknis, manajemen, hingga klien eksternal.</p>
+        <div class="grid-tiles">
+          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Business Understanding</div>
+          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Stakeholder Management</div>
+          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Process Improvement</div>
+          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Technology Adaptation</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE -->
+<section id="expertise" class="section">
+  <div class="container section-y">
+    <div class="section-grid">
+      <div>
+        <p class="eyebrow">02 · Core Expertise</p>
+        <h2>Empat pilar kompetensi.</h2>
+        <p class="section-desc">Kombinasi keterampilan bisnis, analisis sistem, teknologi, dan desain untuk membangun solusi end-to-end.</p>
+      </div>
+      <div class="grid-2">
+        <div>
+          <h3 class="exp-title">Business Development</h3>
+          <ul class="exp-list">
+            <li><span class="dash"></span>Client Acquisition</li>
+            <li><span class="dash"></span>Lead Generation</li>
+            <li><span class="dash"></span>Market Analysis</li>
+            <li><span class="dash"></span>Relationship Building</li>
+            <li><span class="dash"></span>Client Pitching</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="exp-title">System Analysis</h3>
+          <ul class="exp-list">
+            <li><span class="dash"></span>BPMN 2.0</li>
+            <li><span class="dash"></span>Business Process Analysis</li>
+            <li><span class="dash"></span>Requirement Gathering</li>
+            <li><span class="dash"></span>Use Case & Activity Diagram</li>
+            <li><span class="dash"></span>ERD & Class Diagram</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="exp-title">Technical Skills</h3>
+          <ul class="exp-list">
+            <li><span class="dash"></span>HTML / CSS</li>
+            <li><span class="dash"></span>Python · Flask</li>
+            <li><span class="dash"></span>Flutter · Dart</li>
+            <li><span class="dash"></span>MySQL</li>
+            <li><span class="dash"></span>Git / GitHub</li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="exp-title">UI/UX & Design</h3>
+          <ul class="exp-list">
+            <li><span class="dash"></span>Figma</li>
+            <li><span class="dash"></span>Wireframing</li>
+            <li><span class="dash"></span>Prototyping</li>
+            <li><span class="dash"></span>Adobe Photoshop / Illustrator</li>
+            <li><span class="dash"></span>Canva · Premiere Pro</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container section-y">
+    <div class="section-grid">
+      <div>
+        <p class="eyebrow">03 · Featured Projects</p>
+        <h2>Dari analisis bisnis ke implementasi.</h2>
+        <p class="section-desc">Empat proyek pilihan yang menunjukkan kemampuan menjembatani proses bisnis dengan solusi teknologi.</p>
+      </div>
+      <div class="projects">
+
+        <article class="project">
+          <div class="project-head">
+            <div style="display:flex;gap:1rem;align-items:baseline">
+              <span class="project-no">01</span>
+              <div>
+                <h3>Business Process Reengineering — EMEFDI Store</h3>
+                <p class="role">Business Analyst · Skripsi 2026</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">BPMN 2.0</span><span class="tag">BPR Life Cycle</span><span class="tag">Fishbone</span><span class="tag">Class Diagram</span></div>
+          </div>
+          <div class="project-grid">
+            <div><p class="detail-label">Problem</p><p class="detail-val">Operasional penjualan dan manajemen stok multi-channel berjalan manual sehingga laporan harian terlambat dan stok tidak akurat.</p></div>
+            <div><p class="detail-label">Analysis</p><p class="detail-val">Observasi & wawancara langsung, pemodelan AS-IS dan TO-BE menggunakan BPMN 2.0, Fishbone Diagram, Use Case, dan Class Diagram.</p></div>
+            <div><p class="detail-label">Solution</p><p class="detail-val">Blueprint sistem informasi terintegrasi: manajemen stok multi-channel (offline & online) dan otomatisasi laporan penjualan harian.</p></div>
+            <div><p class="detail-label">Outcome</p><p class="detail-val">Rekomendasi perbaikan proses yang meningkatkan efisiensi pengelolaan stok dan akurasi pelaporan penjualan.</p></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div style="display:flex;gap:1rem;align-items:baseline">
+              <span class="project-no">02</span>
+              <div>
+                <h3>Sistem Informasi Akademik</h3>
+                <p class="role">System Analyst & Developer · 2024</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Figma</span></div>
+          </div>
+          <div class="project-grid">
+            <div><p class="detail-label">Problem</p><p class="detail-val">Pengelolaan jadwal dan nilai untuk Admin, Dosen, dan Mahasiswa membutuhkan platform terpusat berbasis web.</p></div>
+            <div><p class="detail-label">Analysis</p><p class="detail-val">Requirement analysis 3 aktor dengan Use Case Diagram, Activity Diagram, dan BPMN; wireframe antarmuka dirancang di Figma.</p></div>
+            <div><p class="detail-label">Solution</p><p class="detail-val">Aplikasi web manajemen jadwal & nilai berbasis Python + MySQL dengan UI yang dirancang melalui Figma.</p></div>
+            <div><p class="detail-label">Outcome</p><p class="detail-val">Sistem akademik web yang memisahkan hak akses per peran dengan alur input nilai dan jadwal yang sederhana.</p></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div style="display:flex;gap:1rem;align-items:baseline">
+              <span class="project-no">03</span>
+              <div>
+                <h3>Aplikasi Menu & Kasir Mobile</h3>
+                <p class="role">Mobile Developer · 2024</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Mobile</span></div>
+          </div>
+          <div class="project-grid">
+            <div><p class="detail-label">Problem</p><p class="detail-val">Pelaku usaha membutuhkan aplikasi mobile ringan untuk mengelola menu produk dan transaksi kasir.</p></div>
+            <div><p class="detail-label">Analysis</p><p class="detail-val">Definisi fitur inti: katalog produk, keranjang belanja, perhitungan transaksi, dan navigasi antar halaman.</p></div>
+            <div><p class="detail-label">Solution</p><p class="detail-val">Aplikasi cross-platform berbasis Flutter dengan alur transaksi end-to-end dan UI yang konsisten.</p></div>
+            <div><p class="detail-label">Outcome</p><p class="detail-val">Aplikasi siap demo dengan alur transaksi lengkap dari pemilihan menu hingga checkout.</p></div>
+          </div>
+        </article>
+
+        <article class="project">
+          <div class="project-head">
+            <div style="display:flex;gap:1rem;align-items:baseline">
+              <span class="project-no">04</span>
+              <div>
+                <h3>Sistem Kasir Perpustakaan</h3>
+                <p class="role">Developer · 2023</p>
+              </div>
+            </div>
+            <div class="tags"><span class="tag">C++</span><span class="tag">Desktop App</span></div>
+          </div>
+          <div class="project-grid">
+            <div><p class="detail-label">Problem</p><p class="detail-val">Perpustakaan kecil membutuhkan aplikasi desktop untuk mengelola data buku, anggota, dan transaksi peminjaman.</p></div>
+            <div><p class="detail-label">Analysis</p><p class="detail-val">Pemetaan kebutuhan administrasi & transaksi serta validasi data secara terstruktur.</p></div>
+            <div><p class="detail-label">Solution</p><p class="detail-val">Aplikasi kasir & administrasi perpustakaan berbasis C++ dengan logika transaksi dan validasi data.</p></div>
+            <div><p class="detail-label">Outcome</p><p class="detail-val">Aplikasi desktop fungsional yang menangani siklus peminjaman dan pencatatan transaksi.</p></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience" class="section">
+  <div class="container section-y">
+    <div class="section-grid">
+      <div>
+        <p class="eyebrow">04 · Experience</p>
+        <h2>Pengalaman koordinasi dan delivery.</h2>
+        <p class="section-desc">Rekam jejak menangani stakeholder, vendor, dan operasional event berskala besar.</p>
+      </div>
+      <ol class="timeline">
+        <li class="tl-item"><span class="tl-dot"></span>
+          <div class="tl-head"><h3>Intern Sistem Informasi</h3><span class="tl-period">Feb – Mar 2025</span></div>
+          <p class="tl-org">Dinas Ketenagakerjaan Kabupaten Batang</p>
+          <ul class="tl-bullets">
+            <li><span class="dash"></span><span>Mendukung digitalisasi layanan portal Batang Career — menyusun SOP handover berbasis dokumentasi end-to-end dan koordinasi lintas divisi.</span></li>
+            <li><span class="dash"></span><span>Meningkatkan efisiensi pelaporan administrasi dengan merancang template laporan digital berbasis Microsoft Office.</span></li>
+            <li><span class="dash"></span><span>Monitoring konten, pelaporan kendala teknis, dan koordinasi pembaruan informasi portal bersama tim.</span></li>
+          </ul>
+        </li>
+        <li class="tl-item"><span class="tl-dot"></span>
+          <div class="tl-head"><h3>Liaison Officer (LO)</h3><span class="tl-period">2023</span></div>
+          <p class="tl-org">Valeasi Fest 2023</p>
+          <ul class="tl-bullets">
+            <li><span class="dash"></span><span>Mengelola client acquisition Guest Star Band — negosiasi langsung antara panitia, vendor, dan pihak eksternal.</span></li>
+            <li><span class="dash"></span><span>Zero miskomunikasi selama event melalui koordinasi terjadwal dengan 5+ divisi dan vendor eksternal.</span></li>
+          </ul>
+        </li>
+        <li class="tl-item"><span class="tl-dot"></span>
+          <div class="tl-head"><h3>Stage Division</h3><span class="tl-period">2023</span></div>
+          <p class="tl-org">Ekspectanica Semarang 2023</p>
+          <ul class="tl-bullets">
+            <li><span class="dash"></span><span>Mengelola pipeline operasional panggung — koordinasi tim teknis, vendor, dan pengisi acara secara simultan.</span></li>
+            <li><span class="dash"></span><span>Mempertahankan kepuasan partner bisnis dengan penanganan kebutuhan operasional real-time.</span></li>
+          </ul>
+        </li>
+        <li class="tl-item"><span class="tl-dot"></span>
+          <div class="tl-head"><h3>Event Operations & Media Support</h3><span class="tl-period">2020 – Sekarang</span></div>
+          <p class="tl-org">Tarik Shoot · Antara Kata Photo · SCARS ID</p>
+          <ul class="tl-bullets">
+            <li><span class="dash"></span><span>Membangun portfolio client acquisition selama 5+ tahun — pendekatan langsung, presentasi konsep, dan negosiasi paket.</span></li>
+            <li><span class="dash"></span><span>Mendorong revenue growth melalui repeat order dan referral klien dengan briefing terstruktur.</span></li>
+            <li><span class="dash"></span><span>Berkoordinasi dengan klien, vendor, dan talent untuk pengelolaan operasional dan pelaksanaan event.</span></li>
+          </ul>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications" class="section">
+  <div class="container section-y">
+    <div class="section-grid">
+      <div><p class="eyebrow">05 · Certifications</p><h2>Belajar berkelanjutan.</h2></div>
+      <div class="grid-2">
+        <div class="cert"><p class="name">Foundations of User Experience (UX) Design</p><p class="issuer">Google</p></div>
+        <div class="cert"><p class="name">Machine Learning Capstone</p><p class="issuer">IBM</p></div>
+        <div class="cert"><p class="name">Supervised Machine Learning: Regression</p><p class="issuer">IBM</p></div>
+        <div class="cert"><p class="name">Exploratory Data Analysis for Machine Learning</p><p class="issuer">IBM / Coursera</p></div>
+        <div class="cert"><p class="name">AI Literacy for Everyone: Understand, Apply, Create</p><p class="issuer">BASS Training Center</p></div>
+        <div class="cert"><p class="name">Create Your First Web App with Python and Flask</p><p class="issuer">Coursera</p></div>
+        <div class="cert"><p class="name">Jaringan Komputer Dasar</p><p class="issuer">ID-Networkers</p></div>
+        <div class="cert"><p class="name">Internship Information System</p><p class="issuer">Disnaker Kab. Batang</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container section-y">
+    <div class="section-grid">
+      <div><p class="eyebrow">06 · Education</p><h2>Pendidikan formal.</h2></div>
+      <div class="edu-card">
+        <div class="edu-head"><h3>Universitas Dian Nuswantoro</h3><span class="tl-period">Sep 2022 – Feb 2026</span></div>
+        <p class="tl-org">S1 Sistem Informasi · Semarang, Jawa Tengah</p>
+        <div class="stats">
+          <div class="stat"><p class="stat-label">IPK</p><p class="stat-val">3.54 / 4.00</p></div>
+          <div class="stat"><p class="stat-label">TOEFL ITP</p><p class="stat-val">503</p></div>
+          <div class="stat"><p class="stat-label">Fokus</p><p class="stat-val">Sistem Informasi</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHY HIRE -->
+<section id="why" class="section">
+  <div class="container section-y">
+    <div class="section-grid">
+      <div><p class="eyebrow">07 · Why Hire Me</p><h2>Lebih dari fresh graduate yang bisa coding.</h2></div>
+      <div class="grid-2">
+        <div class="why-item"><span class="why-num">01</span><p class="why-text">Memahami bisnis dan teknologi secara bersamaan</p></div>
+        <div class="why-item"><span class="why-num">02</span><p class="why-text">Komunikasi efektif dengan stakeholder teknis maupun non-teknis</p></div>
+        <div class="why-item"><span class="why-num">03</span><p class="why-text">Pengalaman nyata dalam analisis proses bisnis (BPMN, BPR)</p></div>
+        <div class="why-item"><span class="why-num">04</span><p class="why-text">Terbiasa menangani koordinasi klien dan vendor</p></div>
+        <div class="why-item"><span class="why-num">05</span><p class="why-text">Cepat beradaptasi dengan tools dan lingkungan baru</p></div>
+        <div class="why-item"><span class="why-num">06</span><p class="why-text">Mindset problem solving dan inisiatif tinggi</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="container section-y">
+    <div class="contact-grid">
+      <div>
+        <p class="eyebrow">08 · Contact</p>
+        <h2>Let's build something together.</h2>
+        <p class="lead">Terbuka untuk peluang Business Development, System Analyst, Business Analyst, IT Consultant, dan Implementator Sistem.</p>
+        <div class="contact-list">
+          <a href="mailto:fahrizal55250@gmail.com" class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <div style="flex:1"><p class="l">Email</p><p class="v">fahrizal55250@gmail.com</p></div>
+          </a>
+          <a href="tel:+6285803165340" class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+            <div style="flex:1"><p class="l">Phone</p><p class="v">+62 858 0316 5340</p></div>
+          </a>
+          <a href="https://linkedin.com/in/muhammadfahrizal290504" target="_blank" rel="noreferrer" class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            <div style="flex:1"><p class="l">LinkedIn</p><p class="v">muhammadfahrizal290504</p></div>
+          </a>
+          <a href="https://github.com/fahrizall29" target="_blank" rel="noreferrer" class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <div style="flex:1"><p class="l">GitHub</p><p class="v">fahrizall29</p></div>
+          </a>
+          <div class="contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div style="flex:1"><p class="l">Location</p><p class="v">Batang, Jawa Tengah, Indonesia</p></div>
+          </div>
+        </div>
+      </div>
+      <form class="form" onsubmit="event.preventDefault();var f=this;var n=f.name.value,e=f.email.value,m=f.message.value;location.href='mailto:fahrizal55250@gmail.com?subject='+encodeURIComponent('Opportunity from '+n)+'&body='+encodeURIComponent('Halo Fahrizal,\n\n'+m+'\n\nSalam,\n'+n+'\n'+e);">
+        <div class="field"><label>Name</label><input name="name" required /></div>
+        <div class="field"><label>Email</label><input name="email" type="email" required /></div>
+        <div class="field"><label>Message</label><textarea name="message" rows="5" required placeholder="Tell me about the opportunity..."></textarea></div>
+        <button type="submit" class="btn btn-light">Send Message →</button>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container footer-inner">
+    <p>© 2026 Muhammad Fahrizal. All rights reserved.</p>
+    <p>Designed & built with attention to detail.</p>
+  </div>
+</footer>
+
+</body>
+</html>
