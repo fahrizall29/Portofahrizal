@@ -1,591 +1,2135 @@
 <!doctype html>
 <html lang="id">
+
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Muhammad Fahrizal — IT Support | Implementator | System Analyst</title>
-<meta name="description" content="Portfolio Muhammad Fahrizal — Fresh Graduate Sistem Informasi dengan minat pada IT Support, System Implementation, System Analysis, dan Digital Solutions." />
-<meta property="og:title" content="Muhammad Fahrizal — Portfolio" />
-<meta property="og:description" content="Menghubungkan kebutuhan bisnis dengan solusi teknologi melalui analisis proses bisnis dan pengembangan sistem." />
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-<style>
-:root{
-  --bg:#ffffff; --fg:#111111; --muted:#737373; --muted-bg:#fafafa;
-  --border:#e5e5e5; --silver:#c0c0c0; --accent:#e5e5e5;
-}
-*{box-sizing:border-box;margin:0;padding:0;border-color:var(--border)}
-html{scroll-behavior:smooth}
-body{font-family:'Inter',ui-sans-serif,system-ui,sans-serif;background:var(--bg);color:var(--fg);-webkit-font-smoothing:antialiased;line-height:1.5}
-a{color:inherit;text-decoration:none}
-img{max-width:100%;display:block}
-h1,h2,h3,h4,h5{letter-spacing:-0.02em;font-weight:700}
-ul,ol{list-style:none}
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Muhammad Fahrizal — Business Process Analyst | System Analyst | Quality System Support</title>
+  <meta name="description"
+    content="Portfolio Muhammad Fahrizal — Fresh Graduate Sistem Informasi berfokus pada Business Process Analysis, BPMN/BPR, dokumentasi SOP, dan integrasi sistem manajemen mutu." />
+  <meta property="og:title" content="Muhammad Fahrizal — Portfolio" />
+  <meta property="og:description"
+    content="Menghubungkan kebutuhan bisnis dengan solusi teknologi melalui analisis proses bisnis (BPMN 2.0/BPR), dokumentasi SOP, dan integrasi sistem manajemen mutu." />
+  <meta property="og:image" content="assets/og-image.jpg" />
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 font-family=%22Inter, sans-serif%22 font-weight=%22bold%22 fill=%22%23111111%22>MF</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #ffffff;
+      --fg: #111111;
+      --muted: #737373;
+      --muted-bg: #fafafa;
+      --border: #e5e5e5;
+      --silver: #c0c0c0;
+      --accent: #e5e5e5;
+    }
 
-.container{max-width:72rem;margin:0 auto;padding:0 1.5rem}
-.section-y{padding:6rem 0}
-.eyebrow{font-size:.75rem;font-weight:600;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
-.muted{color:var(--muted)}
-.silver{color:var(--silver)}
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      border-color: var(--border)
+    }
 
-/* Nav */
-.nav{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.85);backdrop-filter:blur(10px);border-bottom:1px solid var(--border)}
-.nav-inner{display:flex;align-items:center;justify-content:space-between;height:4rem}
-.brand{font-size:.875rem;font-weight:700}
-.nav-links{display:none;gap:2rem;align-items:center}
-.nav-links a{font-size:.875rem;color:var(--muted);transition:color .15s}
-.nav-links a:hover{color:var(--fg)}
-.btn{display:inline-flex;align-items:center;gap:.5rem;border-radius:999px;padding:.75rem 1.5rem;font-size:.875rem;font-weight:500;border:1px solid transparent;cursor:pointer;transition:opacity .15s,background .15s,color .15s}
-.btn-primary{background:var(--fg);color:var(--bg)}
-.btn-primary:hover{opacity:.9}
-.btn-outline{border-color:var(--fg);color:var(--fg)}
-.btn-outline:hover{background:var(--fg);color:var(--bg)}
-.btn-ghost{color:var(--muted)}
-.btn-ghost:hover{color:var(--fg)}
-.btn-sm{padding:.5rem 1rem;font-size:.75rem}
-.nav .btn{display:none}
-@media(min-width:768px){.nav-links{display:flex}.nav .btn{display:inline-flex}}
+    html {
+      scroll-behavior: smooth
+    }
 
-/* Hero */
-.hero{border-bottom:1px solid var(--border)}
-.hero-grid{display:grid;gap:4rem;padding:5rem 0;align-items:center}
-@media(min-width:768px){.hero-grid{grid-template-columns:1.4fr 1fr;padding:8rem 0}}
-.hero h1{font-size:3rem;line-height:1.05;margin-top:1.5rem}
-@media(min-width:768px){.hero h1{font-size:4.5rem}}
-.hero .lead{margin-top:1.5rem;font-size:1rem;color:var(--muted)}
-@media(min-width:768px){.hero .lead{font-size:1.125rem}}
-.role-row{margin-top:.75rem;display:flex;flex-wrap:wrap;gap:.25rem .75rem;font-size:.875rem;font-weight:500}
-.hero .desc{margin-top:2rem;max-width:36rem;color:var(--muted);font-size:1rem;line-height:1.7}
-.hero-cta{margin-top:2.5rem;display:flex;flex-wrap:wrap;gap:.75rem}
-.portrait-wrap{position:relative}
-.portrait{position:relative;aspect-ratio:1/1;overflow:hidden;border:1px solid var(--border);background:var(--muted-bg)}
-.portrait img{width:100%;height:100%;object-fit:cover}
-.badge-avail{display:none;position:absolute;left:-1rem;bottom:-1rem;border:1px solid var(--border);background:var(--bg);padding:.75rem 1rem;font-size:.75rem}
-.badge-avail strong{display:block}
-@media(min-width:768px){.badge-avail{display:block}}
+    body {
+      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--fg);
+      -webkit-font-smoothing: antialiased;
+      line-height: 1.5
+    }
 
-/* Section */
-.section{border-bottom:1px solid var(--border)}
-.section-grid{display:grid;gap:2.5rem}
-@media(min-width:768px){.section-grid{grid-template-columns:1fr 2fr}}
-.section h2{font-size:1.875rem;margin-top:1rem}
-@media(min-width:768px){.section h2{font-size:2.25rem}}
-.section-desc{margin-top:1rem;max-width:22rem;font-size:.875rem;color:var(--muted)}
+    a {
+      color: inherit;
+      text-decoration: none
+    }
 
-/* About */
-.about-text p{color:var(--muted);font-size:1rem;line-height:1.7;margin-bottom:1.5rem}
-@media(min-width:768px){.about-text p{font-size:1.125rem}}
-.about-text strong{color:var(--fg);font-weight:500}
-.grid-tiles{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;border:1px solid var(--border);background:var(--border);margin-top:1rem;overflow:hidden}
-.grid-tiles>div{background:var(--bg);padding:1.25rem;font-size:.875rem;font-weight:500}
-.check{width:1rem;height:1rem;display:block;margin-bottom:.75rem}
+    img {
+      max-width: 100%;
+      display: block
+    }
 
-/* Expertise / Why / Certs grids */
-.grid-2{display:grid;gap:1px;background:var(--border);border:1px solid var(--border);overflow:hidden}
-@media(min-width:640px){.grid-2{grid-template-columns:repeat(2,1fr)}}
-.grid-2>div{background:var(--bg);padding:1.5rem}
-.exp-icon{width:1.25rem;height:1.25rem}
-.exp-title{margin-top:1rem;font-size:1.125rem;font-weight:600}
-.exp-list{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem;font-size:.875rem;color:var(--muted)}
-.exp-list li{display:flex;gap:.5rem;align-items:flex-start}
-.dash{display:block;width:.75rem;height:1px;background:var(--silver);margin-top:.5rem;flex-shrink:0}
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      letter-spacing: -0.02em;
+      font-weight: 700
+    }
 
-/* Projects */
-.projects{display:flex;flex-direction:column;gap:1px;background:var(--border)}
-.project{background:var(--bg);padding:1.5rem;transition:background .15s}
-@media(min-width:768px){.project{padding:2rem}}
-.project:hover{background:var(--muted-bg)}
-.project-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;align-items:baseline}
-.project-no{font-size:.75rem;font-weight:500;color:var(--silver);margin-right:1rem}
-.project h3{font-size:1.25rem}
-@media(min-width:768px){.project h3{font-size:1.5rem}}
-.project .role{margin-top:.25rem;font-size:.875rem;color:var(--muted)}
-.tags{display:flex;flex-wrap:wrap;gap:.375rem}
-.tag{border:1px solid var(--border);border-radius:999px;padding:.125rem .625rem;font-size:11px;font-weight:500;color:var(--muted)}
-.project-grid{margin-top:1.5rem;display:grid;gap:1.5rem;border-top:1px solid var(--border);padding-top:1.5rem}
-@media(min-width:768px){.project-grid{grid-template-columns:repeat(4,1fr)}}
-.detail-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em}
-.detail-val{margin-top:.5rem;font-size:.875rem;line-height:1.6;color:var(--muted)}
+    ul,
+    ol {
+      list-style: none
+    }
 
-/* Experience timeline */
-.timeline{position:relative;display:flex;flex-direction:column;gap:2.5rem;padding-left:2rem;border-left:1px solid var(--border)}
-.tl-item{position:relative}
-.tl-dot{position:absolute;left:-33px;top:6px;width:.5rem;height:.5rem;border-radius:50%;background:var(--fg);box-shadow:0 0 0 4px var(--bg)}
-.tl-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;align-items:baseline}
-.tl-head h3{font-size:1rem;font-weight:600}
-.tl-period{font-size:.75rem;color:var(--muted)}
-.tl-org{margin-top:.25rem;font-size:.875rem;font-weight:500;color:var(--muted)}
-.tl-bullets{margin-top:1rem;display:flex;flex-direction:column;gap:.5rem}
-.tl-bullets li{display:flex;gap:.75rem;font-size:.875rem;line-height:1.6;color:var(--muted)}
+    .container {
+      max-width: 72rem;
+      margin: 0 auto;
+      padding: 0 1.5rem
+    }
 
-/* Education */
-.edu-card{border:1px solid var(--border);padding:1.5rem}
-@media(min-width:768px){.edu-card{padding:2rem}}
-.edu-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:.5rem;align-items:baseline}
-.edu-head h3{font-size:1.25rem;font-weight:600}
-.stats{margin-top:1.5rem;display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--border);border:1px solid var(--border);overflow:hidden}
-@media(min-width:640px){.stats{grid-template-columns:repeat(3,1fr)}}
-.stat{background:var(--bg);padding:1.25rem}
-.stat-label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
-.stat-val{margin-top:.5rem;font-size:1.125rem;font-weight:700}
+    .section-y {
+      padding: 6rem 0
+    }
 
-/* Why */
-.why-item{display:flex;gap:1rem;background:var(--bg);padding:1.25rem}
-.why-num{font-size:.75rem;font-weight:600;color:var(--silver)}
-.why-text{font-size:.875rem;font-weight:500;line-height:1.6}
+    .eyebrow {
+      font-size: .75rem;
+      font-weight: 600;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: var(--muted)
+    }
 
-/* Certs */
-.cert{background:var(--bg);padding:1.25rem}
-.cert .name{font-size:.875rem;font-weight:500;line-height:1.4}
-.cert .issuer{margin-top:.5rem;font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--muted)}
+    .muted {
+      color: var(--muted)
+    }
 
-/* Contact */
-.contact{border-bottom:1px solid var(--border);background:var(--fg);color:var(--bg)}
-.contact-grid{display:grid;gap:3rem}
-@media(min-width:768px){.contact-grid{grid-template-columns:1fr 1fr}}
-.contact h2{font-size:2.25rem;margin-top:1rem}
-@media(min-width:768px){.contact h2{font-size:3rem}}
-.contact .eyebrow{color:rgba(255,255,255,.6)}
-.contact .lead{margin-top:1.5rem;max-width:28rem;color:rgba(255,255,255,.7)}
-.contact-list{margin-top:2.5rem;display:flex;flex-direction:column;gap:1rem;font-size:.875rem}
-.contact-row{display:flex;align-items:center;gap:1rem;border-bottom:1px solid rgba(255,255,255,.15);padding-bottom:.75rem}
-.contact-row svg{width:1rem;height:1rem;color:rgba(255,255,255,.6);flex-shrink:0}
-.contact-row .l{font-size:11px;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.5)}
-.contact-row .v{font-size:.875rem}
-.form{border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.05);padding:1.5rem;display:flex;flex-direction:column;gap:1.25rem}
-@media(min-width:768px){.form{padding:2rem}}
-.field label{font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.1em;color:rgba(255,255,255,.6)}
-.field input,.field textarea{width:100%;background:transparent;border:0;border-bottom:1px solid rgba(255,255,255,.3);padding:.5rem 0;color:var(--bg);font-family:inherit;font-size:.875rem;margin-top:.5rem;outline:none;resize:none}
-.field input:focus,.field textarea:focus{border-color:var(--bg)}
-.field input::placeholder,.field textarea::placeholder{color:rgba(255,255,255,.4)}
-.btn-light{background:var(--bg);color:var(--fg);align-self:flex-start}
+    .silver {
+      color: var(--silver)
+    }
 
-/* Footer */
-footer{border-top:1px solid var(--border)}
-.footer-inner{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;padding:2rem 0;font-size:.75rem;color:var(--muted)}
+    /* Nav */
+    .nav {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      background: rgba(255, 255, 255, .85);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid var(--border)
+    }
 
-svg.i{width:1rem;height:1rem;stroke:currentColor;fill:none;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;flex-shrink:0}
-</style>
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 4rem
+    }
+
+    .brand {
+      font-size: .875rem;
+      font-weight: 700
+    }
+
+    .nav-links {
+      display: none;
+      gap: 2rem;
+      align-items: center
+    }
+
+    .nav-links a {
+      font-size: .875rem;
+      color: var(--muted);
+      transition: color .15s
+    }
+
+    .nav-links a:hover {
+      color: var(--fg)
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: .5rem;
+      border-radius: 999px;
+      padding: .75rem 1.5rem;
+      font-size: .875rem;
+      font-weight: 500;
+      border: 1px solid transparent;
+      cursor: pointer;
+      transition: opacity .15s, background .15s, color .15s
+    }
+
+    .btn-primary {
+      background: var(--fg);
+      color: var(--bg)
+    }
+
+    .btn-primary:hover {
+      opacity: .9
+    }
+
+    .btn-outline {
+      border-color: var(--fg);
+      color: var(--fg)
+    }
+
+    .btn-outline:hover {
+      background: var(--fg);
+      color: var(--bg)
+    }
+
+    .btn-ghost {
+      color: var(--muted)
+    }
+
+    .btn-ghost:hover {
+      color: var(--fg)
+    }
+
+    .btn-sm {
+      padding: .5rem 1rem;
+      font-size: .75rem
+    }
+
+    .nav .btn {
+      display: none
+    }
+
+    /* Hamburger Toggle Button */
+    .nav-toggle {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      width: 1.25rem;
+      height: 0.875rem;
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+      z-index: 100;
+    }
+
+    .nav-toggle span {
+      width: 100%;
+      height: 2px;
+      background-color: var(--fg);
+      transition: transform 0.3s ease, opacity 0.3s ease;
+      transform-origin: left center;
+    }
+
+    .nav-toggle.active span:nth-child(1) {
+      transform: rotate(45deg) translate(1px, -1px);
+    }
+
+    .nav-toggle.active span:nth-child(2) {
+      opacity: 0;
+    }
+
+    .nav-toggle.active span:nth-child(3) {
+      transform: rotate(-45deg) translate(1px, 1px);
+    }
+
+    .nav-mobile-btn {
+      display: none;
+    }
+
+    @media(max-width:767px) {
+      .nav-links {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 4.05rem;
+        left: 0;
+        width: 100%;
+        background: var(--bg);
+        border-bottom: 1px solid var(--border);
+        padding: 2rem 1.5rem;
+        gap: 1.5rem;
+        transform: translateY(-10px);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 40;
+      }
+
+      .nav-links.active {
+        transform: translateY(0);
+        opacity: 1;
+        visibility: visible;
+      }
+
+      .nav-mobile-btn {
+        display: inline-flex;
+        justify-content: center;
+        width: 100%;
+        margin-top: 0.5rem;
+      }
+    }
+
+    @media(min-width:768px) {
+      .nav-toggle {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex;
+      }
+
+      .nav .btn {
+        display: inline-flex;
+      }
+
+      .nav-links .nav-mobile-btn {
+        display: none;
+      }
+    }
+
+    /* Hero */
+    .hero {
+      border-bottom: 1px solid var(--border)
+    }
+
+    .hero-grid {
+      display: grid;
+      gap: 4rem;
+      padding: 5rem 0;
+      align-items: center
+    }
+
+    @media(min-width:768px) {
+      .hero-grid {
+        grid-template-columns: 1.4fr 1fr;
+        padding: 8rem 0
+      }
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      line-height: 1.05;
+      margin-top: 1.5rem
+    }
+
+    @media(min-width:768px) {
+      .hero h1 {
+        font-size: 4.5rem
+      }
+    }
+
+    .hero .lead {
+      margin-top: 1.5rem;
+      font-size: 1rem;
+      color: var(--muted)
+    }
+
+    @media(min-width:768px) {
+      .hero .lead {
+        font-size: 1.125rem
+      }
+    }
+
+    .role-row {
+      margin-top: .75rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .25rem .75rem;
+      font-size: .875rem;
+      font-weight: 500
+    }
+
+    .hero .desc {
+      margin-top: 2rem;
+      max-width: 36rem;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7
+    }
+
+    .hero-cta {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-wrap: wrap;
+      gap: .75rem
+    }
+
+    .portrait-wrap {
+      position: relative
+    }
+
+    .portrait {
+      position: relative;
+      aspect-ratio: 1/1;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--muted-bg)
+    }
+
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover
+    }
+
+    .badge-avail {
+      display: none;
+      position: absolute;
+      left: -1rem;
+      bottom: -1rem;
+      border: 1px solid var(--border);
+      background: var(--bg);
+      padding: .75rem 1rem;
+      font-size: .75rem
+    }
+
+    .badge-avail strong {
+      display: block
+    }
+
+    @media(min-width:768px) {
+      .badge-avail {
+        display: block
+      }
+    }
+
+    /* Section */
+    .section {
+      border-bottom: 1px solid var(--border)
+    }
+
+    .section-grid {
+      display: grid;
+      gap: 2.5rem
+    }
+
+    @media(min-width:768px) {
+      .section-grid {
+        grid-template-columns: 1fr 2fr
+      }
+    }
+
+    .section h2 {
+      font-size: 1.875rem;
+      margin-top: 1rem
+    }
+
+    @media(min-width:768px) {
+      .section h2 {
+        font-size: 2.25rem
+      }
+    }
+
+    .section-desc {
+      margin-top: 1rem;
+      max-width: 22rem;
+      font-size: .875rem;
+      color: var(--muted)
+    }
+
+    /* About */
+    .about-text p {
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 1.5rem
+    }
+
+    @media(min-width:768px) {
+      .about-text p {
+        font-size: 1.125rem
+      }
+    }
+
+    .about-text strong {
+      color: var(--fg);
+      font-weight: 500
+    }
+
+    .grid-tiles {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      border: 1px solid var(--border);
+      background: var(--border);
+      margin-top: 1rem;
+      overflow: hidden
+    }
+
+    .grid-tiles>div {
+      background: var(--bg);
+      padding: 1.25rem;
+      font-size: .875rem;
+      font-weight: 500
+    }
+
+    .check {
+      width: 1rem;
+      height: 1rem;
+      display: block;
+      margin-bottom: .75rem
+    }
+
+    /* Expertise / Why / Certs grids */
+    .grid-2 {
+      display: grid;
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      overflow: hidden
+    }
+
+    @media(min-width:640px) {
+      .grid-2 {
+        grid-template-columns: repeat(2, 1fr)
+      }
+    }
+
+    .grid-2>div {
+      background: var(--bg);
+      padding: 1.5rem
+    }
+
+    .exp-icon {
+      width: 1.25rem;
+      height: 1.25rem
+    }
+
+    .exp-title {
+      margin-top: 1rem;
+      font-size: 1.125rem;
+      font-weight: 600
+    }
+
+    .exp-list {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem;
+      font-size: .875rem;
+      color: var(--muted)
+    }
+
+    .exp-list li {
+      display: flex;
+      gap: .5rem;
+      align-items: flex-start
+    }
+
+    .dash {
+      display: block;
+      width: .75rem;
+      height: 1px;
+      background: var(--silver);
+      margin-top: .5rem;
+      flex-shrink: 0
+    }
+
+    /* Projects */
+    .projects {
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+      background: var(--border)
+    }
+
+    .project {
+      background: var(--bg);
+      padding: 1.5rem;
+      transition: background 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease
+    }
+
+    @media(min-width:768px) {
+      .project {
+        padding: 2rem
+      }
+    }
+
+    .project:hover {
+      background: var(--muted-bg);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      position: relative;
+      z-index: 1
+    }
+
+    .project-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .5rem;
+      align-items: baseline
+    }
+
+    .project-no {
+      font-size: .75rem;
+      font-weight: 500;
+      color: var(--silver);
+      margin-right: 1rem
+    }
+
+    .project h3 {
+      font-size: 1.25rem
+    }
+
+    @media(min-width:768px) {
+      .project h3 {
+        font-size: 1.5rem
+      }
+    }
+
+    .project .role {
+      margin-top: .25rem;
+      font-size: .875rem;
+      color: var(--muted)
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: .375rem
+    }
+
+    .tag {
+      border: 1px solid var(--border);
+      border-radius: 999px;
+      padding: .125rem .625rem;
+      font-size: 11px;
+      font-weight: 500;
+      color: var(--muted)
+    }
+
+    .project-grid {
+      margin-top: 1.5rem;
+      display: grid;
+      gap: 1.5rem;
+      border-top: 1px solid var(--border);
+      padding-top: 1.5rem
+    }
+
+    @media(min-width:768px) {
+      .project-grid {
+        grid-template-columns: repeat(4, 1fr)
+      }
+    }
+
+    .detail-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em
+    }
+
+    .detail-val {
+      margin-top: .5rem;
+      font-size: .875rem;
+      line-height: 1.6;
+      color: var(--muted)
+    }
+
+    /* Experience timeline */
+    .timeline {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      gap: 2.5rem;
+      padding-left: 2rem;
+      border-left: 1px solid var(--border)
+    }
+
+    .tl-item {
+      position: relative;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)
+    }
+
+    .tl-item:hover {
+      transform: translateX(4px)
+    }
+
+    .tl-dot {
+      position: absolute;
+      left: -33px;
+      top: 6px;
+      width: .5rem;
+      height: .5rem;
+      border-radius: 50%;
+      background: var(--fg);
+      box-shadow: 0 0 0 4px var(--bg)
+    }
+
+    .tl-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .5rem;
+      align-items: baseline
+    }
+
+    .tl-head h3 {
+      font-size: 1rem;
+      font-weight: 600
+    }
+
+    .tl-period {
+      font-size: .75rem;
+      color: var(--muted)
+    }
+
+    .tl-org {
+      margin-top: .25rem;
+      font-size: .875rem;
+      font-weight: 500;
+      color: var(--muted)
+    }
+
+    .tl-bullets {
+      margin-top: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: .5rem
+    }
+
+    .tl-bullets li {
+      display: flex;
+      gap: .75rem;
+      font-size: .875rem;
+      line-height: 1.6;
+      color: var(--muted)
+    }
+
+    /* Education */
+    .edu-card {
+      border: 1px solid var(--border);
+      padding: 1.5rem
+    }
+
+    @media(min-width:768px) {
+      .edu-card {
+        padding: 2rem
+      }
+    }
+
+    .edu-head {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: .5rem;
+      align-items: baseline
+    }
+
+    .edu-head h3 {
+      font-size: 1.25rem;
+      font-weight: 600
+    }
+
+    .stats {
+      margin-top: 1.5rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+      overflow: hidden
+    }
+
+    @media(min-width:640px) {
+      .stats {
+        grid-template-columns: repeat(3, 1fr)
+      }
+    }
+
+    .stat {
+      background: var(--bg);
+      padding: 1.25rem
+    }
+
+    .stat-label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: var(--muted)
+    }
+
+    .stat-val {
+      margin-top: .5rem;
+      font-size: 1.125rem;
+      font-weight: 700
+    }
+
+    /* Why */
+    .why-item {
+      display: flex;
+      gap: 1rem;
+      background: var(--bg);
+      padding: 1.25rem;
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, box-shadow 0.3s ease
+    }
+
+    .why-item:hover {
+      transform: translateY(-2px);
+      background: var(--muted-bg);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
+      position: relative;
+      z-index: 1
+    }
+
+    .why-num {
+      font-size: .75rem;
+      font-weight: 600;
+      color: var(--silver)
+    }
+
+    .why-text {
+      font-size: .875rem;
+      font-weight: 500;
+      line-height: 1.6
+    }
+
+    /* =========================
+   CERTIFICATIONS
+========================= */
+
+    .cert-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 1.5rem;
+    }
+
+    @media (max-width: 992px) {
+      .cert-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .cert-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    .cert {
+      background: var(--bg);
+      padding: 1.25rem;
+      cursor: pointer;
+      transition: transform .3s cubic-bezier(.16, 1, .3, 1),
+        background .3s ease,
+        box-shadow .3s ease;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+
+    .cert:hover {
+      transform: translateY(-4px);
+      background: var(--muted-bg);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
+    }
+
+    .cert-thumbnail {
+      width: 100%;
+      aspect-ratio: 16/10;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: var(--muted-bg);
+      margin-bottom: 1rem;
+    }
+
+    .cert-thumbnail img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform .35s ease;
+    }
+
+    .cert:hover .cert-thumbnail img {
+      transform: scale(1.05);
+    }
+
+    .cert-info {
+      display: flex;
+      flex-direction: column;
+      flex: 1;
+    }
+
+    .cert .name {
+      font-size: .95rem;
+      font-weight: 600;
+      line-height: 1.45;
+      color: var(--fg);
+    }
+
+    .cert .issuer {
+      margin-top: auto;
+      padding-top: .75rem;
+      font-size: .75rem;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      color: var(--muted);
+    }
+
+    /* Contact */
+    .contact {
+      border-bottom: 1px solid var(--border);
+      background: var(--fg);
+      color: var(--bg)
+    }
+
+    .contact-grid {
+      display: grid;
+      gap: 3rem
+    }
+
+    @media(min-width:768px) {
+      .contact-grid {
+        grid-template-columns: 1fr 1fr
+      }
+    }
+
+    .contact h2 {
+      font-size: 2.25rem;
+      margin-top: 1rem
+    }
+
+    @media(min-width:768px) {
+      .contact h2 {
+        font-size: 3rem
+      }
+    }
+
+    .contact .eyebrow {
+      color: rgba(255, 255, 255, .6)
+    }
+
+    .contact .lead {
+      margin-top: 1.5rem;
+      max-width: 28rem;
+      color: rgba(255, 255, 255, .7)
+    }
+
+    .contact-list {
+      margin-top: 2.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      font-size: .875rem
+    }
+
+    .contact-row {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      border-bottom: 1px solid rgba(255, 255, 255, .15);
+      padding-bottom: .75rem
+    }
+
+    .contact-row svg {
+      width: 1rem;
+      height: 1rem;
+      color: rgba(255, 255, 255, .6);
+      flex-shrink: 0
+    }
+
+    .contact-row .l {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: rgba(255, 255, 255, .5)
+    }
+
+    .contact-row .v {
+      font-size: .875rem
+    }
+
+    .form {
+      border: 1px solid rgba(255, 255, 255, .2);
+      background: rgba(255, 255, 255, .05);
+      padding: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem
+    }
+
+    @media(min-width:768px) {
+      .form {
+        padding: 2rem
+      }
+    }
+
+    .field label {
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      color: rgba(255, 255, 255, .6)
+    }
+
+    .field input,
+    .field textarea {
+      width: 100%;
+      background: transparent;
+      border: 0;
+      border-bottom: 1px solid rgba(255, 255, 255, .3);
+      padding: .5rem 0;
+      color: var(--bg);
+      font-family: inherit;
+      font-size: .875rem;
+      margin-top: .5rem;
+      outline: none;
+      resize: none
+    }
+
+    .field input:focus,
+    .field textarea:focus {
+      border-color: var(--bg)
+    }
+
+    .field input::placeholder,
+    .field textarea::placeholder {
+      color: rgba(255, 255, 255, .4)
+    }
+
+    .btn-light {
+      background: var(--bg);
+      color: var(--fg);
+      align-self: flex-start
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border)
+    }
+
+    .footer-inner {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 1rem;
+      padding: 2rem 0;
+      font-size: .75rem;
+      color: var(--muted)
+    }
+
+    svg.i {
+      width: 1rem;
+      height: 1rem;
+      stroke: currentColor;
+      fill: none;
+      stroke-width: 2;
+      stroke-linecap: round;
+      stroke-linejoin: round;
+      flex-shrink: 0
+    }
+
+    /* Lightbox modal */
+    .lightbox {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.9);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 1000;
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      padding: 1.5rem;
+    }
+
+    .lightbox.active {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .lightbox-close {
+      position: absolute;
+      top: 1.5rem;
+      right: 1.5rem;
+      background: transparent;
+      border: none;
+      color: #fff;
+      font-size: 2.5rem;
+      cursor: pointer;
+      line-height: 1;
+      z-index: 1010;
+      transition: opacity 0.2s;
+    }
+
+    .lightbox-close:hover {
+      opacity: 0.8;
+    }
+
+    .lightbox-content {
+      max-width: 50rem;
+      width: 100%;
+      background: #111;
+      border: 1px solid #333;
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    .lightbox-content img {
+      width: 100%;
+      height: auto;
+      max-height: 70vh;
+      object-fit: contain;
+      background: #000;
+    }
+
+    .lightbox-caption {
+      padding: 1.5rem;
+      color: #fff;
+    }
+
+    .lightbox-caption h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+      font-weight: 600;
+    }
+
+    .lightbox-caption .eyebrow {
+      color: #aaa;
+      font-size: 0.75rem;
+    }
+
+    /* Scroll Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .reveal.reveal-active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 </head>
+
 <body>
 
-<header class="nav">
-  <div class="container nav-inner">
-    <a href="#top" class="brand">M. Fahrizal<span class="muted">.</span></a>
-    <nav class="nav-links">
-      <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#certifications">Certifications</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a href="#contact" class="btn btn-primary btn-sm">Contact Me →</a>
-  </div>
-</header>
-
-<main>
-<!-- HERO -->
-<section id="top" class="hero">
-  <div class="container hero-grid">
-    <div>
-      <p class="eyebrow">Portfolio · 2026</p>
-      <h1>Muhammad<br/>Fahrizal<span class="silver">.</span></h1>
-      <p class="lead">Fresh Graduate Sistem Informasi</p>
-      <div class="role-row">
-      <span>IT Support</span>
-      <span class="silver">·</span>
-      <span>System Implementator</span>
-      <span class="silver">·</span>
-      <span>System Analyst</span>
-      </div>
-      <p class="desc">Berfokus pada implementasi sistem informasi, IT support, dan analisis sistem dengan pengalaman mendukung digitalisasi layanan, dokumentasi sistem, troubleshooting, serta kolaborasi dengan stakeholder untuk memastikan implementasi berjalan efektif.</p>
-   <div class="hero-cta">
-    <a href="#projects" class="btn btn-primary">View Projects →</a>
-
-       <a
-  href="https://drive.google.com/file/d/1Vd03xaiMsW5lBc65ipHb-XEK_MkowLUm/view?usp=sharing"
-  target="_blank"
-  class="btn btn-outline">
-  View CV
-</a>
-
-    <a href="#contact" class="btn btn-ghost">
-      Contact Me
-    </a>
-</div>
+  <header class="nav">
+    <div class="container nav-inner">
+      <a href="#top" class="brand">M. Fahrizal<span class="muted">.</span></a>
+      <nav class="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-mobile-btn">Contact Me →</a>
+      </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <a href="#contact" class="btn btn-primary btn-sm">Contact Me →</a>
     </div>
-    <div class="portrait-wrap">
-      <div class="portrait">
-        <img src="potrait-formal.jpg" alt="Muhammad Fahrizal" width="1024" height="1024" />
-      </div>
-      <div class="badge-avail">
-        <strong>Available for opportunities</strong>
-        <span class="muted">Full-time · Remote · Onsite</span>
-      </div>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- ABOUT -->
-<section id="about" class="section">
-  <div class="container section-y">
-    <div class="section-grid">
-      <div>
-        <p class="eyebrow">01 · About</p>
-        <h2>Bridging business and technology.</h2>
-        <p class="section-desc">Profil singkat tentang latar belakang, ketertarikan karier, dan nilai yang dibawa.</p>
-      </div>
-      <div class="about-text">
-        <p>Saya adalah lulusan S1 Sistem Informasi <strong>Universitas Dian Nuswantoro</strong> dengan IPK 3.54/4.00. Fokus karier saya berada pada implementasi sistem informasi, IT support, dan analisis sistem untuk membantu organisasi mengadopsi solusi teknologi secara efektif.</p>
-        <p>Dengan pengalaman mendukung digitalisasi layanan, menyusun dokumentasi sistem, melakukan monitoring operasional, serta berkoordinasi dengan berbagai stakeholder, saya terbiasa memastikan implementasi sistem berjalan sesuai kebutuhan pengguna.</p>
-        <div class="grid-tiles">
-          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Business Understanding</div>
-          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Stakeholder Management</div>
-          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Process Improvement</div>
-          <div><svg class="i check" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Technology Adaptation</div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERTISE -->
-<section id="expertise" class="section">
-  <div class="container section-y">
-    <div class="section-grid">
-      <div>
-        <p class="eyebrow">02 · Core Expertise</p>
-        <h2>Empat kompetensi utama.</h2>
-        <p class="section-desc">
-          Kombinasi kemampuan implementasi sistem, analisis, dukungan teknis, dan pengembangan aplikasi untuk mendukung kebutuhan bisnis dan pengguna.
-        </p>
-      </div>
-
-      <div class="grid-2">
-
+  <main>
+    <!-- HERO -->
+    <section id="top" class="hero">
+      <div class="container hero-grid">
         <div>
-          <h3 class="exp-title">IT Support & System Implementation</h3>
-          <ul class="exp-list">
-            <li><span class="dash"></span>System Implementation</li>
-            <li><span class="dash"></span>User Support</li>
-            <li><span class="dash"></span>Computer Troubleshooting</li>
-            <li><span class="dash"></span>System Documentation</li>
-            <li><span class="dash"></span>Software Deployment</li>
-          </ul>
-        </div>
+          <p class="eyebrow">Portfolio · 2026</p>
+          <h1>Muhammad<br />Fahrizal<span class="silver">.</span></h1>
+          <p class="lead">Fresh Graduate Sistem Informasi</p>
+          <div class="role-row">
+            <span>Business Process Analyst</span>
+            <span class="silver">·</span>
+            <span>System Analyst</span>
+            <span class="silver">·</span>
+            <span>Quality System Support</span>
+          </div>
+          <p class="desc">Berfokus pada analisis dan perbaikan proses bisnis menggunakan BPR Life Cycle dan BPMN 2.0,
+            penyusunan dokumentasi proses & SOP, serta dukungan implementasi sistem informasi. Memiliki ketertarikan
+            mendalami integrasi sistem manajemen mutu, lingkungan, dan K3 untuk mendukung kepatuhan regulasi dan
+            efisiensi operasional perusahaan.</p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects →</a>
 
-        <div>
-          <h3 class="exp-title">System Analysis</h3>
-          <ul class="exp-list">
-            <li><span class="dash"></span>Business Process Analysis</li>
-            <li><span class="dash"></span>BPMN 2.0</li>
-            <li><span class="dash"></span>Requirement Gathering</li>
-            <li><span class="dash"></span>Use Case & Activity Diagram</li>
-            <li><span class="dash"></span>ERD & Class Diagram</li>
-          </ul>
-        </div>
+            <a href="https://drive.google.com/file/d/1vlHxENhIJgQbOGgrneYkDPvP8VWxUdCV/view?usp=sharing" target="_blank"
+              rel="noreferrer" class="btn btn-outline">
+              View CV
+            </a>
 
-        <div>
-          <h3 class="exp-title">Programming & Technical</h3>
-          <ul class="exp-list">
-            <li><span class="dash"></span>Python, HTML/CSS</li>
-            <li><span class="dash"></span>Flutter, Dart, C++</li>
-            <li><span class="dash"></span>MySQL, Git/GitHub</li>
-            <li><span class="dash"></span>Basic Networking (TCP/IP)</li>
-            <li><span class="dash"></span>Microsoft Office</li>
-          </ul>
+            <a href="#contact" class="btn btn-ghost">
+              Contact Me
+            </a>
+          </div>
         </div>
-
-        <div>
-          <h3 class="exp-title">UI/UX & Collaboration</h3>
-          <ul class="exp-list">
-            <li><span class="dash"></span>Figma (Wireframe & Prototype)</li>
-            <li><span class="dash"></span>Adobe Photoshop & Illustrator</li>
-            <li><span class="dash"></span>Canva & Premiere Pro</li>
-            <li><span class="dash"></span>Stakeholder Communication</li>
-            <li><span class="dash"></span>Problem Solving</li>
-          </ul>
+        <div class="portrait-wrap">
+          <div class="portrait">
+            <img src="potrait-formal.jpg" alt="Muhammad Fahrizal" width="1024" height="1024" />
+          </div>
+          <div class="badge-avail">
+            <strong>Available for opportunities</strong>
+            <span class="muted">Full-time · Remote · Onsite</span>
+          </div>
         </div>
-
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
-<!-- PROJECTS -->
-<section id="projects" class="section">
-  <div class="container section-y">
-    <div class="section-grid">
-      <div>
-        <p class="eyebrow">03 · Featured Projects</p>
-        <h2>Dari analisis bisnis ke implementasi.</h2>
-        <p class="section-desc">Empat proyek pilihan yang menunjukkan kemampuan menjembatani proses bisnis dengan solusi teknologi.</p>
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <div class="container section-y">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">01 · About</p>
+            <h2>Menjembatani bisnis dan teknologi.</h2>
+            <p class="section-desc">Profil singkat tentang latar belakang, ketertarikan karier, dan nilai yang dibawa.
+            </p>
+          </div>
+          <div class="about-text">
+            <p>Saya adalah lulusan S1 Sistem Informasi <strong>Universitas Dian Nuswantoro</strong> dengan IPK
+              3.54/4.00. Fokus saya berada pada analisis dan perbaikan proses bisnis — mulai dari review proses berjalan
+              (as-is), identifikasi gap, hingga perancangan ulang proses (to-be) menggunakan BPR Life Cycle, BPMN 2.0,
+              dan Fishbone Diagram.</p>
+            <p>Dengan pengalaman menyusun dokumentasi proses dan SOP selama magang di Dinas Ketenagakerjaan Kabupaten
+              Batang, saya terbiasa bekerja secara teliti dan sistematis dalam pemetaan proses maupun penyusunan dokumen
+              standar. Saya juga tertarik mendalami integrasi sistem manajemen mutu, lingkungan, dan K3 untuk mendukung
+              kepatuhan dan efisiensi operasional.</p>
+            <div class="grid-tiles">
+              <div><svg class="i check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Business Process Analysis</div>
+
+              <div><svg class="i check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>System Analysis & Requirement Gathering</div>
+
+              <div><svg class="i check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Data Analysis & Visualization</div>
+
+              <div><svg class="i check" viewBox="0 0 24 24">
+                  <polyline points="20 6 9 17 4 12" />
+                </svg>Process Documentation & SOP</div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="projects">
+    </section>
 
-        <article class="project">
-          <div class="project-head">
-            <div style="display:flex;gap:1rem;align-items:baseline">
-              <span class="project-no">01</span>
-              <div>
-                <h3>Business Process Reengineering — EMEFDI Store</h3>
-                <p class="role">Business Analyst · Skripsi 2026</p>
+    <!-- EXPERTISE -->
+    <section id="expertise" class="section">
+      <div class="container section-y">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">02 · Core Expertise</p>
+            <h2>Empat kompetensi utama.</h2>
+            <p class="section-desc">
+              Menggabungkan analisis bisnis, analisis sistem, analisis data, dan dokumentasi proses
+              untuk meningkatkan efisiensi operasional, mendukung pengambilan keputusan yang tepat, dan memastikan
+              proses bisnis yang terstandarisasi.
+            </p>
+          </div>
+
+          <div class="grid-2">
+
+            <div>
+              <h3 class="exp-title">Business Process Analysis</h3>
+              <ul class="exp-list">
+                <li><span class="dash"></span>Business Process Analysis</li>
+                <li><span class="dash"></span>Business Process Reengineering (BPR)</li>
+                <li><span class="dash"></span>BPMN 2.0 Process Modeling</li>
+                <li><span class="dash"></span>Process Improvement</li>
+                <li><span class="dash"></span>Gap Analysis</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="exp-title">System Analysis</h3>
+              <ul class="exp-list">
+                <li><span class="dash"></span>Requirement Gathering</li>
+                <li><span class="dash"></span>Business & System Analysis</li>
+                <li><span class="dash"></span>Use Case & Activity Diagram</li>
+                <li><span class="dash"></span>Class Diagram & ERD</li>
+                <li><span class="dash"></span>System Documentation</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="exp-title">Data Analysis</h3>
+              <ul class="exp-list">
+                <li><span class="dash"></span>SQL & MySQL</li>
+                <li><span class="dash"></span>Microsoft Excel</li>
+                <li><span class="dash"></span>Data Cleaning</li>
+                <li><span class="dash"></span>Data Visualization</li>
+                <li><span class="dash"></span>Analytical Reporting</li>
+              </ul>
+            </div>
+
+            <div>
+              <h3 class="exp-title">Quality System Support</h3>
+              <ul class="exp-list">
+                <li><span class="dash"></span>Process Documentation & SOP</li>
+                <li><span class="dash"></span>Quality Documentation</li>
+                <li><span class="dash"></span>Cross-functional Collaboration</li>
+                <li><span class="dash"></span>Continuous Improvement</li>
+                <li><span class="dash"></span>Problem Solving</li>
+              </ul>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <div class="container section-y">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">03 · Featured Projects</p>
+            <h2>Mengubah kebutuhan bisnis menjadi solusi digital.</h2>
+            <p class="section-desc">
+              Lima proyek pilihan yang menunjukkan kemampuan dalam analisis proses bisnis,
+              analisis sistem, analisis data, serta pengembangan solusi berbasis teknologi.
+            </p>
+          </div>
+
+          <div class="projects">
+
+            <!-- PROJECT 1 -->
+            <article class="project">
+              <div class="project-head">
+                <div style="display:flex;gap:1rem;align-items:baseline">
+                  <span class="project-no">01</span>
+                  <div>
+                    <h3>Business Process Reengineering EMEFDI Store</h3>
+                    <p class="role">Business Analyst · Skripsi (2026)</p>
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <span class="tag">BPMN 2.0</span>
+                  <span class="tag">BPR</span>
+                  <span class="tag">Fishbone</span>
+                  <span class="tag">System Analysis</span>
+                </div>
+              </div>
+
+              <div class="project-grid">
+
+                <div>
+                  <p class="detail-label">Permasalahan</p>
+                  <p class="detail-val">
+                    Proses penjualan dan pengelolaan stok masih dilakukan secara manual,
+                    sehingga laporan terlambat, data stok kurang akurat,
+                    dan proses operasional menjadi kurang efisien.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Analisis</p>
+                  <p class="detail-val">
+                    Melakukan observasi dan wawancara, memodelkan proses AS-IS dan TO-BE
+                    menggunakan BPMN 2.0, menganalisis akar masalah dengan Fishbone Diagram,
+                    serta menyusun Use Case Diagram dan Class Diagram.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Solusi</p>
+                  <p class="detail-val">
+                    Merancang blueprint sistem informasi terintegrasi untuk
+                    menstandarkan proses bisnis, meningkatkan akurasi pelaporan,
+                    dan mendukung efisiensi operasional.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Hasil</p>
+                  <p class="detail-val">
+                    Menghasilkan rekomendasi perbaikan proses bisnis yang mendukung
+                    pengelolaan stok lebih efektif serta pelaporan penjualan yang lebih akurat.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+            <!-- PROJECT 2 -->
+            <article class="project">
+              <div class="project-head">
+                <div style="display:flex;gap:1rem;align-items:baseline">
+                  <span class="project-no">02</span>
+                  <div>
+                    <h3>E-KRB Batang - Dashboard Daerah Rawan Bencana</h3>
+                    <p class="role">Data Analyst & Web Developer · 2026</p>
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <span class="tag">Data Analysis</span>
+                  <span class="tag">Microsoft Excel</span>
+                  <span class="tag">HTML/CSS</span>
+                  <span class="tag">GitHub Pages</span>
+                </div>
+              </div>
+
+              <div class="project-grid">
+
+                <div>
+                  <p class="detail-label">Permasalahan</p>
+                  <p class="detail-val">
+                    Data daerah rawan bencana Kabupaten Batang masih berupa data statis
+                    sehingga kurang informatif dan sulit dipahami masyarakat.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Analisis</p>
+                  <p class="detail-val">
+                    Menganalisis data daerah rawan bencana, menentukan kebutuhan visualisasi,
+                    serta merancang antarmuka dashboard yang mudah digunakan.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Solusi</p>
+                  <p class="detail-val">
+                    Mengembangkan dashboard web interaktif menggunakan HTML/CSS
+                    dan melakukan deployment melalui GitHub Pages.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Hasil</p>
+                  <p class="detail-val">
+                    Menyajikan visualisasi data yang lebih informatif sehingga
+                    memudahkan pengguna memahami persebaran daerah rawan bencana.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+            <!-- PROJECT 3 -->
+            <article class="project">
+              <div class="project-head">
+                <div style="display:flex;gap:1rem;align-items:baseline">
+                  <span class="project-no">03</span>
+                  <div>
+                    <h3>Sistem Informasi Akademik</h3>
+                    <p class="role">System Analyst & Web Developer · 2024</p>
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <span class="tag">Requirement Analysis</span>
+                  <span class="tag">BPMN</span>
+                  <span class="tag">Python</span>
+                  <span class="tag">MySQL</span>
+                </div>
+              </div>
+
+              <div class="project-grid">
+
+                <div>
+                  <p class="detail-label">Permasalahan</p>
+                  <p class="detail-val">
+                    Pengelolaan jadwal dan nilai membutuhkan sistem terpusat
+                    yang dapat digunakan oleh Admin, Dosen, dan Mahasiswa.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Analisis</p>
+                  <p class="detail-val">
+                    Menganalisis kebutuhan tiga jenis pengguna melalui
+                    Requirement Gathering, Use Case Diagram,
+                    Activity Diagram, dan BPMN.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Solusi</p>
+                  <p class="detail-val">
+                    Mengembangkan sistem informasi akademik berbasis web
+                    menggunakan Python dan MySQL dengan hak akses sesuai peran pengguna.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Hasil</p>
+                  <p class="detail-val">
+                    Menghasilkan sistem yang mempermudah pengelolaan jadwal,
+                    nilai, serta administrasi akademik secara lebih terstruktur.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+            <!-- PROJECT 4 -->
+            <article class="project">
+              <div class="project-head">
+                <div style="display:flex;gap:1rem;align-items:baseline">
+                  <span class="project-no">04</span>
+                  <div>
+                    <h3>Aplikasi Menu & Kasir</h3>
+                    <p class="role">Mobile Developer · 2024</p>
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <span class="tag">Flutter</span>
+                  <span class="tag">Dart</span>
+                  <span class="tag">Mobile App</span>
+                </div>
+              </div>
+
+              <div class="project-grid">
+
+                <div>
+                  <p class="detail-label">Permasalahan</p>
+                  <p class="detail-val">
+                    Pelaku usaha membutuhkan aplikasi mobile sederhana
+                    untuk mengelola produk dan transaksi penjualan.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Analisis</p>
+                  <p class="detail-val">
+                    Menganalisis kebutuhan fitur seperti katalog produk,
+                    keranjang belanja, perhitungan transaksi,
+                    dan navigasi aplikasi.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Solusi</p>
+                  <p class="detail-val">
+                    Mengembangkan aplikasi kasir berbasis Flutter
+                    dengan fitur pengelolaan menu dan transaksi.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Hasil</p>
+                  <p class="detail-val">
+                    Menghasilkan aplikasi mobile yang mampu mendukung
+                    proses transaksi dari pemilihan produk hingga pembayaran.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+            <!-- PROJECT 5 -->
+            <article class="project">
+              <div class="project-head">
+                <div style="display:flex;gap:1rem;align-items:baseline">
+                  <span class="project-no">05</span>
+                  <div>
+                    <h3>Sistem Kasir Perpustakaan</h3>
+                    <p class="role">Desktop Developer · 2024</p>
+                  </div>
+                </div>
+
+                <div class="tags">
+                  <span class="tag">C++</span>
+                  <span class="tag">Desktop App</span>
+                </div>
+              </div>
+
+              <div class="project-grid">
+
+                <div>
+                  <p class="detail-label">Permasalahan</p>
+                  <p class="detail-val">
+                    Perpustakaan membutuhkan aplikasi desktop
+                    untuk mengelola data buku, anggota,
+                    dan transaksi peminjaman.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Analisis</p>
+                  <p class="detail-val">
+                    Menganalisis kebutuhan administrasi,
+                    alur transaksi,
+                    dan validasi data.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Solusi</p>
+                  <p class="detail-val">
+                    Mengembangkan aplikasi desktop berbasis C++
+                    untuk pengelolaan data perpustakaan
+                    dan transaksi peminjaman.
+                  </p>
+                </div>
+
+                <div>
+                  <p class="detail-label">Hasil</p>
+                  <p class="detail-val">
+                    Menghasilkan aplikasi yang membantu
+                    proses administrasi perpustakaan
+                    menjadi lebih terstruktur dan efisien.
+                  </p>
+                </div>
+
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section">
+      <div class="container section-y">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">04 · Experience</p>
+            <h2>Pengalaman koordinasi dan delivery.</h2>
+            <p class="section-desc">Rekam jejak menangani stakeholder, vendor, dan operasional event berskala besar.</p>
+          </div>
+          <ol class="timeline">
+            <li class="tl-item"><span class="tl-dot"></span>
+              <div class="tl-head">
+                <h3>Intern Sistem Informasi</h3><span class="tl-period">Feb – Mar 2025</span>
+              </div>
+              <p class="tl-org">Dinas Ketenagakerjaan Kabupaten Batang</p>
+              <ul class="tl-bullets">
+                <li><span class="dash"></span><span>Mendukung implementasi digitalisasi Batang Career dengan memonitor
+                    ±10–20 konten harian, mengelola ±350 data administrasi digital menggunakan Microsoft Excel, serta
+                    menyusun dokumentasi proses & SOP.</span></li>
+                <li><span class="dash"></span><span>Meningkatkan efisiensi pelaporan administrasi dengan merancang
+                    template laporan digital berbasis Microsoft Office serta berkoordinasi dengan ±5 stakeholder.</span>
+                </li>
+                <li><span class="dash"></span><span>Monitoring konten, pelaporan kendala teknis, dan koordinasi
+                    pembaruan informasi portal bersama tim.</span></li>
+              </ul>
+            </li>
+            <li class="tl-item"><span class="tl-dot"></span>
+              <div class="tl-head">
+                <h3>Liaison Officer (LO)</h3><span class="tl-period">2023</span>
+              </div>
+              <p class="tl-org">Valeasi Fest 2023</p>
+              <ul class="tl-bullets">
+                <li><span class="dash"></span><span>Mengelola client acquisition Guest Star Band — negosiasi langsung
+                    antara panitia, vendor, dan pihak eksternal.</span></li>
+                <li><span class="dash"></span><span>Zero miskomunikasi selama event melalui koordinasi terjadwal dengan
+                    5+ divisi dan vendor eksternal.</span></li>
+              </ul>
+            </li>
+            <li class="tl-item"><span class="tl-dot"></span>
+              <div class="tl-head">
+                <h3>Stage Division</h3><span class="tl-period">2023</span>
+              </div>
+              <p class="tl-org">Ekspectanica Semarang 2023</p>
+              <ul class="tl-bullets">
+                <li><span class="dash"></span><span>Mengelola pipeline operasional panggung — koordinasi tim teknis,
+                    vendor, dan pengisi acara secara simultan.</span></li>
+                <li><span class="dash"></span><span>Mempertahankan kepuasan partner bisnis dengan penanganan kebutuhan
+                    operasional real-time.</span></li>
+              </ul>
+            </li>
+            <li class="tl-item"><span class="tl-dot"></span>
+              <div class="tl-head">
+                <h3>Event Operations & Media Support</h3><span class="tl-period">2020 – Sekarang</span>
+              </div>
+              <p class="tl-org">Tarik Shoot · Antara Kata Photo · SCARS ID</p>
+              <ul class="tl-bullets">
+                <li><span class="dash"></span><span>Membangun portfolio client acquisition selama 5+ tahun — pendekatan
+                    langsung, presentasi konsep, dan negosiasi paket.</span></li>
+                <li><span class="dash"></span><span>Mendorong revenue growth melalui repeat order dan referral klien
+                    dengan briefing terstruktur.</span></li>
+                <li><span class="dash"></span><span>Berkoordinasi dengan klien, vendor, dan talent untuk pengelolaan
+                    operasional dan pelaksanaan event.</span></li>
+              </ul>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section id="certifications" class="section">
+      <div class="container section-y">
+        <div class="section-grid">
+
+          <div>
+            <p class="eyebrow">05 · Certifications</p>
+            <h2>Belajar berkelanjutan.</h2>
+            <p class="section-desc">Sertifikasi profesional dan kursus yang memperkuat kompetensi di bidang analisis
+              bisnis, analisis sistem, analisis data, serta pengembangan solusi digital.</p>
+          </div>
+
+          <div class="cert-grid">
+
+            <div class="cert" data-img="assets/bnsp data scientist.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/bnsp data scientist.jpg" alt="Associate Data Scientist" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Associate Data Scientist</p>
+                <p class="issuer">BNSP – LSP Universitas Dian Nuswantoro</p>
               </div>
             </div>
-            <div class="tags"><span class="tag">BPMN 2.0</span><span class="tag">BPR Life Cycle</span><span class="tag">Fishbone</span><span class="tag">Class Diagram</span></div>
-          </div>
-          <div class="project-grid">
-            <div><p class="detail-label">Problem</p><p class="detail-val">Operasional penjualan dan manajemen stok multi-channel berjalan manual sehingga laporan harian terlambat dan stok tidak akurat.</p></div>
-            <div><p class="detail-label">Analysis</p><p class="detail-val">Observasi & wawancara langsung, pemodelan AS-IS dan TO-BE menggunakan BPMN 2.0, Fishbone Diagram, Use Case, dan Class Diagram.</p></div>
-            <div><p class="detail-label">Solution</p><p class="detail-val">Blueprint sistem informasi terintegrasi: manajemen stok multi-channel (offline & online) dan otomatisasi laporan penjualan harian.</p></div>
-            <div><p class="detail-label">Outcome</p><p class="detail-val">Rekomendasi perbaikan proses yang meningkatkan efisiensi pengelolaan stok dan akurasi pelaporan penjualan.</p></div>
-          </div>
-        </article>
 
-        <article class="project">
-          <div class="project-head">
-            <div style="display:flex;gap:1rem;align-items:baseline">
-              <span class="project-no">02</span>
-              <div>
-                <h3>Sistem Informasi Akademik</h3>
-                <p class="role">System Analyst & Developer · 2024</p>
+            <div class="cert" data-img="assets/google ui ux.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/google ui ux.jpg" alt="Foundations of User Experience (UX) Design" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Foundations of User Experience (UX) Design</p>
+                <p class="issuer">Google</p>
               </div>
             </div>
-            <div class="tags"><span class="tag">HTML</span><span class="tag">CSS</span><span class="tag">Python</span><span class="tag">MySQL</span><span class="tag">Figma</span></div>
-          </div>
-          <div class="project-grid">
-            <div><p class="detail-label">Problem</p><p class="detail-val">Pengelolaan jadwal dan nilai untuk Admin, Dosen, dan Mahasiswa membutuhkan platform terpusat berbasis web.</p></div>
-            <div><p class="detail-label">Analysis</p><p class="detail-val">Requirement analysis 3 aktor dengan Use Case Diagram, Activity Diagram, dan BPMN; wireframe antarmuka dirancang di Figma.</p></div>
-            <div><p class="detail-label">Solution</p><p class="detail-val">Aplikasi web manajemen jadwal & nilai berbasis Python + MySQL dengan UI yang dirancang melalui Figma.</p></div>
-            <div><p class="detail-label">Outcome</p><p class="detail-val">Sistem akademik web yang memisahkan hak akses per peran dengan alur input nilai dan jadwal yang sederhana.</p></div>
-          </div>
-        </article>
 
-        <article class="project">
-          <div class="project-head">
-            <div style="display:flex;gap:1rem;align-items:baseline">
-              <span class="project-no">03</span>
-              <div>
-                <h3>Aplikasi Menu & Kasir Mobile</h3>
-                <p class="role">Mobile Developer · 2024</p>
+            <div class="cert" data-img="assets/machine learning capstone.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/machine learning capstone.jpg" alt="Machine Learning Capstone" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Machine Learning Capstone</p>
+                <p class="issuer">IBM</p>
               </div>
             </div>
-            <div class="tags"><span class="tag">Flutter</span><span class="tag">Dart</span><span class="tag">Mobile</span></div>
-          </div>
-          <div class="project-grid">
-            <div><p class="detail-label">Problem</p><p class="detail-val">Pelaku usaha membutuhkan aplikasi mobile ringan untuk mengelola menu produk dan transaksi kasir.</p></div>
-            <div><p class="detail-label">Analysis</p><p class="detail-val">Definisi fitur inti: katalog produk, keranjang belanja, perhitungan transaksi, dan navigasi antar halaman.</p></div>
-            <div><p class="detail-label">Solution</p><p class="detail-val">Aplikasi cross-platform berbasis Flutter dengan alur transaksi end-to-end dan UI yang konsisten.</p></div>
-            <div><p class="detail-label">Outcome</p><p class="detail-val">Aplikasi siap demo dengan alur transaksi lengkap dari pemilihan menu hingga checkout.</p></div>
-          </div>
-        </article>
 
-        <article class="project">
-          <div class="project-head">
-            <div style="display:flex;gap:1rem;align-items:baseline">
-              <span class="project-no">04</span>
-              <div>
-                <h3>Sistem Kasir Perpustakaan</h3>
-                <p class="role">Developer · 2023</p>
+            <div class="cert" data-img="assets/reggresion.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/reggresion.jpg" alt="Supervised Machine Learning: Regression" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Supervised Machine Learning: Regression</p>
+                <p class="issuer">IBM</p>
               </div>
             </div>
-            <div class="tags"><span class="tag">C++</span><span class="tag">Desktop App</span></div>
+
+            <div class="cert" data-img="assets/data analisis.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/data analisis.jpg" alt="Exploratory Data Analysis for Machine Learning" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Exploratory Data Analysis for Machine Learning</p>
+                <p class="issuer">IBM / Coursera</p>
+              </div>
+            </div>
+
+            <div class="cert" data-img="assets/web python.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/web python.jpg" alt="Create Your First Web App with Python and Flask" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Create Your First Web App with Python and Flask</p>
+                <p class="issuer">Coursera</p>
+              </div>
+            </div>
+
+            <div class="cert" data-img="assets/sertif ai.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/sertif ai.jpg" alt="AI Literacy for Everyone" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">AI Literacy for Everyone: Understand, Apply, Create</p>
+                <p class="issuer">BASS Training Center</p>
+              </div>
+            </div>
+
+            <div class="cert" data-img="assets/jaringan dasar.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/jaringan dasar.jpg" alt="Jaringan Komputer Dasar" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Jaringan Komputer Dasar</p>
+                <p class="issuer">ID-Networkers</p>
+              </div>
+            </div>
+
+            <div class="cert" data-img="assets/serti magang.jpg">
+              <div class="cert-thumbnail">
+                <img src="assets/serti magang.jpg" alt="Internship Information System" loading="lazy">
+              </div>
+              <div class="cert-info">
+                <p class="name">Internship Information System</p>
+                <p class="issuer">Disnaker Kabupaten Batang</p>
+              </div>
+            </div>
+
           </div>
-          <div class="project-grid">
-            <div><p class="detail-label">Problem</p><p class="detail-val">Perpustakaan kecil membutuhkan aplikasi desktop untuk mengelola data buku, anggota, dan transaksi peminjaman.</p></div>
-            <div><p class="detail-label">Analysis</p><p class="detail-val">Pemetaan kebutuhan administrasi & transaksi serta validasi data secara terstruktur.</p></div>
-            <div><p class="detail-label">Solution</p><p class="detail-val">Aplikasi kasir & administrasi perpustakaan berbasis C++ dengan logika transaksi dan validasi data.</p></div>
-            <div><p class="detail-label">Outcome</p><p class="detail-val">Aplikasi desktop fungsional yang menangani siklus peminjaman dan pencatatan transaksi.</p></div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <div class="container section-y">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">06 · Education</p>
+            <h2>Pendidikan formal.</h2>
           </div>
-        </article>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EXPERIENCE -->
-<section id="experience" class="section">
-  <div class="container section-y">
-    <div class="section-grid">
-      <div>
-        <p class="eyebrow">04 · Experience</p>
-        <h2>Pengalaman koordinasi dan delivery.</h2>
-        <p class="section-desc">Rekam jejak menangani stakeholder, vendor, dan operasional event berskala besar.</p>
-      </div>
-      <ol class="timeline">
-        <li class="tl-item"><span class="tl-dot"></span>
-          <div class="tl-head"><h3>Intern Sistem Informasi</h3><span class="tl-period">Feb – Mar 2025</span></div>
-          <p class="tl-org">Dinas Ketenagakerjaan Kabupaten Batang</p>
-          <ul class="tl-bullets">
-            <li><span class="dash"></span><span>Mendukung digitalisasi layanan portal Batang Career — menyusun SOP handover berbasis dokumentasi end-to-end dan koordinasi lintas divisi.</span></li>
-            <li><span class="dash"></span><span>Meningkatkan efisiensi pelaporan administrasi dengan merancang template laporan digital berbasis Microsoft Office.</span></li>
-            <li><span class="dash"></span><span>Monitoring konten, pelaporan kendala teknis, dan koordinasi pembaruan informasi portal bersama tim.</span></li>
-          </ul>
-        </li>
-        <li class="tl-item"><span class="tl-dot"></span>
-          <div class="tl-head"><h3>Liaison Officer (LO)</h3><span class="tl-period">2023</span></div>
-          <p class="tl-org">Valeasi Fest 2023</p>
-          <ul class="tl-bullets">
-            <li><span class="dash"></span><span>Mengelola client acquisition Guest Star Band — negosiasi langsung antara panitia, vendor, dan pihak eksternal.</span></li>
-            <li><span class="dash"></span><span>Zero miskomunikasi selama event melalui koordinasi terjadwal dengan 5+ divisi dan vendor eksternal.</span></li>
-          </ul>
-        </li>
-        <li class="tl-item"><span class="tl-dot"></span>
-          <div class="tl-head"><h3>Stage Division</h3><span class="tl-period">2023</span></div>
-          <p class="tl-org">Ekspectanica Semarang 2023</p>
-          <ul class="tl-bullets">
-            <li><span class="dash"></span><span>Mengelola pipeline operasional panggung — koordinasi tim teknis, vendor, dan pengisi acara secara simultan.</span></li>
-            <li><span class="dash"></span><span>Mempertahankan kepuasan partner bisnis dengan penanganan kebutuhan operasional real-time.</span></li>
-          </ul>
-        </li>
-        <li class="tl-item"><span class="tl-dot"></span>
-          <div class="tl-head"><h3>Event Operations & Media Support</h3><span class="tl-period">2020 – Sekarang</span></div>
-          <p class="tl-org">Tarik Shoot · Antara Kata Photo · SCARS ID</p>
-          <ul class="tl-bullets">
-            <li><span class="dash"></span><span>Membangun portfolio client acquisition selama 5+ tahun — pendekatan langsung, presentasi konsep, dan negosiasi paket.</span></li>
-            <li><span class="dash"></span><span>Mendorong revenue growth melalui repeat order dan referral klien dengan briefing terstruktur.</span></li>
-            <li><span class="dash"></span><span>Berkoordinasi dengan klien, vendor, dan talent untuk pengelolaan operasional dan pelaksanaan event.</span></li>
-          </ul>
-        </li>
-      </ol>
-    </div>
-  </div>
-</section>
-
-<!-- CERTIFICATIONS -->
-<section id="certifications" class="section">
-  <div class="container section-y">
-    <div class="section-grid">
-      <div><p class="eyebrow">05 · Certifications</p><h2>Belajar berkelanjutan.</h2></div>
-      <div class="grid-2">
-        <div class="cert"><p class="name">Foundations of User Experience (UX) Design</p><p class="issuer">Google</p></div>
-        <div class="cert"><p class="name">Machine Learning Capstone</p><p class="issuer">IBM</p></div>
-        <div class="cert"><p class="name">Supervised Machine Learning: Regression</p><p class="issuer">IBM</p></div>
-        <div class="cert"><p class="name">Exploratory Data Analysis for Machine Learning</p><p class="issuer">IBM / Coursera</p></div>
-        <div class="cert"><p class="name">AI Literacy for Everyone: Understand, Apply, Create</p><p class="issuer">BASS Training Center</p></div>
-        <div class="cert"><p class="name">Create Your First Web App with Python and Flask</p><p class="issuer">Coursera</p></div>
-        <div class="cert"><p class="name">Jaringan Komputer Dasar</p><p class="issuer">ID-Networkers</p></div>
-        <div class="cert"><p class="name">Internship Information System</p><p class="issuer">Disnaker Kab. Batang</p></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- EDUCATION -->
-<section id="education" class="section">
-  <div class="container section-y">
-    <div class="section-grid">
-      <div><p class="eyebrow">06 · Education</p><h2>Pendidikan formal.</h2></div>
-      <div class="edu-card">
-        <div class="edu-head"><h3>Universitas Dian Nuswantoro</h3><span class="tl-period">Sep 2022 – Feb 2026</span></div>
-        <p class="tl-org">S1 Sistem Informasi · Semarang, Jawa Tengah</p>
-        <div class="stats">
-          <div class="stat"><p class="stat-label">IPK</p><p class="stat-val">3.54 / 4.00</p></div>
-          <div class="stat"><p class="stat-label">TOEFL ITP</p><p class="stat-val">503</p></div>
-          <div class="stat"><p class="stat-label">Fokus</p><p class="stat-val">Sistem Informasi</p></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- WHY HIRE -->
-<section id="why" class="section">
-  <div class="container section-y">
-    <div class="section-grid">
-      <div>
-        <p class="eyebrow">07 · Why Hire Me</p>
-        <h2>Siap mendukung implementasi dan operasional sistem.</h2>
-      </div>
-
-      <div class="grid-2">
-
-        <div class="why-item">
-          <span class="why-num">01</span>
-          <p class="why-text">Memiliki dasar yang kuat dalam implementasi sistem informasi dan digitalisasi layanan.</p>
-        </div>
-
-        <div class="why-item">
-          <span class="why-num">02</span>
-          <p class="why-text">Terbiasa melakukan koordinasi dengan stakeholder untuk memastikan kebutuhan pengguna terpenuhi.</p>
-        </div>
-
-        <div class="why-item">
-          <span class="why-num">03</span>
-          <p class="why-text">Mampu melakukan analisis kebutuhan, menyusun dokumentasi sistem, dan membuat SOP implementasi.</p>
-        </div>
-
-        <div class="why-item">
-          <span class="why-num">04</span>
-          <p class="why-text">Memahami dasar troubleshooting komputer, jaringan, dan pengoperasian aplikasi berbasis web maupun desktop.</p>
-        </div>
-
-        <div class="why-item">
-          <span class="why-num">05</span>
-          <p class="why-text">Cepat mempelajari software baru serta mampu beradaptasi dengan lingkungan kerja dan teknologi yang berbeda.</p>
-        </div>
-
-        <div class="why-item">
-          <span class="why-num">06</span>
-          <p class="why-text">Mengutamakan komunikasi, problem solving, serta tanggung jawab dalam mendukung keberhasilan implementasi sistem.</p>
-        </div>
-
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- CONTACT -->
-<section id="contact" class="contact">
-  <div class="container section-y">
-    <div class="contact-grid">
-      <div>
-        <p class="eyebrow">08 · Contact</p>
-        <h2>Let's build something together.</h2>
-        <p class="lead">Terbuka untuk peluang Business Development, System Analyst, Business Analyst, IT Consultant, dan Implementator Sistem.</p>
-        <div class="contact-list">
-          <a href="mailto:fahrizal55250@gmail.com" class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            <div style="flex:1"><p class="l">Email</p><p class="v">fahrizal55250@gmail.com</p></div>
-          </a>
-          <a href="tel:+6285803165340" class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-            <div style="flex:1"><p class="l">Phone</p><p class="v">+62 858 0316 5340</p></div>
-          </a>
-          <a href="https://linkedin.com/in/muhammadfahrizal290504" target="_blank" rel="noreferrer" class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <div style="flex:1"><p class="l">LinkedIn</p><p class="v">muhammadfahrizal290504</p></div>
-          </a>
-          <a href="https://github.com/fahrizall29" target="_blank" rel="noreferrer" class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-            <div style="flex:1"><p class="l">GitHub</p><p class="v">fahrizall29</p></div>
-          </a>
-          <div class="contact-row">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            <div style="flex:1"><p class="l">Location</p><p class="v">Batang, Jawa Tengah, Indonesia</p></div>
+          <div class="edu-card">
+            <div class="edu-head">
+              <h3>Universitas Dian Nuswantoro</h3><span class="tl-period">Sep 2022 – Feb 2026</span>
+            </div>
+            <p class="tl-org">S1 Sistem Informasi · Semarang, Jawa Tengah</p>
+            <div class="stats">
+              <div class="stat">
+                <p class="stat-label">IPK</p>
+                <p class="stat-val"><span class="counter" data-target="3.54" data-decimals="2">0.00</span> / 4.00</p>
+              </div>
+              <div class="stat">
+                <p class="stat-label">TOEFL ITP</p>
+                <p class="stat-val"><span class="counter" data-target="503" data-decimals="0">0</span></p>
+              </div>
+              <div class="stat">
+                <p class="stat-label">Fokus</p>
+                <p class="stat-val">Sistem Informasi</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <form class="form" onsubmit="event.preventDefault();var f=this;var n=f.name.value,e=f.email.value,m=f.message.value;location.href='mailto:fahrizal55250@gmail.com?subject='+encodeURIComponent('Opportunity from '+n)+'&body='+encodeURIComponent('Halo Fahrizal,\n\n'+m+'\n\nSalam,\n'+n+'\n'+e);">
-        <div class="field"><label>Name</label><input name="name" required /></div>
-        <div class="field"><label>Email</label><input name="email" type="email" required /></div>
-        <div class="field"><label>Message</label><textarea name="message" rows="5" required placeholder="Tell me about the opportunity..."></textarea></div>
-        <button type="submit" class="btn btn-light">Send Message →</button>
-      </form>
+    </section>
+
+    <!-- WHY HIRE -->
+    <section id="why" class="section">
+      <div class="container section-y">
+        <div class="section-grid">
+          <div>
+            <p class="eyebrow">07 · Why Hire Me</p>
+            <h2>Siap mendukung implementasi dan operasional sistem.</h2>
+          </div>
+
+          <div class="grid-2">
+
+            <div class="why-item">
+              <span class="why-num">01</span>
+              <p class="why-text">Memiliki fondasi kuat dalam analisis dan perancangan ulang proses bisnis menggunakan
+                BPR Life Cycle dan BPMN 2.0.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">02</span>
+              <p class="why-text">Terbiasa melakukan koordinasi dengan stakeholder untuk memastikan kebutuhan pengguna
+                terpenuhi.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">03</span>
+              <p class="why-text">Mampu menyusun dokumentasi proses, SOP, dan blueprint sistem untuk mendukung
+                standarisasi dan kepatuhan prosedur.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">04</span>
+              <p class="why-text">Teliti dan sistematis dalam pengecekan dokumen dan prosedur, dengan ketertarikan pada
+                integrasi sistem mutu, lingkungan, dan K3.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">05</span>
+              <p class="why-text">Cepat mempelajari software baru serta mampu beradaptasi dengan lingkungan kerja dan
+                teknologi yang berbeda.</p>
+            </div>
+
+            <div class="why-item">
+              <span class="why-num">06</span>
+              <p class="why-text">Mengutamakan komunikasi, problem solving, serta tanggung jawab dalam mendukung
+                keberhasilan implementasi sistem.</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact">
+      <div class="container section-y">
+        <div class="contact-grid">
+          <div>
+            <p class="eyebrow">08 · Contact</p>
+            <h2>Let's build something together.</h2>
+            <p class="lead">Terbuka untuk peluang Business Process Analyst, System Analyst, dan Quality System Support.
+            </p>
+            <div class="contact-list">
+              <a href="mailto:fahrizal55250@gmail.com" class="contact-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                  <polyline points="22,6 12,13 2,6" />
+                </svg>
+                <div style="flex:1">
+                  <p class="l">Email</p>
+                  <p class="v">fahrizal55250@gmail.com</p>
+                </div>
+              </a>
+              <a href="tel:+6285803165340" class="contact-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                </svg>
+                <div style="flex:1">
+                  <p class="l">Phone</p>
+                  <p class="v">+62 858 0316 5340</p>
+                </div>
+              </a>
+              <a href="https://linkedin.com/in/muhammadfahrizal290504" target="_blank" rel="noreferrer"
+                class="contact-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+                  <rect x="2" y="9" width="4" height="12" />
+                  <circle cx="4" cy="4" r="2" />
+                </svg>
+                <div style="flex:1">
+                  <p class="l">LinkedIn</p>
+                  <p class="v">muhammadfahrizal290504</p>
+                </div>
+              </a>
+              <a href="https://github.com/fahrizall29" target="_blank" rel="noreferrer" class="contact-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path
+                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                </svg>
+                <div style="flex:1">
+                  <p class="l">GitHub</p>
+                  <p class="v">fahrizall29</p>
+                </div>
+              </a>
+              <div class="contact-row">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                <div style="flex:1">
+                  <p class="l">Location</p>
+                  <p class="v">Batang, Jawa Tengah, Indonesia</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="form">
+            <div class="field"><label>Name</label><input name="name" required /></div>
+            <div class="field"><label>Email</label><input name="email" type="email" required /></div>
+            <div class="field"><label>Message</label><textarea name="message" rows="5" required
+                placeholder="Tell me about the opportunity..."></textarea></div>
+            <button type="submit" class="btn btn-light">Send Message →</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <p>© 2026 Muhammad Fahrizal. All rights reserved.</p>
+      <p>Designed & built with attention to detail.</p>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Certifications -->
+  <div id="cert-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+    <div class="lightbox-content">
+      <img id="lightbox-img" src="" alt="">
+      <div class="lightbox-caption">
+        <h3 id="lightbox-title"></h3>
+        <p id="lightbox-issuer" class="eyebrow"></p>
+      </div>
     </div>
   </div>
-</section>
-</main>
 
-<footer>
-  <div class="container footer-inner">
-    <p>© 2026 Muhammad Fahrizal. All rights reserved.</p>
-    <p>Designed & built with attention to detail.</p>
-  </div>
-</footer>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Mobile Nav Toggle
+      const navToggle = document.querySelector('.nav-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      if (navToggle && navLinks) {
+        navToggle.addEventListener('click', (e) => {
+          e.stopPropagation();
+          const isActive = navLinks.classList.toggle('active');
+          navToggle.classList.toggle('active');
+          navToggle.setAttribute('aria-expanded', isActive);
+        });
+
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('a').forEach(link => {
+          link.addEventListener('click', () => {
+            navLinks.classList.remove('active');
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+          });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+          if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
+            navLinks.classList.remove('active');
+            navToggle.classList.remove('active');
+            navToggle.setAttribute('aria-expanded', 'false');
+          }
+        });
+      }
+
+      // Lightbox Modal
+      const certs = document.querySelectorAll('.cert');
+      const lightbox = document.getElementById('cert-lightbox');
+      const lightboxImg = document.getElementById('lightbox-img');
+      const lightboxTitle = document.getElementById('lightbox-title');
+      const lightboxIssuer = document.getElementById('lightbox-issuer');
+      const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
+
+      if (certs.length && lightbox && lightboxImg) {
+        certs.forEach(cert => {
+          cert.addEventListener('click', () => {
+            const imgSrc = cert.getAttribute('data-img');
+            const title = cert.querySelector('.name').textContent;
+            const issuer = cert.querySelector('.issuer').textContent;
+
+            lightboxImg.src = imgSrc;
+            lightboxImg.alt = title;
+            lightboxTitle.textContent = title;
+            lightboxIssuer.textContent = issuer;
+
+            lightbox.classList.add('active');
+            lightbox.setAttribute('aria-hidden', 'false');
+            document.body.style.overflow = 'hidden'; // prevent background scrolling
+          });
+        });
+
+        const closeLightbox = () => {
+          lightbox.classList.remove('active');
+          lightbox.setAttribute('aria-hidden', 'true');
+          document.body.style.overflow = '';
+          setTimeout(() => {
+            lightboxImg.src = '';
+          }, 300);
+        };
+
+        if (lightboxClose) {
+          lightboxClose.addEventListener('click', closeLightbox);
+        }
+
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox || (e.target.classList.contains('lightbox-content') === false && !lightbox.querySelector('.lightbox-content').contains(e.target))) {
+            closeLightbox();
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+            closeLightbox();
+          }
+        });
+      }
+
+      // Scroll Reveal Observer
+      const revealElements = document.querySelectorAll('.hero-grid > div, .section-grid, .contact-grid');
+      revealElements.forEach(el => el.classList.add('reveal'));
+
+      const revealObserver = new IntersectionObserver((entries, observer) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('reveal-active');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.15,
+        rootMargin: '0px 0px -50px 0px'
+      });
+
+      revealElements.forEach(el => revealObserver.observe(el));
+
+      // Counter Stats Animation
+      const counters = document.querySelectorAll('.counter');
+
+      const animateCounter = (counter) => {
+        const target = parseFloat(counter.getAttribute('data-target'));
+        const decimals = parseInt(counter.getAttribute('data-decimals') || '0');
+        const duration = 1500;
+        const startTime = performance.now();
+
+        const update = (now) => {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / duration, 1);
+          const easeProgress = progress * (2 - progress); // Ease out quad
+          const value = easeProgress * target;
+
+          counter.textContent = value.toFixed(decimals);
+
+          if (progress < 1) {
+            requestAnimationFrame(update);
+          } else {
+            counter.textContent = target.toFixed(decimals);
+          }
+        };
+
+        requestAnimationFrame(update);
+      };
+
+      const eduSection = document.getElementById('education');
+      if (eduSection && counters.length) {
+        let animated = false;
+        const eduObserver = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            if (entry.isIntersecting && !animated) {
+              animated = true;
+              counters.forEach(counter => animateCounter(counter));
+              eduObserver.unobserve(entry.target);
+            }
+          });
+        }, { threshold: 0.2 });
+
+        eduObserver.observe(eduSection);
+      }
+
+      // Contact Form progressive enhancement
+      const contactForm = document.querySelector('.form');
+      if (contactForm) {
+        const submitBtn = contactForm.querySelector('button[type="submit"]');
+        const inputs = contactForm.querySelectorAll('input, textarea');
+
+        const checkFormValidity = () => {
+          let allValid = true;
+          inputs.forEach(input => {
+            if (!input.checkValidity()) {
+              allValid = false;
+            }
+          });
+          submitBtn.disabled = !allValid;
+          submitBtn.style.opacity = allValid ? '1' : '0.5';
+          submitBtn.style.cursor = allValid ? 'pointer' : 'not-allowed';
+        };
+
+        inputs.forEach(input => {
+          input.addEventListener('input', checkFormValidity);
+        });
+
+        // Run initial validity check on load
+        checkFormValidity();
+
+        contactForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+
+          const n = contactForm.name.value;
+          const eVal = contactForm.email.value;
+          const m = contactForm.message.value;
+
+          const originalText = submitBtn.textContent;
+          submitBtn.textContent = 'Membuka email client...';
+          submitBtn.disabled = true;
+          submitBtn.style.opacity = '0.5';
+
+          window.location.href = 'mailto:fahrizal55250@gmail.com?subject=' +
+            encodeURIComponent('Opportunity from ' + n) +
+            '&body=' + encodeURIComponent('Halo Fahrizal,\n\n' + m + '\n\nSalam,\n' + n + '\n' + eVal);
+
+          setTimeout(() => {
+            submitBtn.textContent = originalText;
+            submitBtn.disabled = false;
+            submitBtn.style.opacity = '1';
+            checkFormValidity();
+          }, 3000);
+        });
+      }
+    });
+  </script>
 
 </body>
+
 </html>
