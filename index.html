@@ -4,2204 +4,1441 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Muhammad Fahrizal — Fresh Graduate Sistem Informasi | IT Portfolio</title>
+  <title>Muhammad Fahrizal — Fresh Graduate Sistem Informasi | IT &amp; Creative Portfolio</title>
   <meta name="description"
-    content="Portfolio Muhammad Fahrizal, Fresh Graduate S1 Sistem Informasi dengan project di bidang system analysis, data, database, web application, business process, dan IT support." />
-  <meta property="og:title" content="Muhammad Fahrizal — Portfolio" />
+    content="Portfolio Muhammad Fahrizal, Fresh Graduate S1 Sistem Informasi Universitas Dian Nuswantoro dengan keahlian di bidang system analysis, data, database, web application, business process, IT support, dan creative media." />
+  <meta property="og:title" content="Muhammad Fahrizal — IT &amp; Creative Portfolio" />
   <meta property="og:description"
-    content="Portfolio fresh graduate S1 Sistem Informasi Universitas Dian Nuswantoro, dengan exposure di system analysis, data, aplikasi, business process, dan IT support." />
-  <meta property="og:image" content="assets/og-image.jpg" />
+    content="Menghubungkan analisis proses bisnis dan pengembangan sistem informasi dengan visual storytelling kreatif." />
+  <meta property="og:image" content="potrait-formal.jpg" />
   <link rel="icon" type="image/svg+xml"
-    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2280%22 font-family=%22Inter, sans-serif%22 font-weight=%22bold%22 fill=%22%23111111%22>MF</text></svg>" />
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 fill=%22%23070708%22/><text y=%22.75em%22 x=%22.15em%22 font-size=%2265%22 font-family=%22sans-serif%22 font-weight=%22800%22 fill=%22%23e52b35%22>MF</text></svg>" />
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
-  <style>
-    :root {
-      --bg: #ffffff;
-      --fg: #111111;
-      --muted: #737373;
-      --muted-bg: #fafafa;
-      --border: #e5e5e5;
-      --silver: #c0c0c0;
-      --accent: #e5e5e5;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      border-color: var(--border)
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-
-    body {
-      font-family: 'Inter', ui-sans-serif, system-ui, sans-serif;
-      background: var(--bg);
-      color: var(--fg);
-      -webkit-font-smoothing: antialiased;
-      line-height: 1.5
-    }
-
-    a {
-      color: inherit;
-      text-decoration: none
-    }
-
-    img {
-      max-width: 100%;
-      display: block
-    }
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5 {
-      letter-spacing: -0.02em;
-      font-weight: 700
-    }
-
-    ul,
-    ol {
-      list-style: none
-    }
-
-    .container {
-      max-width: 72rem;
-      margin: 0 auto;
-      padding: 0 1.5rem
-    }
-
-    .section-y {
-      padding: 6rem 0
-    }
-
-    .eyebrow {
-      font-size: .75rem;
-      font-weight: 600;
-      letter-spacing: .2em;
-      text-transform: uppercase;
-      color: var(--muted)
-    }
-
-    .muted {
-      color: var(--muted)
-    }
-
-    .silver {
-      color: var(--silver)
-    }
-
-    /* Nav */
-    .nav {
-      position: sticky;
-      top: 0;
-      z-index: 50;
-      background: rgba(255, 255, 255, .85);
-      backdrop-filter: blur(10px);
-      border-bottom: 1px solid var(--border)
-    }
-
-    .nav-inner {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      height: 4rem
-    }
-
-    .brand {
-      font-size: .875rem;
-      font-weight: 700
-    }
-
-    .nav-links {
-      display: none;
-      gap: 2rem;
-      align-items: center
-    }
-
-    .nav-links a {
-      font-size: .875rem;
-      color: var(--muted);
-      transition: color .15s
-    }
-
-    .nav-links a:hover {
-      color: var(--fg)
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      gap: .5rem;
-      border-radius: 999px;
-      padding: .75rem 1.5rem;
-      font-size: .875rem;
-      font-weight: 500;
-      border: 1px solid transparent;
-      cursor: pointer;
-      transition: opacity .15s, background .15s, color .15s
-    }
-
-    .btn-primary {
-      background: var(--fg);
-      color: var(--bg)
-    }
-
-    .btn-primary:hover {
-      opacity: .9
-    }
-
-    .btn-outline {
-      border-color: var(--fg);
-      color: var(--fg)
-    }
-
-    .btn-outline:hover {
-      background: var(--fg);
-      color: var(--bg)
-    }
-
-    .btn-ghost {
-      color: var(--muted)
-    }
-
-    .btn-ghost:hover {
-      color: var(--fg)
-    }
-
-    .btn-sm {
-      padding: .5rem 1rem;
-      font-size: .75rem
-    }
-
-    .nav .btn {
-      display: none
-    }
-
-    /* Hamburger Toggle Button */
-    .nav-toggle {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      width: 1.25rem;
-      height: 0.875rem;
-      background: transparent;
-      border: none;
-      cursor: pointer;
-      padding: 0;
-      z-index: 100;
-    }
-
-    .nav-toggle span {
-      width: 100%;
-      height: 2px;
-      background-color: var(--fg);
-      transition: transform 0.3s ease, opacity 0.3s ease;
-      transform-origin: left center;
-    }
-
-    .nav-toggle.active span:nth-child(1) {
-      transform: rotate(45deg) translate(1px, -1px);
-    }
-
-    .nav-toggle.active span:nth-child(2) {
-      opacity: 0;
-    }
-
-    .nav-toggle.active span:nth-child(3) {
-      transform: rotate(-45deg) translate(1px, 1px);
-    }
-
-    .nav-mobile-btn {
-      display: none;
-    }
-
-    @media(max-width:767px) {
-      .nav-links {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 4.05rem;
-        left: 0;
-        width: 100%;
-        background: var(--bg);
-        border-bottom: 1px solid var(--border);
-        padding: 2rem 1.5rem;
-        gap: 1.5rem;
-        transform: translateY(-10px);
-        opacity: 0;
-        visibility: hidden;
-        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-        z-index: 40;
-      }
-
-      .nav-links.active {
-        transform: translateY(0);
-        opacity: 1;
-        visibility: visible;
-      }
-
-      .nav-mobile-btn {
-        display: inline-flex;
-        justify-content: center;
-        width: 100%;
-        margin-top: 0.5rem;
-      }
-    }
-
-    @media(min-width:768px) {
-      .nav-toggle {
-        display: none;
-      }
-
-      .nav-links {
-        display: flex;
-      }
-
-      .nav .btn {
-        display: inline-flex;
-      }
-
-      .nav-links .nav-mobile-btn {
-        display: none;
-      }
-    }
-
-    /* Hero */
-    .hero {
-      border-bottom: 1px solid var(--border)
-    }
-
-    .hero-grid {
-      display: grid;
-      gap: 4rem;
-      padding: 5rem 0;
-      align-items: center
-    }
-
-    @media(min-width:768px) {
-      .hero-grid {
-        grid-template-columns: 1.4fr 1fr;
-        padding: 8rem 0
-      }
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      line-height: 1.05;
-      margin-top: 1.5rem
-    }
-
-    @media(min-width:768px) {
-      .hero h1 {
-        font-size: 4.5rem
-      }
-    }
-
-    .hero .lead {
-      margin-top: 1.5rem;
-      font-size: 1rem;
-      color: var(--muted)
-    }
-
-    @media(min-width:768px) {
-      .hero .lead {
-        font-size: 1.125rem
-      }
-    }
-
-    .role-row {
-      margin-top: .75rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: .25rem .75rem;
-      font-size: .875rem;
-      font-weight: 500
-    }
-
-    .hero .desc {
-      margin-top: 2rem;
-      max-width: 36rem;
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.7
-    }
-
-    .hero-cta {
-      margin-top: 2.5rem;
-      display: flex;
-      flex-wrap: wrap;
-      gap: .75rem
-    }
-
-    .portrait-wrap {
-      position: relative
-    }
-
-    .portrait {
-      position: relative;
-      aspect-ratio: 1/1;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: var(--muted-bg)
-    }
-
-    .portrait img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover
-    }
-
-    .badge-avail {
-      display: none;
-      position: absolute;
-      left: -1rem;
-      bottom: -1rem;
-      border: 1px solid var(--border);
-      background: var(--bg);
-      padding: .75rem 1rem;
-      font-size: .75rem
-    }
-
-    .badge-avail strong {
-      display: block
-    }
-
-    @media(min-width:768px) {
-      .badge-avail {
-        display: block
-      }
-    }
-
-    /* Section */
-    .section {
-      border-bottom: 1px solid var(--border)
-    }
-
-    .section-grid {
-      display: grid;
-      gap: 2.5rem
-    }
-
-    @media(min-width:768px) {
-      .section-grid {
-        grid-template-columns: 1fr 2fr
-      }
-    }
-
-    .section h2 {
-      font-size: 1.875rem;
-      margin-top: 1rem
-    }
-
-    @media(min-width:768px) {
-      .section h2 {
-        font-size: 2.25rem
-      }
-    }
-
-    .section-desc {
-      margin-top: 1rem;
-      max-width: 22rem;
-      font-size: .875rem;
-      color: var(--muted)
-    }
-
-    /* About */
-    .about-text p {
-      color: var(--muted);
-      font-size: 1rem;
-      line-height: 1.7;
-      margin-bottom: 1.5rem
-    }
-
-    @media(min-width:768px) {
-      .about-text p {
-        font-size: 1.125rem
-      }
-    }
-
-    .about-text strong {
-      color: var(--fg);
-      font-weight: 500
-    }
-
-    .grid-tiles {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      border: 1px solid var(--border);
-      background: var(--border);
-      margin-top: 1rem;
-      overflow: hidden
-    }
-
-    .grid-tiles>div {
-      background: var(--bg);
-      padding: 1.25rem;
-      font-size: .875rem;
-      font-weight: 500
-    }
-
-    .check {
-      width: 1rem;
-      height: 1rem;
-      display: block;
-      margin-bottom: .75rem
-    }
-
-    /* Expertise / Why / Certs grids */
-    .grid-2 {
-      display: grid;
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      overflow: hidden
-    }
-
-    @media(min-width:640px) {
-      .grid-2 {
-        grid-template-columns: repeat(2, 1fr)
-      }
-    }
-
-    .grid-2>div {
-      background: var(--bg);
-      padding: 1.5rem
-    }
-
-    .exp-icon {
-      width: 1.25rem;
-      height: 1.25rem
-    }
-
-    .exp-title {
-      margin-top: 1rem;
-      font-size: 1.125rem;
-      font-weight: 600
-    }
-
-    .exp-list {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: .5rem;
-      font-size: .875rem;
-      color: var(--muted)
-    }
-
-    .exp-list li {
-      display: flex;
-      gap: .5rem;
-      align-items: flex-start
-    }
-
-    .dash {
-      display: block;
-      width: .75rem;
-      height: 1px;
-      background: var(--silver);
-      margin-top: .5rem;
-      flex-shrink: 0
-    }
-
-    /* Projects */
-    .projects {
-      display: flex;
-      flex-direction: column;
-      gap: 1px;
-      background: var(--border)
-    }
-
-    .project {
-      background: var(--bg);
-      padding: 1.5rem;
-      transition: background 0.3s ease, transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease
-    }
-
-    @media(min-width:768px) {
-      .project {
-        padding: 2rem
-      }
-    }
-
-    .project:hover {
-      background: var(--muted-bg);
-      transform: translateY(-2px);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-      position: relative;
-      z-index: 1
-    }
-
-    .project-head {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: .5rem;
-      align-items: baseline
-    }
-
-    .project-no {
-      font-size: .75rem;
-      font-weight: 500;
-      color: var(--silver);
-      margin-right: 1rem
-    }
-
-    .project h3 {
-      font-size: 1.25rem
-    }
-
-    @media(min-width:768px) {
-      .project h3 {
-        font-size: 1.5rem
-      }
-    }
-
-    .project .role {
-      margin-top: .25rem;
-      font-size: .875rem;
-      color: var(--muted)
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: .375rem
-    }
-
-    .tag {
-      border: 1px solid var(--border);
-      border-radius: 999px;
-      padding: .125rem .625rem;
-      font-size: 11px;
-      font-weight: 500;
-      color: var(--muted)
-    }
-
-    .project-grid {
-      margin-top: 1.5rem;
-      display: grid;
-      gap: 1.5rem;
-      border-top: 1px solid var(--border);
-      padding-top: 1.5rem
-    }
-
-    @media(min-width:768px) {
-      .project-grid {
-        grid-template-columns: repeat(4, 1fr)
-      }
-    }
-
-    .detail-label {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .1em
-    }
-
-    .detail-val {
-      margin-top: .5rem;
-      font-size: .875rem;
-      line-height: 1.6;
-      color: var(--muted)
-    }
-
-    /* Experience timeline */
-    .timeline {
-      position: relative;
-      display: flex;
-      flex-direction: column;
-      gap: 2.5rem;
-      padding-left: 2rem;
-      border-left: 1px solid var(--border)
-    }
-
-    .tl-item {
-      position: relative;
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1)
-    }
-
-    .tl-item:hover {
-      transform: translateX(4px)
-    }
-
-    .tl-dot {
-      position: absolute;
-      left: -33px;
-      top: 6px;
-      width: .5rem;
-      height: .5rem;
-      border-radius: 50%;
-      background: var(--fg);
-      box-shadow: 0 0 0 4px var(--bg)
-    }
-
-    .tl-head {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: .5rem;
-      align-items: baseline
-    }
-
-    .tl-head h3 {
-      font-size: 1rem;
-      font-weight: 600
-    }
-
-    .tl-period {
-      font-size: .75rem;
-      color: var(--muted)
-    }
-
-    .tl-org {
-      margin-top: .25rem;
-      font-size: .875rem;
-      font-weight: 500;
-      color: var(--muted)
-    }
-
-    .tl-bullets {
-      margin-top: 1rem;
-      display: flex;
-      flex-direction: column;
-      gap: .5rem
-    }
-
-    .tl-bullets li {
-      display: flex;
-      gap: .75rem;
-      font-size: .875rem;
-      line-height: 1.6;
-      color: var(--muted)
-    }
-
-    /* Education */
-    .edu-card {
-      border: 1px solid var(--border);
-      padding: 1.5rem
-    }
-
-    @media(min-width:768px) {
-      .edu-card {
-        padding: 2rem
-      }
-    }
-
-    .edu-head {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: .5rem;
-      align-items: baseline
-    }
-
-    .edu-head h3 {
-      font-size: 1.25rem;
-      font-weight: 600
-    }
-
-    .stats {
-      margin-top: 1.5rem;
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 1px;
-      background: var(--border);
-      border: 1px solid var(--border);
-      overflow: hidden
-    }
-
-    @media(min-width:640px) {
-      .stats {
-        grid-template-columns: repeat(3, 1fr)
-      }
-    }
-
-    .stat {
-      background: var(--bg);
-      padding: 1.25rem
-    }
-
-    .stat-label {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      color: var(--muted)
-    }
-
-    .stat-val {
-      margin-top: .5rem;
-      font-size: 1.125rem;
-      font-weight: 700
-    }
-
-    /* Why */
-    .why-item {
-      display: flex;
-      gap: 1rem;
-      background: var(--bg);
-      padding: 1.25rem;
-      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, box-shadow 0.3s ease
-    }
-
-    .why-item:hover {
-      transform: translateY(-2px);
-      background: var(--muted-bg);
-      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.04);
-      position: relative;
-      z-index: 1
-    }
-
-    .why-num {
-      font-size: .75rem;
-      font-weight: 600;
-      color: var(--silver)
-    }
-
-    .why-text {
-      font-size: .875rem;
-      font-weight: 500;
-      line-height: 1.6
-    }
-
-    /* =========================
-   CERTIFICATIONS
-========================= */
-
-    .cert-grid {
-      display: grid;
-      grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 1.5rem;
-    }
-
-    @media (max-width: 992px) {
-      .cert-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
-    @media (max-width: 640px) {
-      .cert-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    .cert {
-      background: var(--bg);
-      padding: 1.25rem;
-      cursor: pointer;
-      transition: transform .3s cubic-bezier(.16, 1, .3, 1),
-        background .3s ease,
-        box-shadow .3s ease;
-      display: flex;
-      flex-direction: column;
-      height: 100%;
-    }
-
-    .cert:hover {
-      transform: translateY(-4px);
-      background: var(--muted-bg);
-      box-shadow: 0 12px 30px rgba(0, 0, 0, .08);
-    }
-
-    .cert-thumbnail {
-      width: 100%;
-      aspect-ratio: 16/10;
-      overflow: hidden;
-      border: 1px solid var(--border);
-      background: var(--muted-bg);
-      margin-bottom: 1rem;
-    }
-
-    .cert-thumbnail img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform .35s ease;
-    }
-
-    .cert:hover .cert-thumbnail img {
-      transform: scale(1.05);
-    }
-
-    .cert-info {
-      display: flex;
-      flex-direction: column;
-      flex: 1;
-    }
-
-    .cert .name {
-      font-size: .95rem;
-      font-weight: 600;
-      line-height: 1.45;
-      color: var(--fg);
-    }
-
-    .cert .issuer {
-      margin-top: auto;
-      padding-top: .75rem;
-      font-size: .75rem;
-      text-transform: uppercase;
-      letter-spacing: .08em;
-      color: var(--muted);
-    }
-
-    /* Contact */
-    .contact {
-      border-bottom: 1px solid var(--border);
-      background: var(--fg);
-      color: var(--bg)
-    }
-
-    .contact-grid {
-      display: grid;
-      gap: 3rem
-    }
-
-    @media(min-width:768px) {
-      .contact-grid {
-        grid-template-columns: 1fr 1fr
-      }
-    }
-
-    .contact h2 {
-      font-size: 2.25rem;
-      margin-top: 1rem
-    }
-
-    @media(min-width:768px) {
-      .contact h2 {
-        font-size: 3rem
-      }
-    }
-
-    .contact .eyebrow {
-      color: rgba(255, 255, 255, .6)
-    }
-
-    .contact .lead {
-      margin-top: 1.5rem;
-      max-width: 28rem;
-      color: rgba(255, 255, 255, .7)
-    }
-
-    .contact-list {
-      margin-top: 2.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1rem;
-      font-size: .875rem
-    }
-
-    .contact-row {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      border-bottom: 1px solid rgba(255, 255, 255, .15);
-      padding-bottom: .75rem
-    }
-
-    .contact-row svg {
-      width: 1rem;
-      height: 1rem;
-      color: rgba(255, 255, 255, .6);
-      flex-shrink: 0
-    }
-
-    .contact-row .l {
-      font-size: 11px;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      color: rgba(255, 255, 255, .5)
-    }
-
-    .contact-row .v {
-      font-size: .875rem
-    }
-
-    .form {
-      border: 1px solid rgba(255, 255, 255, .2);
-      background: rgba(255, 255, 255, .05);
-      padding: 1.5rem;
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem
-    }
-
-    @media(min-width:768px) {
-      .form {
-        padding: 2rem
-      }
-    }
-
-    .field label {
-      font-size: 11px;
-      font-weight: 600;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      color: rgba(255, 255, 255, .6)
-    }
-
-    .field input,
-    .field textarea {
-      width: 100%;
-      background: transparent;
-      border: 0;
-      border-bottom: 1px solid rgba(255, 255, 255, .3);
-      padding: .5rem 0;
-      color: var(--bg);
-      font-family: inherit;
-      font-size: .875rem;
-      margin-top: .5rem;
-      outline: none;
-      resize: none
-    }
-
-    .field input:focus,
-    .field textarea:focus {
-      border-color: var(--bg)
-    }
-
-    .field input::placeholder,
-    .field textarea::placeholder {
-      color: rgba(255, 255, 255, .4)
-    }
-
-    .btn-light {
-      background: var(--bg);
-      color: var(--fg);
-      align-self: flex-start
-    }
-
-    /* Footer */
-    footer {
-      border-top: 1px solid var(--border)
-    }
-
-    .footer-inner {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      gap: 1rem;
-      padding: 2rem 0;
-      font-size: .75rem;
-      color: var(--muted)
-    }
-
-    svg.i {
-      width: 1rem;
-      height: 1rem;
-      stroke: currentColor;
-      fill: none;
-      stroke-width: 2;
-      stroke-linecap: round;
-      stroke-linejoin: round;
-      flex-shrink: 0
-    }
-
-    /* Lightbox modal */
-    .lightbox {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.9);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 1000;
-      opacity: 0;
-      visibility: hidden;
-      transition: opacity 0.3s ease, visibility 0.3s ease;
-      padding: 1.5rem;
-    }
-
-    .lightbox.active {
-      opacity: 1;
-      visibility: visible;
-    }
-
-    .lightbox-close {
-      position: absolute;
-      top: 1.5rem;
-      right: 1.5rem;
-      background: transparent;
-      border: none;
-      color: #fff;
-      font-size: 2.5rem;
-      cursor: pointer;
-      line-height: 1;
-      z-index: 1010;
-      transition: opacity 0.2s;
-    }
-
-    .lightbox-close:hover {
-      opacity: 0.8;
-    }
-
-    .lightbox-content {
-      max-width: 50rem;
-      width: 100%;
-      background: #111;
-      border: 1px solid #333;
-      display: flex;
-      flex-direction: column;
-      position: relative;
-    }
-
-    .lightbox-content img {
-      width: 100%;
-      height: auto;
-      max-height: 70vh;
-      object-fit: contain;
-      background: #000;
-    }
-
-    .lightbox-caption {
-      padding: 1.5rem;
-      color: #fff;
-    }
-
-    .lightbox-caption h3 {
-      font-size: 1.25rem;
-      margin-bottom: 0.25rem;
-      font-weight: 600;
-    }
-
-    .lightbox-caption .eyebrow {
-      color: #aaa;
-      font-size: 0.75rem;
-    }
-
-    /* Scroll Reveal */
-    .reveal {
-      opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    .reveal.reveal-active {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  </style>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Syne:wght@600;700;800&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/style.css" />
 </head>
 
 <body>
 
-  <header class="nav">
+  <!-- SITE HEADER / NAVIGATION -->
+  <header class="nav" id="site-nav">
     <div class="container nav-inner">
-      <a href="#top" class="brand">M. Fahrizal<span class="muted">.</span></a>
-      <nav class="nav-links">
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Experience</a>
-        <a href="#certifications">Certifications</a>
-        <a href="#contact">Contact</a>
-        <a href="#contact" class="btn btn-primary btn-sm nav-mobile-btn">Contact Me →</a>
+      <a href="#top" class="brand" aria-label="M. Fahrizal Homepage">
+        M. FAHRIZAL<span class="brand-dot">.</span>
+      </a>
+
+      <nav class="nav-links" id="primary-navigation" aria-label="Primary Navigation">
+        <a href="#about" class="nav-link">The Person</a>
+        <a href="#skills" class="nav-link">Toolkit</a>
+        <a href="#projects" class="nav-link">Selected Work</a>
+        <a href="#creative" class="nav-link">Creative</a>
+        <a href="#experience" class="nav-link">Journey</a>
+        <a href="#certifications" class="nav-link">Credentials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#contact" class="btn btn-primary btn-sm nav-cta-btn">Contact Me &rarr;</a>
       </nav>
-      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+
+      <button class="nav-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false"
+        aria-controls="primary-navigation">
         <span></span>
         <span></span>
         <span></span>
       </button>
     </div>
+    <div class="nav-progress" aria-hidden="true"></div>
   </header>
 
   <main>
-    <!-- HERO -->
+    <!-- 00 / HERO SCENE -->
     <section id="top" class="hero">
+      <div class="hero-ambient" aria-hidden="true">
+        <div class="hero-halo"></div>
+      </div>
+
       <div class="container hero-grid">
-        <div>
-          <p class="eyebrow">Portfolio · 2026</p>
-          <h1>Muhammad<br />Fahrizal<span class="silver">.</span></h1>
-          <p class="lead">Fresh Graduate Sistem Informasi</p>
-          <div class="role-row">
+        <!-- Hero Left Column: Editorial Information -->
+        <div class="hero-content">
+          <p class="hero-kicker">
+            <span class="eyebrow-dot"></span> Personal Portfolio / 2026
+          </p>
+
+          <h1 class="hero-title">
+            <span class="title-first">MUHAMMAD</span>
+            <span class="title-last">FAHRIZAL<span class="accent-dot">.</span></span>
+          </h1>
+
+          <p class="hero-lead">
+            Information Systems Graduate <span>&mdash;</span> Technology &amp; Creative Media
+          </p>
+
+          <div class="hero-roles">
             <span>System Analysis</span>
-            <span class="silver">·</span>
+            <span class="bullet">&bull;</span>
             <span>Business Process</span>
-            <span class="silver">·</span>
-            <span>Web</span>
-            <span class="silver">·</span>
-            <span>Data</span>
-            <span class="silver">·</span>
+            <span class="bullet">&bull;</span>
+            <span>Web &amp; App</span>
+            <span class="bullet">&bull;</span>
+            <span>Data Analysis</span>
+            <span class="bullet">&bull;</span>
             <span>IT Support</span>
           </div>
-          <p class="desc">Lulusan S1 Sistem Informasi dengan pengalaman melalui berbagai proyek akademik, internship,
-            dan aktivitas praktis di bidang teknologi informasi. Memiliki dasar dalam analisis dan perancangan sistem,
-            analisis proses bisnis, pengolahan data, database, pengembangan aplikasi sederhana, dokumentasi, serta
-            troubleshooting dasar IT. Portfolio ini merupakan kumpulan project dan pengalaman yang menunjukkan bagaimana
-            saya menerapkan pengetahuan Sistem Informasi dalam berbagai studi kasus dan kebutuhan teknologi.</p>
-          <div class="hero-cta">
-            <a href="#projects" class="btn btn-primary">View Projects →</a>
 
+          <p class="hero-bio">
+            Menyatukan cara berpikir analitis dari Sistem Informasi dengan visual storytelling dari dunia kreatif
+            &mdash; merancang blueprint proses bisnis yang terstruktur, mengolah data, dan membangun solusi digital yang
+            berdampak nyata.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">
+              Explore Selected Work <span aria-hidden="true">&searr;</span>
+            </a>
             <a href="#contact" class="btn btn-ghost">
-              Contact Me
+              Get In Touch <span aria-hidden="true">&nearr;</span>
             </a>
           </div>
-        </div>
-        <div class="portrait-wrap">
-          <div class="portrait">
-            <img src="potrait-formal.jpg" alt="Muhammad Fahrizal" width="1024" height="1024" />
+
+          <div class="hero-stats">
+            <div class="hero-stat-item">
+              <strong>3.54</strong>
+              <span>GPA / 4.00</span>
+            </div>
+            <div class="hero-stat-item">
+              <strong>IT + CREATIVE</strong>
+              <span>Dual Competency</span>
+            </div>
+            <div class="hero-stat-item">
+              <strong>UDINUS</strong>
+              <span>S1 Sistem Informasi</span>
+            </div>
           </div>
-          <div class="badge-avail">
-            <strong>Open to IT Opportunities</strong>
-            <span class="muted">Full-time · Onsite / Remote</span>
+        </div>
+
+        <!-- Hero Right Column: Cinematic Portrait Framing -->
+        <div class="hero-visual">
+          <div class="portrait-frame">
+            <img src="potrait-formal.jpg" alt="Potret formal Muhammad Fahrizal, S1 Sistem Informasi" width="1080"
+              height="1350" fetchpriority="high" />
+            <div class="hero-avail-badge">
+              <span class="status-indicator"></span>
+              <div>
+                <strong>Open to IT Opportunities</strong>
+                <span>Entry-Level &bull; Full-Time &bull; Onsite / Remote</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+
+      <a href="#about" class="scroll-cue" aria-label="Scroll to content">
+        <span>Scroll</span>
+        <div class="scroll-line"></div>
+      </a>
     </section>
 
-    <!-- ABOUT -->
-    <section id="about" class="section">
-      <div class="container section-y">
-        <div class="section-grid">
-          <div>
-            <p class="eyebrow">01 · About</p>
-            <h2>Tentang Saya</h2>
-            <p class="section-desc">Fresh Graduate Sistem Informasi dengan pengalaman belajar dan project di berbagai
-              area IT.</p>
-          </div>
-          <div class="about-text">
-            <p>Saya adalah lulusan S1 Sistem Informasi <strong>Universitas Dian Nuswantoro</strong> dengan IPK
-              3.54/4.00. Selama perkuliahan, saya mempelajari berbagai aspek teknologi informasi, mulai dari analisis
-              dan perancangan sistem, basis data, pengolahan data, pemodelan proses bisnis, pengembangan aplikasi,
-              hingga UI/UX.</p>
-            <p>Melalui berbagai proyek akademik dan pengalaman internship, saya memperoleh kesempatan untuk menerapkan
-              pengetahuan tersebut pada studi kasus maupun kebutuhan nyata. Saya terbiasa melakukan analisis kebutuhan,
-              menyusun dokumentasi, mengolah data menggunakan Excel dan SQL, membuat pemodelan sistem dan proses bisnis,
-              serta mengembangkan solusi sederhana berbasis web maupun aplikasi. Sebagai fresh graduate, saya terbuka
-              untuk belajar dan berkembang di lingkungan kerja profesional, bekerja sama dengan tim, serta memberikan
-              kontribusi melalui kemampuan analitis, teknis, komunikasi, dan problem solving.</p>
-            <div class="grid-tiles">
-              <div><svg class="i check" viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>System Analysis &amp; Design</div>
+    <!-- 01 / ABOUT (THE PERSON) -->
+    <section id="about" class="section section-alt">
+      <div class="watermark-bg" aria-hidden="true">PERSON</div>
+      <div class="container editorial-grid">
+        <div class="editorial-sidebar reveal-left">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> 01 / The Person</p>
+          <h2 class="section-title">Tentang<br>Saya<span class="accent-dot">.</span></h2>
+          <p class="section-desc">
+            Fresh Graduate Sistem Informasi yang menghubungkan kebutuhan bisnis dengan solusi teknologi melalui
+            pemodelan proses dan rekayasa data.
+          </p>
+        </div>
 
-              <div><svg class="i check" viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>Data &amp; Database</div>
+        <div class="about-content reveal-right">
+          <p class="about-narrative">
+            Saya adalah lulusan S1 Sistem Informasi <strong>Universitas Dian Nuswantoro</strong> dengan IPK
+            <strong>3.54/4.00</strong>. Selama perkuliahan dan magang, saya mendalami perancangan sistem, basis data,
+            pengolahan data analitis, pemodelan proses bisnis (BPMN), hingga pengembangan antarmuka web dan mobile.
+          </p>
+          <p class="about-narrative">
+            Melalui berbagai proyek akademik dan pengalaman di instansi pemerintahan maupun industri kreatif, saya
+            terbiasa melakukan requirement gathering, menyusun dokumentasi teknis, memodelkan sistem dengan Use Case
+            &amp; Class Diagram, mengolah data dengan SQL &amp; Excel, serta berkolaborasi lintas disiplin. Saya siap
+            berkontribusi secara profesional melalui ketelitian teknis, analytical thinking, dan komunikasi yang solid.
+          </p>
 
-              <div><svg class="i check" viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>Web &amp; Application Development</div>
+          <div class="capabilities-grid">
+            <div class="capability-card">
+              <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>System Analysis &amp; Architecture</span>
+            </div>
 
-              <div><svg class="i check" viewBox="0 0 24 24">
-                  <polyline points="20 6 9 17 4 12" />
-                </svg>Documentation &amp; IT Support</div>
+            <div class="capability-card">
+              <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Data Analysis &amp; SQL Database</span>
+            </div>
+
+            <div class="capability-card">
+              <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Web &amp; Application Development</span>
+            </div>
+
+            <div class="capability-card">
+              <svg class="capability-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12"></polyline>
+              </svg>
+              <span>Technical Documentation &amp; IT Support</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- SKILLS -->
+    <!-- 02 / TOOLKIT (SKILLS) -->
     <section id="skills" class="section">
-      <div class="container section-y">
-        <div class="section-grid">
-          <div>
-            <p class="eyebrow">02 · Skills &amp; Technical Areas</p>
-            <h2>Area kemampuan dan teknologi.</h2>
-            <p class="section-desc">
-              Kemampuan yang dibangun melalui perkuliahan, proyek akademik, dan internship — mencakup berbagai area
-              Sistem Informasi.
-            </p>
+      <div class="watermark-bg" aria-hidden="true">TOOLKIT</div>
+      <div class="container editorial-grid">
+        <div class="editorial-sidebar reveal-left">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> 02 / The Toolkit</p>
+          <h2 class="section-title">Area<br>Kemampuan<span class="accent-dot">.</span></h2>
+          <p class="section-desc">
+            Kombinasi keahlian teknis dan metodologis yang terasah melalui perkuliahan terstruktur, sertifikasi
+            profesional, dan implementasi proyek nyata.
+          </p>
+        </div>
+
+        <div class="skills-grid reveal-right">
+          <!-- Skill Cluster 1 -->
+          <div class="skill-cluster">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">System Analysis</h3>
+              <span class="skill-cluster-idx">01</span>
+            </div>
+            <ul class="skill-list">
+              <li><span class="dash"></span>Requirement Gathering &amp; Analysis</li>
+              <li><span class="dash"></span>System Analysis &amp; Design</li>
+              <li><span class="dash"></span>Use Case Diagram &amp; Activity Diagram</li>
+              <li><span class="dash"></span>Class Diagram &amp; ERD Modeling</li>
+              <li><span class="dash"></span>Technical &amp; Functional Documentation</li>
+            </ul>
           </div>
 
-          <div class="grid-2">
-
-            <div>
-              <h3 class="exp-title">System Analysis</h3>
-              <ul class="exp-list">
-                <li><span class="dash"></span>Requirement Analysis</li>
-                <li><span class="dash"></span>System Analysis &amp; Design</li>
-                <li><span class="dash"></span>Use Case &amp; Activity Diagram</li>
-                <li><span class="dash"></span>Class Diagram &amp; ERD</li>
-                <li><span class="dash"></span>System Documentation</li>
-              </ul>
+          <!-- Skill Cluster 2 -->
+          <div class="skill-cluster">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">Data &amp; Database</h3>
+              <span class="skill-cluster-idx">02</span>
             </div>
+            <ul class="skill-list">
+              <li><span class="dash"></span>SQL &amp; Relational Database (MySQL)</li>
+              <li><span class="dash"></span>Microsoft Excel (Pivot Table, VLOOKUP, XLOOKUP)</li>
+              <li><span class="dash"></span>Data Cleaning &amp; Exploratory Analysis</li>
+              <li><span class="dash"></span>Data Visualization &amp; Dashboards</li>
+              <li><span class="dash"></span>Google Looker Studio</li>
+            </ul>
+          </div>
 
-            <div>
-              <h3 class="exp-title">Data &amp; Database</h3>
-              <ul class="exp-list">
-                <li><span class="dash"></span>SQL &amp; MySQL</li>
-                <li><span class="dash"></span>Microsoft Excel (Pivot, VLOOKUP)</li>
-                <li><span class="dash"></span>Data Cleaning &amp; Analysis</li>
-                <li><span class="dash"></span>Data Visualization</li>
-                <li><span class="dash"></span>Google Looker Studio</li>
-              </ul>
+          <!-- Skill Cluster 3 -->
+          <div class="skill-cluster">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">Web &amp; Application</h3>
+              <span class="skill-cluster-idx">03</span>
             </div>
+            <ul class="skill-list">
+              <li><span class="dash"></span>HTML5, CSS3, JavaScript</li>
+              <li><span class="dash"></span>Python &amp; Flask Web Framework</li>
+              <li><span class="dash"></span>Flutter &amp; Dart Mobile Development</li>
+              <li><span class="dash"></span>Figma (UI/UX Wireframing &amp; Prototyping)</li>
+              <li><span class="dash"></span>RESTful API Integration</li>
+            </ul>
+          </div>
 
-            <div>
-              <h3 class="exp-title">Web &amp; Application</h3>
-              <ul class="exp-list">
-                <li><span class="dash"></span>HTML, CSS, Python (Flask)</li>
-                <li><span class="dash"></span>Flutter &amp; Dart</li>
-                <li><span class="dash"></span>Basic Web Development</li>
-                <li><span class="dash"></span>Basic Application Development</li>
-                <li><span class="dash"></span>Figma (UI/UX Prototyping)</li>
-              </ul>
+          <!-- Skill Cluster 4 -->
+          <div class="skill-cluster">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">Business Process</h3>
+              <span class="skill-cluster-idx">04</span>
             </div>
+            <ul class="skill-list">
+              <li><span class="dash"></span>BPMN 2.0 Process Modeling (AS-IS &amp; TO-BE)</li>
+              <li><span class="dash"></span>Business Process Reengineering (BPR)</li>
+              <li><span class="dash"></span>Root Cause Analysis (Fishbone Diagram)</li>
+              <li><span class="dash"></span>Standard Operating Procedure (SOP) Formulation</li>
+              <li><span class="dash"></span>Gap Analysis &amp; Workflow Optimization</li>
+            </ul>
+          </div>
 
-            <div>
-              <h3 class="exp-title">Business Process</h3>
-              <ul class="exp-list">
-                <li><span class="dash"></span>Business Process Analysis</li>
-                <li><span class="dash"></span>BPMN 2.0 Process Modeling</li>
-                <li><span class="dash"></span>Business Process Reengineering (BPR)</li>
-                <li><span class="dash"></span>Process &amp; SOP Documentation</li>
-                <li><span class="dash"></span>Gap Analysis</li>
-              </ul>
+          <!-- Skill Cluster 5 -->
+          <div class="skill-cluster">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">IT Support &amp; Network</h3>
+              <span class="skill-cluster-idx">05</span>
             </div>
+            <ul class="skill-list">
+              <li><span class="dash"></span>Hardware &amp; Software Troubleshooting</li>
+              <li><span class="dash"></span>Windows OS Configuration &amp; Maintenance</li>
+              <li><span class="dash"></span>TCP/IP, Subnetting &amp; IP Addressing</li>
+              <li><span class="dash"></span>LAN &amp; Wi-Fi Network Administration</li>
+            </ul>
+          </div>
 
-            <div>
-              <h3 class="exp-title">IT Support &amp; Networking</h3>
-              <ul class="exp-list">
-                <li><span class="dash"></span>Basic Hardware &amp; Software Troubleshooting</li>
-                <li><span class="dash"></span>Windows OS</li>
-                <li><span class="dash"></span>TCP/IP, IP Addressing, Subnetting</li>
-                <li><span class="dash"></span>Wi-Fi / Basic Networking</li>
-              </ul>
+          <!-- Skill Cluster 6 -->
+          <div class="skill-cluster">
+            <div class="skill-cluster-header">
+              <h3 class="skill-cluster-title">Tools &amp; Production</h3>
+              <span class="skill-cluster-idx">06</span>
             </div>
-
-            <div>
-              <h3 class="exp-title">Tools &amp; Design</h3>
-              <ul class="exp-list">
-                <li><span class="dash"></span>Git &amp; GitHub</li>
-                <li><span class="dash"></span>Microsoft Office</li>
-                <li><span class="dash"></span>Canva</li>
-                <li><span class="dash"></span>Google Workspace</li>
-              </ul>
-            </div>
-
+            <ul class="skill-list">
+              <li><span class="dash"></span>Git Version Control &amp; GitHub</li>
+              <li><span class="dash"></span>Microsoft Office Suite (Word, Excel, PPT)</li>
+              <li><span class="dash"></span>Adobe Creative Suite &amp; Canva</li>
+              <li><span class="dash"></span>Google Workspace &amp; Collaboration Platforms</li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PROJECTS -->
-    <section id="projects" class="section">
-      <div class="container section-y">
-        <div class="section-grid">
-          <div>
-            <p class="eyebrow">03 · Selected Projects</p>
-            <h2>Proyek akademik dan personal.</h2>
+    <!-- 03 / SELECTED WORK (CINEMATIC HORIZONTAL PINNED TRACK) -->
+    <section id="projects" class="horizontal-scroll-section">
+      <div class="horizontal-sticky-stage">
+        <div class="container">
+          <div class="horizontal-header-bar">
+            <div>
+              <p class="eyebrow"><span class="eyebrow-dot"></span> 03 / Selected Work</p>
+              <h2 class="section-title">IT &amp; Systems Projects<span class="accent-dot">.</span></h2>
+            </div>
             <p class="section-desc">
-              Kumpulan proyek akademik dan personal yang menunjukkan penerapan kemampuan Sistem Informasi dalam
-              analisis, data, database, pengembangan aplikasi, dan teknologi digital.
+              Scroll secara vertikal untuk menjelajahi studi kasus sistem informasi, analisis proses bisnis, dan
+              pengembangan perangkat lunak.
             </p>
           </div>
 
-          <div class="projects">
+          <div class="horizontal-track-container">
+            <div class="horizontal-track">
 
-            <!-- PROJECT 1 -->
-            <article class="project">
-              <div class="project-head">
-                <div style="display:flex;gap:1rem;align-items:baseline">
-                  <span class="project-no">01</span>
-                  <div>
-                    <h3>Business Process Reengineering - EMEFDI Store</h3>
-                    <p class="role">Academic Project · Final Project · 2026</p>
+              <!-- PROJECT 01 -->
+              <article class="horizontal-card">
+                <div>
+                  <div class="project-top">
+                    <span class="project-idx">01</span>
+                    <div class="project-header-info">
+                      <h3 class="project-title">Business Process Reengineering &mdash; EMEFDI Store</h3>
+                      <p class="project-role">Academic Final Project &bull; Systems Analysis &bull; 2026</p>
+                      <div class="project-tags">
+                        <span class="project-tag">BPMN 2.0</span>
+                        <span class="project-tag">BPR</span>
+                        <span class="project-tag">Fishbone</span>
+                        <span class="project-tag">System Blueprint</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-grid-details">
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Permasalahan</p>
+                      <p class="project-detail-text">
+                        Pengelolaan stok barang dan pencatatan transaksi penjualan masih manual, memicu disparitas data
+                        inventaris, keterlambatan pelaporan keuangan, dan inefisiensi alur kerja harian.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Analisis</p>
+                      <p class="project-detail-text">
+                        Melakukan wawancara dan observasi lapangan, memetakan proses AS-IS vs TO-BE dengan BPMN 2.0,
+                        mengidentifikasi bottleneck menggunakan Fishbone Diagram, serta menyusun Use Case &amp; Class
+                        Diagram.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Solusi</p>
+                      <p class="project-detail-text">
+                        Merancang blueprint sistem informasi manajemen terintegrasi untuk menstandarisasi siklus
+                        pengadaan, pencatatan otomatis transaksi, dan penyelarasan basis data stok realtime.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Hasil</p>
+                      <p class="project-detail-text">
+                        Menghasilkan dokumen rekomendasi rekayasa proses bisnis dan blueprint arsitektur sistem yang
+                        siap diimplementasikan untuk mendongkrak efisiensi operasional toko.
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </article>
 
-                <div class="tags">
-                  <span class="tag">BPMN 2.0</span>
-                  <span class="tag">BPR</span>
-                  <span class="tag">Fishbone</span>
-                  <span class="tag">System Analysis</span>
-                </div>
-              </div>
-
-              <div class="project-grid">
-
+              <!-- PROJECT 02 -->
+              <article class="horizontal-card">
                 <div>
-                  <p class="detail-label">Permasalahan</p>
-                  <p class="detail-val">
-                    Proses penjualan dan pengelolaan stok masih dilakukan secara manual,
-                    sehingga laporan terlambat, data stok kurang akurat,
-                    dan proses operasional menjadi kurang efisien.
-                  </p>
-                </div>
+                  <div class="project-top">
+                    <span class="project-idx">02</span>
+                    <div class="project-header-info">
+                      <h3 class="project-title">E-KRB Batang &mdash; Disaster Risk Data Dashboard</h3>
+                      <p class="project-role">Data Analysis &amp; Web Project &bull; Public Service &bull; 2026</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Data Analysis</span>
+                        <span class="project-tag">Microsoft Excel</span>
+                        <span class="project-tag">HTML5 / CSS3</span>
+                        <span class="project-tag">GitHub Pages</span>
+                      </div>
+                    </div>
+                  </div>
 
-                <div>
-                  <p class="detail-label">Analisis</p>
-                  <p class="detail-val">
-                    Melakukan observasi dan wawancara, memodelkan proses AS-IS dan TO-BE
-                    menggunakan BPMN 2.0, menganalisis akar masalah dengan Fishbone Diagram,
-                    serta menyusun Use Case Diagram dan Class Diagram.
-                  </p>
-                </div>
+                  <div class="project-grid-details">
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Permasalahan</p>
+                      <p class="project-detail-text">
+                        Data pemetaan kawasan rawan bencana (KRB) di Kabupaten Batang tersebar dalam laporan tabular
+                        yang sukar dibaca secara cepat oleh stakeholder dan masyarakat umum.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Solusi</p>
-                  <p class="detail-val">
-                    Merancang blueprint sistem informasi terintegrasi sebagai usulan untuk menstandarkan proses bisnis,
-                    mendukung akurasi pelaporan, dan membantu meningkatkan efisiensi operasional.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Analisis</p>
+                      <p class="project-detail-text">
+                        Mengagregasi data kerentanan wilayah dari berbagai sumber, melakukan cleansing data dengan
+                        Microsoft Excel, dan mengklasifikasikan tingkat risiko geografis secara terukur.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Hasil</p>
-                  <p class="detail-val">
-                    Menghasilkan rancangan perbaikan proses bisnis dan blueprint sistem sebagai rekomendasi untuk
-                    mendukung pengelolaan stok dan pelaporan penjualan yang lebih terstruktur.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Solusi</p>
+                      <p class="project-detail-text">
+                        Membangun portal dashboard interaktif berbasis web yang memvisualisasikan zonasi risiko bencana
+                        dengan grafik informatif, kartu data rekapitulasi, dan deployment di GitHub Pages.
+                      </p>
+                    </div>
 
-              </div>
-            </article>
-
-            <!-- PROJECT 2 -->
-            <article class="project">
-              <div class="project-head">
-                <div style="display:flex;gap:1rem;align-items:baseline">
-                  <span class="project-no">02</span>
-                  <div>
-                    <h3>E-KRB Batang - Disaster Risk Data Dashboard</h3>
-                    <p class="role">Data Analysis &amp; Web Project · 2026</p>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Hasil</p>
+                      <p class="project-detail-text">
+                        Menyediakan media diseminasi data mitigasi bencana yang dapat diakses publik dengan visualisasi
+                        terstruktur, responsif, dan mudah dipahami.
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </article>
 
-                <div class="tags">
-                  <span class="tag">Data Analysis</span>
-                  <span class="tag">Microsoft Excel</span>
-                  <span class="tag">HTML/CSS</span>
-                  <span class="tag">GitHub Pages</span>
-                </div>
-              </div>
-
-              <div class="project-grid">
-
+              <!-- PROJECT 03 -->
+              <article class="horizontal-card">
                 <div>
-                  <p class="detail-label">Permasalahan</p>
-                  <p class="detail-val">
-                    Informasi mengenai kawasan rawan bencana perlu disajikan dalam bentuk visual yang lebih terstruktur
-                    dan mudah dipahami.
-                  </p>
-                </div>
+                  <div class="project-top">
+                    <span class="project-idx">03</span>
+                    <div class="project-header-info">
+                      <h3 class="project-title">Academic Information System (SIAKAD)</h3>
+                      <p class="project-role">Web Application Project &bull; Academic &bull; 2024</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Python (Flask)</span>
+                        <span class="project-tag">MySQL</span>
+                        <span class="project-tag">BPMN</span>
+                        <span class="project-tag">Role-Based Access</span>
+                      </div>
+                    </div>
+                  </div>
 
-                <div>
-                  <p class="detail-label">Analisis</p>
-                  <p class="detail-val">
-                    Mengolah dan menyusun data yang tersedia untuk menentukan informasi dan visualisasi yang relevan
-                    pada dashboard.
-                  </p>
-                </div>
+                  <div class="project-grid-details">
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Permasalahan</p>
+                      <p class="project-detail-text">
+                        Simulasi kebutuhan portal akademik terpusat untuk mengelola KRS, jadwal kuliah, dan input nilai
+                        dengan batasan hak akses ketat antara Admin, Dosen, dan Mahasiswa.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Solusi</p>
-                  <p class="detail-val">
-                    Mengembangkan dashboard web menggunakan HTML/CSS dan melakukan deployment melalui GitHub Pages.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Analisis</p>
+                      <p class="project-detail-text">
+                        Merancang alur otorisasi multi-role, menyusun use case diagram per peran, mendesain ERD dengan
+                        normalisasi 3NF untuk mencegah redundansi data mahasiswa dan mata kuliah.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Hasil</p>
-                  <p class="detail-val">
-                    Menghasilkan dashboard web yang menyajikan informasi dan visualisasi data kawasan rawan bencana
-                    secara lebih terstruktur.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Solusi</p>
+                      <p class="project-detail-text">
+                        Mengembangkan aplikasi web SIAKAD menggunakan Python dan MySQL dengan modul registrasi
+                        perkuliahan, kalkulasi IPK otomatis, dan cetak transkrip semester.
+                      </p>
+                    </div>
 
-              </div>
-            </article>
-
-            <!-- PROJECT 3 -->
-            <article class="project">
-              <div class="project-head">
-                <div style="display:flex;gap:1rem;align-items:baseline">
-                  <span class="project-no">03</span>
-                  <div>
-                    <h3>Academic Information System</h3>
-                    <p class="role">Academic Project · 2024</p>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Hasil</p>
+                      <p class="project-detail-text">
+                        Platform web fungsional yang mensimulasikan tata kelola administrasi akademik secara aman,
+                        terstruktur, dan terverifikasi.
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </article>
 
-                <div class="tags">
-                  <span class="tag">Requirement Analysis</span>
-                  <span class="tag">BPMN</span>
-                  <span class="tag">Python</span>
-                  <span class="tag">MySQL</span>
-                </div>
-              </div>
-
-              <div class="project-grid">
-
+              <!-- PROJECT 04 -->
+              <article class="horizontal-card">
                 <div>
-                  <p class="detail-label">Permasalahan</p>
-                  <p class="detail-val">
-                    Proyek akademik yang mensimulasikan kebutuhan sistem informasi
-                    terpusat untuk pengelolaan jadwal dan nilai, dengan tiga role pengguna:
-                    Admin, Dosen, dan Mahasiswa.
-                  </p>
-                </div>
+                  <div class="project-top">
+                    <span class="project-idx">04</span>
+                    <div class="project-header-info">
+                      <h3 class="project-title">Mobile Menu &amp; Cashier Application</h3>
+                      <p class="project-role">Mobile Application Project &bull; Academic &bull; 2024</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Flutter</span>
+                        <span class="project-tag">Dart</span>
+                        <span class="project-tag">Mobile POS</span>
+                        <span class="project-tag">State Management</span>
+                      </div>
+                    </div>
+                  </div>
 
-                <div>
-                  <p class="detail-label">Analisis</p>
-                  <p class="detail-val">
-                    Menganalisis kebutuhan tiga jenis pengguna melalui
-                    Requirement Gathering, Use Case Diagram,
-                    Activity Diagram, dan BPMN.
-                  </p>
-                </div>
+                  <div class="project-grid-details">
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Permasalahan</p>
+                      <p class="project-detail-text">
+                        Kebutuhan antarmuka kasir mobile yang cepat dan intuitif untuk bisnis F&amp;B yang membutuhkan
+                        input pesanan instan, kalkulasi diskon, dan manajemen katalog menu.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Solusi</p>
-                  <p class="detail-val">
-                    Mengembangkan sistem informasi akademik berbasis web
-                    menggunakan Python dan MySQL dengan hak akses sesuai peran pengguna.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Analisis</p>
+                      <p class="project-detail-text">
+                        Menganalisis alur transaksi kasir, merancang arsitektur keranjang belanja (cart state), validasi
+                        input pembayaran tunai/non-tunai, dan hierarki navigasi pengguna.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Hasil</p>
-                  <p class="detail-val">
-                    Menghasilkan sistem informasi akademik yang mendukung pengelolaan jadwal, nilai, dan administrasi
-                    akademik secara lebih terstruktur.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Solusi</p>
+                      <p class="project-detail-text">
+                        Membangun aplikasi mobile cross-platform menggunakan Flutter dan Dart dengan rendering kartu
+                        menu responsif, kalkulasi subtotal realtime, dan rekap transaksi.
+                      </p>
+                    </div>
 
-              </div>
-            </article>
-
-            <!-- PROJECT 4 -->
-            <article class="project">
-              <div class="project-head">
-                <div style="display:flex;gap:1rem;align-items:baseline">
-                  <span class="project-no">04</span>
-                  <div>
-                    <h3>Mobile Menu &amp; Cashier Application</h3>
-                    <p class="role">Mobile Application Project · Academic · 2024</p>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Hasil</p>
+                      <p class="project-detail-text">
+                        Aplikasi mobile yang responsif, fluid, dan mempermudah operasional kasir dari pemilihan item
+                        hingga proses checkout.
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </article>
 
-                <div class="tags">
-                  <span class="tag">Flutter</span>
-                  <span class="tag">Dart</span>
-                  <span class="tag">Mobile App</span>
-                </div>
-              </div>
-
-              <div class="project-grid">
-
+              <!-- PROJECT 05 -->
+              <article class="horizontal-card">
                 <div>
-                  <p class="detail-label">Permasalahan</p>
-                  <p class="detail-val">
-                    Proyek pembelajaran pengembangan aplikasi mobile yang mensimulasikan
-                    kebutuhan manajemen menu dan transaksi penjualan.
-                  </p>
-                </div>
+                  <div class="project-top">
+                    <span class="project-idx">05</span>
+                    <div class="project-header-info">
+                      <h3 class="project-title">Library Information &amp; Cashier System</h3>
+                      <p class="project-role">Desktop Application Project &bull; Academic &bull; 2024</p>
+                      <div class="project-tags">
+                        <span class="project-tag">C++</span>
+                        <span class="project-tag">Data Structures</span>
+                        <span class="project-tag">File Handling</span>
+                        <span class="project-tag">Desktop App</span>
+                      </div>
+                    </div>
+                  </div>
 
-                <div>
-                  <p class="detail-label">Analisis</p>
-                  <p class="detail-val">
-                    Menganalisis kebutuhan fitur seperti katalog produk,
-                    keranjang belanja, perhitungan transaksi,
-                    dan navigasi aplikasi.
-                  </p>
-                </div>
+                  <div class="project-grid-details">
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Permasalahan</p>
+                      <p class="project-detail-text">
+                        Pencatatan sirkulasi buku perpustakaan dan denda keterlambatan yang rentan inkonsistensi saat
+                        dikelola tanpa sistem validasi data otomatis.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Solusi</p>
-                  <p class="detail-val">
-                    Mengembangkan aplikasi kasir berbasis Flutter
-                    dengan fitur pengelolaan menu dan transaksi.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Analisis</p>
+                      <p class="project-detail-text">
+                        Menganalisis logika pencarian buku, struktur data linked list/array untuk penyimpanan data
+                        anggota, serta perumusan denda keterlambatan berdasarkan rentang hari.
+                      </p>
+                    </div>
 
-                <div>
-                  <p class="detail-label">Hasil</p>
-                  <p class="detail-val">
-                    Menghasilkan aplikasi mobile yang mampu mendukung
-                    proses transaksi dari pemilihan produk hingga pembayaran.
-                  </p>
-                </div>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Solusi</p>
+                      <p class="project-detail-text">
+                        Mengembangkan program desktop berbasis C++ dengan modul CRUD katalog buku, pencatatan
+                        peminjaman/pengembalian, dan penyimpanan persisten file I/O.
+                      </p>
+                    </div>
 
-              </div>
-            </article>
-
-            <!-- PROJECT 5 -->
-            <article class="project">
-              <div class="project-head">
-                <div style="display:flex;gap:1rem;align-items:baseline">
-                  <span class="project-no">05</span>
-                  <div>
-                    <h3>Library / Cashier Application</h3>
-                    <p class="role">Desktop Application Project · Academic · 2024</p>
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Hasil</p>
+                      <p class="project-detail-text">
+                        Aplikasi desktop dengan algoritma pencarian cepat dan validasi terstruktur yang mempercepat
+                        tugas staf administrasi perpustakaan.
+                      </p>
+                    </div>
                   </div>
                 </div>
+              </article>
 
-                <div class="tags">
-                  <span class="tag">C++</span>
-                  <span class="tag">Desktop App</span>
-                </div>
-              </div>
-
-              <div class="project-grid">
-
+              <!-- PROJECT 06 -->
+              <article class="horizontal-card">
                 <div>
-                  <p class="detail-label">Permasalahan</p>
-                  <p class="detail-val">
-                    Proyek akademik pengembangan aplikasi desktop berbasis C++
-                    untuk mengelola data buku, anggota, dan transaksi peminjaman.
-                  </p>
-                </div>
+                  <div class="project-top">
+                    <span class="project-idx">06</span>
+                    <div class="project-header-info">
+                      <h3 class="project-title">Analisis Kinerja Website Batang Karir &mdash; Metode PIECES</h3>
+                      <p class="project-role">Website Analysis &bull; Government IT &bull; 2025</p>
+                      <div class="project-tags">
+                        <span class="project-tag">PIECES Method</span>
+                        <span class="project-tag">System Analysis</span>
+                        <span class="project-tag">Business Process</span>
+                        <span class="project-tag">UX Evaluation</span>
+                      </div>
+                    </div>
+                  </div>
 
+                  <div class="project-grid-details">
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Permasalahan</p>
+                      <p class="project-detail-text">
+                        Evaluasi kinerja website Batang Karir milik Dinas Ketenagakerjaan Kabupaten Batang sebagai media
+                        informasi lowongan kerja yang memerlukan analisis menyeluruh.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Analisis</p>
+                      <p class="project-detail-text">
+                        Menggunakan metode PIECES yang mencakup enam aspek: kinerja, informasi, ekonomi, pengendalian,
+                        efisiensi, dan pelayanan. Dilakukan melalui observasi langsung dan dokumentasi aktivitas sistem.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Solusi</p>
+                      <p class="project-detail-text">
+                        Mengidentifikasi kendala performa, kualitas informasi, efisiensi operasional, dan layanan
+                        pengguna untuk menyusun rekomendasi perbaikan sistem dan optimalisasi performa.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Hasil</p>
+                      <p class="project-detail-text">
+                        Rekomendasi perbaikan sistem, optimalisasi performa website, peningkatan keamanan, serta
+                        penyempurnaan antarmuka dan pengalaman pengguna berbasis data evaluasi PIECES.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </article>
+
+              <!-- PROJECT 07 -->
+              <article class="horizontal-card">
                 <div>
-                  <p class="detail-label">Analisis</p>
-                  <p class="detail-val">
-                    Menganalisis kebutuhan administrasi,
-                    alur transaksi,
-                    dan validasi data.
-                  </p>
+                  <div class="project-top">
+                    <span class="project-idx">07</span>
+                    <div class="project-header-info">
+                      <h3 class="project-title">Optimasi Pendapatan Barbershop &mdash; Program Linear</h3>
+                      <p class="project-role">Operations Research &bull; Business Analysis &bull; 2025</p>
+                      <div class="project-tags">
+                        <span class="project-tag">Linear Programming</span>
+                        <span class="project-tag">Operations Research</span>
+                        <span class="project-tag">Simplex Method</span>
+                        <span class="project-tag">Business Analysis</span>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="project-grid-details">
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Permasalahan</p>
+                      <p class="project-detail-text">
+                        Analisis optimasi pendapatan pada Gamal Barbershop untuk menentukan kombinasi layanan terbaik
+                        berdasarkan kendala waktu operasional dan kapasitas layanan.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Analisis</p>
+                      <p class="project-detail-text">
+                        Menyusun model matematis Linear Programming berdasarkan kendala kapasitas, kemudian menganalisis
+                        kombinasi layanan optimal menggunakan metode grafik dan metode simpleks.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Solusi</p>
+                      <p class="project-detail-text">
+                        Menghasilkan model optimasi matematis yang menemukan kombinasi layanan barbershop dengan
+                        pendapatan maksimal dalam batas kapasitas dan waktu operasional yang tersedia.
+                      </p>
+                    </div>
+
+                    <div class="project-detail-box">
+                      <p class="project-detail-label">Hasil</p>
+                      <p class="project-detail-text">
+                        Rekomendasi berbasis data terkait alokasi sumber daya, penjadwalan tenaga kerja, dan peningkatan
+                        efisiensi operasional untuk meningkatkan pendapatan Gamal Barbershop.
+                      </p>
+                    </div>
+                  </div>
                 </div>
+              </article>
 
-                <div>
-                  <p class="detail-label">Solusi</p>
-                  <p class="detail-val">
-                    Mengembangkan aplikasi desktop berbasis C++
-                    untuk pengelolaan data perpustakaan
-                    dan transaksi peminjaman.
-                  </p>
-                </div>
+            </div>
+          </div>
 
-                <div>
-                  <p class="detail-label">Hasil</p>
-                  <p class="detail-val">
-                    Menghasilkan aplikasi yang membantu
-                    proses administrasi perpustakaan
-                    menjadi lebih terstruktur dan efisien.
-                  </p>
-                </div>
-
-              </div>
-            </article>
-
+          <!-- Bottom Track Progress Indicator -->
+          <div class="horizontal-indicator-bar" aria-hidden="true">
+            <span
+              style="font-family: var(--font-display); font-size: 0.72rem; letter-spacing: 0.16em; color: var(--fg-muted);">TRACK
+              PROGRESS</span>
+            <div class="track-progress-line">
+              <div class="track-progress-fill"></div>
+            </div>
+            <span style="font-family: var(--font-display); font-size: 0.85rem; font-weight: 800; color: #ffffff;">
+              <span class="current-card-num" style="color: var(--accent);">01</span> / 07
+            </span>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- EXPERIENCE -->
+    <!-- 04 / CREATIVE PRACTICE -->
+    <section id="creative" class="section section-alt">
+      <div class="watermark-bg" aria-hidden="true">CREATIVE</div>
+      <div class="container">
+        <div class="editorial-grid">
+          <div class="editorial-sidebar reveal-left">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> 04 / Creative Practice</p>
+            <h2 class="section-title">Visual<br>Storytelling<span class="accent-dot">.</span></h2>
+            <p class="section-desc">
+              Menyeimbangkan cara berpikir analitis dengan estetika visual. Berpengalaman dalam fotografi, videografi,
+              perancangan konten media sosial, dan penataan narasi visual digital.
+            </p>
+          </div>
+
+          <div class="reveal-right">
+            <div class="creative-gallery">
+              <!-- Featured Portrait Photography -->
+              <div class="creative-card featured">
+                <div class="creative-media-wrap">
+                  <img src="potrait-formal.jpg" alt="Portrait Storytelling Photography oleh Fahrizal" loading="lazy"
+                    width="1080" height="1350" />
+                </div>
+                <div class="creative-overlay">
+                  <strong>Editorial &amp; Portrait Storytelling</strong>
+                  <span>Photography &bull; Framing &bull; Lighting</span>
+                </div>
+              </div>
+
+              <!-- Secondary Visual: Data Communication -->
+              <div class="creative-card">
+                <div class="creative-media-wrap">
+                  <img src="data analisis.jpg" alt="Data Analytics and Visual Communication" loading="lazy" width="800"
+                    height="600" />
+                </div>
+                <div class="creative-overlay">
+                  <strong>Data to Story Visuals</strong>
+                  <span>Information Design &bull; Communication</span>
+                </div>
+              </div>
+
+              <!-- Tertiary Visual: UI/UX Craft -->
+              <div class="creative-card">
+                <div class="creative-media-wrap">
+                  <img src="google ui ux.jpg" alt="Interface and Experience Design" loading="lazy" width="800"
+                    height="600" />
+                </div>
+                <div class="creative-overlay">
+                  <strong>Interface Craft &amp; Prototyping</strong>
+                  <span>UX Foundations &bull; Figma Systems</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Proven Professional Experience Badges -->
+            <div class="creative-roles-bar">
+              <div class="creative-role-item">
+                <strong>SCARS_ID</strong>
+                <span>Creative Specialist (2025&ndash;2026)</span>
+              </div>
+              <div class="creative-role-item">
+                <strong>Spikoe Nenek Moyang</strong>
+                <span>Social Media Marketing (2024&ndash;2025)</span>
+              </div>
+              <div class="creative-role-item">
+                <strong>The Vallery Clinic</strong>
+                <span>Content Specialist (2025)</span>
+              </div>
+              <div class="creative-role-item">
+                <strong>Tarik.shoot</strong>
+                <span>Photographer &amp; Producer (2020&ndash;2024)</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 05 / THE JOURNEY (EXPERIENCE & ACTIVITIES) -->
     <section id="experience" class="section">
-      <div class="container section-y">
-        <div class="section-grid">
-          <div>
-            <p class="eyebrow">04 · Experience &amp; Activities</p>
-            <h2>Experience &amp; Activities</h2>
-            <p class="section-desc">Pengalaman internship, aktivitas, dan project-based experience yang membantu
-              membangun kemampuan teknis, komunikasi, koordinasi, dan problem solving.</p>
-          </div>
-          <ol class="timeline">
-            <li class="tl-item"><span class="tl-dot"></span>
-              <div class="tl-head">
-                <h3>Creative Specialist</h3><span class="tl-period">Jan 2025 &ndash; Jul 2026</span>
-              </div>
-              <p class="tl-org">SCARS_ID &middot; Semarang, Jawa Tengah</p>
-              <ul class="tl-bullets">
-                <li><span class="dash"></span><span>Bertanggung jawab atas proses produksi konten visual, mulai dari
-                    photography &amp; videography hingga proses editing.</span></li>
-                <li><span class="dash"></span><span>Mengoperasikan peralatan foto/video serta menghasilkan konten visual
-                    untuk kebutuhan brand dan media sosial.</span></li>
-                <li><span class="dash"></span><span>Berkolaborasi dengan tim kreatif dalam pengembangan konsep dan
-                    peningkatan kualitas konten.</span></li>
-              </ul>
-            </li>
-            <li class="tl-item"><span class="tl-dot"></span>
-              <div class="tl-head">
-                <h3>Social Media Marketing Specialist</h3><span class="tl-period">Jul 2024 &ndash; Jun 2025</span>
-              </div>
-              <p class="tl-org">Spikoe Nenek Moyang &middot; Semarang, Jawa Tengah</p>
-              <ul class="tl-bullets">
-                <li><span class="dash"></span><span>Mengelola dan memproduksi konten visual untuk kebutuhan media sosial
-                    dan promosi brand.</span></li>
-                <li><span class="dash"></span><span>Melakukan photography, videography, editing, serta dokumentasi
-                    produk.</span></li>
-                <li><span class="dash"></span><span>Mengembangkan konsep konten yang sesuai dengan identitas dan
-                    kebutuhan komunikasi brand.</span></li>
-              </ul>
-            </li>
-            <li class="tl-item"><span class="tl-dot"></span>
-              <div class="tl-head">
-                <h3>Content Specialist</h3><span class="tl-period">Feb 2025 &ndash; Sep 2025</span>
-              </div>
-              <p class="tl-org">The Vallery Aesthetic Clinic &middot; Semarang, Jawa Tengah</p>
-              <ul class="tl-bullets">
-                <li><span class="dash"></span><span>Memproduksi konten foto dan video untuk kebutuhan promosi Instagram
-                    dan TikTok.</span></li>
-                <li><span class="dash"></span><span>Bertanggung jawab atas proses shooting, editing, dan pengembangan
-                    konten visual.</span></li>
-                <li><span class="dash"></span><span>Mendukung aktivitas social media dan digital marketing melalui
-                    konten yang informatif dan menarik.</span></li>
-              </ul>
-            </li>
-            <li class="tl-item"><span class="tl-dot"></span>
-              <div class="tl-head">
-                <h3>IT Staff (Intern)</h3><span class="tl-period">Feb 2025 &ndash; Apr 2025</span>
-              </div>
-              <p class="tl-org">Dinas Ketenagakerjaan Kabupaten Batang &middot; Batang, Jawa Tengah</p>
-              <ul class="tl-bullets">
-                <li><span class="dash"></span><span>Mendukung pengelolaan dan pembaruan sistem informasi serta website
-                    Batang Career.</span></li>
-                <li><span class="dash"></span><span>Melakukan pengolahan data dan penyusunan laporan menggunakan
-                    Microsoft Word dan Excel.</span></li>
-                <li><span class="dash"></span><span>Mendukung pembaruan informasi digital serta administrasi layanan
-                    ketenagakerjaan.</span></li>
-              </ul>
-            </li>
-            <li class="tl-item"><span class="tl-dot"></span>
-              <div class="tl-head">
-                <h3>Photographer</h3><span class="tl-period">Nov 2020 &ndash; Agu 2024</span>
-              </div>
-              <p class="tl-org">Tarik.shoot &middot; Batang, Jawa Tengah</p>
-              <ul class="tl-bullets">
-                <li><span class="dash"></span><span>Menangani photography dan videography untuk kebutuhan modeling
-                    berdasarkan permintaan klien.</span></li>
-                <li><span class="dash"></span><span>Melakukan proses pengambilan dan pengolahan foto/video sesuai konsep
-                    dan kebutuhan klien.</span></li>
-              </ul>
-            </li>
-            <li class="tl-item"><span class="tl-dot"></span>
-              <div class="tl-head">
-                <h3>Liaison Officer</h3><span class="tl-period">Sep 2022</span>
-              </div>
-              <p class="tl-org">Valeasi Fest &middot; Kota Pekalongan, Jawa Tengah</p>
-              <ul class="tl-bullets">
-                <li><span class="dash"></span><span>Mengkoordinasikan kebutuhan talent, jadwal, mobilitas, dan
-                    komunikasi antara talent dengan panitia.</span></li>
-                <li><span class="dash"></span><span>Memastikan pelaksanaan kegiatan sesuai rundown serta membantu
-                    menangani kebutuhan operasional selama acara.</span></li>
-              </ul>
-            </li>
-            <li class="tl-item"><span class="tl-dot"></span>
-              <div class="tl-head">
-                <h3>Assistant Stage Manager</h3><span class="tl-period">Sep 2022</span>
-              </div>
-              <p class="tl-org">Ekspectanica &ldquo;Healing de Java&rdquo; Semarang &middot; Semarang, Jawa Tengah</p>
-              <ul class="tl-bullets">
-                <li><span class="dash"></span><span>Mendukung persiapan dan operasional panggung selama pelaksanaan
-                    konser.</span></li>
-                <li><span class="dash"></span><span>Berkoordinasi dengan tim sound, lighting, production, dan performer
-                    untuk memastikan kegiatan berjalan sesuai rundown.</span></li>
-              </ul>
-            </li>
-          </ol>
-        </div>
-      </div>
-    </section>
-
-    <!-- CERTIFICATIONS -->
-    <section id="certifications" class="section">
-      <div class="container section-y">
-        <div class="section-grid">
-
-          <div>
-            <p class="eyebrow">05 · Certifications</p>
-            <h2>Belajar berkelanjutan.</h2>
-            <p class="section-desc">Sertifikasi dan kursus yang memperkuat kemampuan di bidang data, sistem informasi,
-              teknologi, jaringan, dan pengembangan aplikasi.</p>
-          </div>
-
-          <div class="cert-grid">
-
-            <div class="cert" data-img="bnsp data scientist.jpg">
-              <div class="cert-thumbnail">
-                <img src="bnsp data scientist.jpg" alt="Associate Data Scientist" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Associate Data Scientist</p>
-                <p class="issuer">BNSP – LSP Universitas Dian Nuswantoro</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="google ui ux.jpg">
-              <div class="cert-thumbnail">
-                <img src="google ui ux.jpg" alt="Foundations of User Experience (UX) Design" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Foundations of User Experience (UX) Design</p>
-                <p class="issuer">Google</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="machine learning capstone.jpg">
-              <div class="cert-thumbnail">
-                <img src="machine learning capstone.jpg" alt="Machine Learning Capstone" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Machine Learning Capstone</p>
-                <p class="issuer">IBM</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="reggresion.jpg">
-              <div class="cert-thumbnail">
-                <img src="reggresion.jpg" alt="Supervised Machine Learning: Regression" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Supervised Machine Learning: Regression</p>
-                <p class="issuer">IBM</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="data analisis.jpg">
-              <div class="cert-thumbnail">
-                <img src="data analisis.jpg" alt="Exploratory Data Analysis for Machine Learning" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Exploratory Data Analysis for Machine Learning</p>
-                <p class="issuer">IBM / Coursera</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="web python.jpg">
-              <div class="cert-thumbnail">
-                <img src="web python.jpg" alt="Create Your First Web App with Python and Flask" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Create Your First Web App with Python and Flask</p>
-                <p class="issuer">Coursera</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="sertif ai.jpg">
-              <div class="cert-thumbnail">
-                <img src="sertif ai.jpg" alt="AI Literacy for Everyone" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">AI Literacy for Everyone: Understand, Apply, Create</p>
-                <p class="issuer">BASS Training Center</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="jaringan dasar.jpg">
-              <div class="cert-thumbnail">
-                <img src="jaringan dasar.jpg" alt="Jaringan Komputer Dasar" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Jaringan Komputer Dasar</p>
-                <p class="issuer">ID-Networkers</p>
-              </div>
-            </div>
-
-            <div class="cert" data-img="serti magang.jpg">
-              <div class="cert-thumbnail">
-                <img src="serti magang.jpg" alt="Internship Information System" loading="lazy">
-              </div>
-              <div class="cert-info">
-                <p class="name">Internship Information System</p>
-                <p class="issuer">Disnaker Kabupaten Batang</p>
-              </div>
-            </div>
-
-          </div>
-
-        </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-      <div class="container section-y">
-        <div class="section-grid">
-          <div>
-            <p class="eyebrow">06 · Education</p>
-            <h2>Pendidikan formal.</h2>
-          </div>
-          <div class="edu-card">
-            <div class="edu-head">
-              <h3>Universitas Dian Nuswantoro</h3><span class="tl-period">Sep 2022 – Feb 2026</span>
-            </div>
-            <p class="tl-org">S1 Sistem Informasi · Semarang, Jawa Tengah</p>
-            <div class="stats">
-              <div class="stat">
-                <p class="stat-label">IPK</p>
-                <p class="stat-val"><span class="counter" data-target="3.54" data-decimals="2">0.00</span> / 4.00</p>
-              </div>
-              <div class="stat">
-                <p class="stat-label">TOEFL ITP</p>
-                <p class="stat-val"><span class="counter" data-target="503" data-decimals="0">0</span></p>
-              </div>
-              <div class="stat">
-                <p class="stat-label">Fokus</p>
-                <p class="stat-val">Sistem Informasi</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- STRENGTHS -->
-    <section id="why" class="section">
-      <div class="container section-y">
-        <div class="section-grid">
-          <div>
-            <p class="eyebrow">07 · Strengths</p>
-            <h2>Kelebihan dan keunggulan diri.</h2>
-          </div>
-
-          <div class="grid-2">
-
-            <div class="why-item">
-              <span class="why-num">01</span>
-              <p class="why-text"><strong>Analytical Thinking</strong> — Terbiasa memecah masalah dan memahami kebutuhan
-                sebelum menentukan solusi.</p>
-            </div>
-
-            <div class="why-item">
-              <span class="why-num">02</span>
-              <p class="why-text"><strong>Willingness to Learn</strong> — Terbuka mempelajari teknologi, tools, dan
-                proses kerja baru.</p>
-            </div>
-
-            <div class="why-item">
-              <span class="why-num">03</span>
-              <p class="why-text"><strong>Problem Solving</strong> — Terbiasa mencari penyebab masalah dan menyusun
-                langkah penyelesaian secara sistematis.</p>
-            </div>
-
-            <div class="why-item">
-              <span class="why-num">04</span>
-              <p class="why-text"><strong>Attention to Detail</strong> — Memperhatikan detail dalam pengolahan data,
-                dokumentasi, dan pekerjaan teknis.</p>
-            </div>
-
-            <div class="why-item">
-              <span class="why-num">05</span>
-              <p class="why-text"><strong>Communication &amp; Collaboration</strong> — Memiliki pengalaman berkoordinasi
-                dengan berbagai pihak dalam internship, project, dan aktivitas lainnya.</p>
-            </div>
-
-            <div class="why-item">
-              <span class="why-num">06</span>
-              <p class="why-text"><strong>Documentation &amp; Reporting</strong> — Terbiasa menyusun dokumentasi,
-                laporan, diagram, dan informasi terstruktur.</p>
-            </div>
-
-            <div class="why-item">
-              <span class="why-num">07</span>
-              <p class="why-text"><strong>Adaptability</strong> — Siap beradaptasi dengan lingkungan kerja, tools, dan
-                kebutuhan perusahaan.</p>
-            </div>
-
-            <div class="why-item">
-              <span class="why-num">08</span>
-              <p class="why-text"><strong>Basic IT Troubleshooting</strong> — Memiliki dasar troubleshooting hardware,
-                software, Windows, serta networking dasar.</p>
-            </div>
-
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT -->
-    <section id="contact" class="contact">
-      <div class="container section-y">
-        <div class="contact-grid">
-          <div>
-            <p class="eyebrow">08 · Contact</p>
-            <h2>Let's Connect</h2>
-            <p class="lead">Saya terbuka untuk berbagai kesempatan entry-level di bidang Teknologi Informasi dan siap
-              belajar serta berkembang bersama tim dan perusahaan. Jika Anda tertarik untuk berdiskusi mengenai peluang
-              kerja, project, atau kolaborasi, silakan hubungi saya melalui kontak yang tersedia.
+      <div class="watermark-bg" aria-hidden="true">JOURNEY</div>
+      <div class="container">
+        <div class="editorial-grid" style="margin-bottom: 4rem;">
+          <div class="editorial-sidebar reveal-left">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> 05 / The Journey</p>
+            <h2 class="section-title">Experience &amp;<br>Activities<span class="accent-dot">.</span></h2>
+            <p class="section-desc">
+              Rekam jejak pengalaman kerja, program magang institusi, dan aktivitas manajemen kepanitiaan yang mengasah
+              koordinasi tim, ketahanan kerja, dan pemecahan masalah nyata.
             </p>
-            <div class="contact-list">
-              <a href="mailto:fahrizal55250@gmail.com" class="contact-row">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
-                  <polyline points="22,6 12,13 2,6" />
-                </svg>
-                <div style="flex:1">
-                  <p class="l">Email</p>
-                  <p class="v">fahrizal55250@gmail.com</p>
+          </div>
+          <div></div>
+        </div>
+
+        <!-- Experience Cards Grid -->
+        <div class="exp-cards-grid reveal-on-scroll">
+
+          <!-- Exp Card 1 -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-badge">Contract</div>
+              <span class="exp-card-period">Jan 2025 &ndash; Jul 2026</span>
+            </div>
+            <h3 class="exp-card-role">Creative Specialist</h3>
+            <p class="exp-card-org">SCARS_ID <span class="exp-card-loc">&bull; Semarang &bull; On-site</span></p>
+            <ul class="exp-card-bullets">
+              <li>End-to-end creative content production: concept development, photography, videography &amp;
+                post-production for automotive &amp; digital campaigns.</li>
+              <li>Produced high-quality visual content tailored to brand identity, marketing objectives, and social
+                media platforms.</li>
+              <li>Collaborated with clients and creative teams to translate ideas into engaging visual materials.</li>
+            </ul>
+            <div class="exp-card-skills">
+              <span>Photography</span><span>Videography</span><span>Graphic Design</span><span>Content Creation</span>
+            </div>
+          </div>
+
+          <!-- Exp Card 2 -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-badge">Freelance</div>
+              <span class="exp-card-period">Feb 2025 &ndash; Sep 2025</span>
+            </div>
+            <h3 class="exp-card-role">Content Specialist</h3>
+            <p class="exp-card-org">The Vallery Aesthetic Clinic <span class="exp-card-loc">&bull; Semarang &bull;
+                Hybrid</span></p>
+            <ul class="exp-card-bullets">
+              <li>Produced engaging promotional &amp; digital marketing content for Instagram and TikTok focusing on
+                aesthetic treatments and brand awareness.</li>
+              <li>Managed content production process: creative planning, video shooting, editing, and visual
+                storytelling.</li>
+              <li>Developed visually consistent content aligned with brand identity and social media communication
+                objectives.</li>
+            </ul>
+            <div class="exp-card-skills">
+              <span>Content Creation</span><span>Social Media Marketing</span><span>Video Editing</span>
+            </div>
+          </div>
+
+          <!-- Exp Card 3 -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-badge">Contract</div>
+              <span class="exp-card-period">Jul 2024 &ndash; Jun 2025</span>
+            </div>
+            <h3 class="exp-card-role">Social Media Marketing Specialist</h3>
+            <p class="exp-card-org">Spikoe Nenek Moyang <span class="exp-card-loc">&bull; Semarang &bull; Hybrid</span>
+            </p>
+            <ul class="exp-card-bullets">
+              <li>Supported social media management &amp; digital marketing activities through content planning, product
+                photography, videography, and visual content production.</li>
+              <li>Developed engaging promotional materials showcasing products, brand identity, and marketing campaigns.
+              </li>
+              <li>Managed photo and video editing, maintained visual consistency across digital platforms.</li>
+            </ul>
+            <div class="exp-card-skills">
+              <span>Social Media Management</span><span>Content Planning</span><span>Photography</span>
+            </div>
+          </div>
+
+          <!-- Exp Card 4 -->
+          <div class="exp-card exp-card-featured">
+            <div class="exp-card-header">
+              <div class="exp-card-badge exp-card-badge-gov">Apprenticeship</div>
+              <span class="exp-card-period">Feb 2025 &ndash; Apr 2025</span>
+            </div>
+            <h3 class="exp-card-role">Information Technology Support Officer</h3>
+            <p class="exp-card-org">Kementrian Ketenagakerjaan RI &mdash; Disnaker Kabupaten Batang <span
+                class="exp-card-loc">&bull; Batang &bull; On-site</span></p>
+            <ul class="exp-card-bullets">
+              <li>Supported information system operations and digital administration. Managed and updated employment
+                information through Batang Karir platform.</li>
+              <li>Maintained administrative records using Microsoft Excel, assisted with website content management,
+                data processing, and operational reporting.</li>
+              <li>Coordinated with internal teams and external stakeholders to ensure information accuracy and document
+                system-related issues.</li>
+              <li>Gained practical experience in IT support, information systems management, data administration, and
+                government service operations.</li>
+            </ul>
+            <div class="exp-card-skills">
+              <span>IT Support</span><span>Website Administration</span><span>Data Entry</span><span>Information
+                Systems</span>
+            </div>
+          </div>
+
+          <!-- Exp Card 5 -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-badge">Self-employed</div>
+              <span class="exp-card-period">Nov 2020 &ndash; Aug 2024</span>
+            </div>
+            <h3 class="exp-card-role">Photographer</h3>
+            <p class="exp-card-org">Tarik.shoot <span class="exp-card-loc">&bull; Batang &bull; On-site</span></p>
+            <ul class="exp-card-bullets">
+              <li>Provided freelance photography and videography services for individual clients, creative projects, and
+                event documentation.</li>
+              <li>Managed production from client consultation and concept development to shooting, photo retouching,
+                video editing, and final delivery.</li>
+            </ul>
+            <div class="exp-card-skills">
+              <span>Photography</span><span>Videography</span><span>Photo Retouching</span>
+            </div>
+          </div>
+
+          <!-- Exp Card 6 -->
+          <div class="exp-card">
+            <div class="exp-card-header">
+              <div class="exp-card-badge">Freelance</div>
+              <span class="exp-card-period">Jul 2023 &ndash; Sep 2023</span>
+            </div>
+            <h3 class="exp-card-role">Liaison Officer</h3>
+            <p class="exp-card-org">Valeasi Fest <span class="exp-card-loc">&bull; Pekalongan &bull; On-site</span></p>
+            <ul class="exp-card-bullets">
+              <li>Coordinated communication between performing artists, event organizers, and operational teams during
+                Valeasi Fest.</li>
+              <li>Managed talent schedules, transportation coordination, backstage requirements, and artist-related
+                logistics to ensure smooth event operations.</li>
+            </ul>
+            <div class="exp-card-skills">
+              <span>Event Management</span><span>Coordination</span><span>Communication</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- VOLUNTEERING SUBSECTION -->
+        <div class="volunteer-section">
+          <div class="volunteer-header">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Volunteering</p>
+          </div>
+          <div class="volunteer-cards">
+
+            <!-- Volunteer Card 1 -->
+            <div class="volunteer-card">
+              <div class="volunteer-card-top">
+                <div>
+                  <span class="volunteer-badge">Volunteer</span>
+                  <h3 class="volunteer-role">Assistant Stage Manager</h3>
+                  <p class="volunteer-org">Ekspectanica &ldquo;Healing de Java&rdquo; &mdash; Semarang</p>
                 </div>
-              </a>
-              <a href="https://wa.me/6285803165340" class="contact-row">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-                </svg>
-                <div style="flex:1">
-                  <p class="l">Phone</p>
-                  <p class="v">+62 858 0316 5340</p>
+                <div class="volunteer-meta">
+                  <span class="volunteer-period">Sep 2023 &bull; 1 mo</span>
+                  <span class="volunteer-cause">Arts &amp; Culture</span>
                 </div>
-              </a>
-              <a href="https://linkedin.com/in/muhammadfahrizal290504" target="_blank" rel="noreferrer"
-                class="contact-row">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
-                  <rect x="2" y="9" width="4" height="12" />
-                  <circle cx="4" cy="4" r="2" />
+              </div>
+              <p class="volunteer-desc">
+                Supported stage management and event operations during the Ekspectanica &ldquo;Healing de Java&rdquo;
+                concert in Semarang. Assisted in coordinating stage preparations, performance schedules, artist
+                transitions, and technical requirements. Collaborated with production crews, sound and lighting teams,
+                and event organizers to maintain effective communication and ensure performances followed the
+                established event rundown.
+              </p>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 06 / CONTINUOUS LEARNING (CERTIFICATIONS) -->
+    <section id="certifications" class="section section-alt">
+      <div class="watermark-bg" aria-hidden="true">CERTS</div>
+      <div class="container">
+        <div class="editorial-grid" style="margin-bottom: 3rem;">
+          <div class="reveal-left">
+            <p class="eyebrow"><span class="eyebrow-dot"></span> 06 / Continuous Learning</p>
+            <h2 class="section-title">Sertifikasi &amp;<br>Kredensial<span class="accent-dot">.</span></h2>
+          </div>
+          <div class="reveal-right">
+            <p class="section-desc">
+              Sertifikasi kompetensi resmi dan kursus tersertifikasi yang memvalidasi penguasaan di bidang Data Science,
+              UI/UX, Machine Learning, Web Python, Jaringan, dan Sistem Informasi. Klik kartu untuk melihat detail
+              sertifikat.
+            </p>
+          </div>
+        </div>
+
+        <div class="certifications-grid reveal-on-scroll">
+          <!-- Cert 1 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="bnsp data scientist.jpg"
+            data-title="Associate Data Scientist" data-issuer="BNSP &ndash; LSP Universitas Dian Nuswantoro">
+            <div class="cert-thumb">
+              <img src="bnsp data scientist.jpg" alt="Associate Data Scientist - BNSP" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Associate Data Scientist</h3>
+              <p class="cert-issuer">BNSP &ndash; LSP Universitas Dian Nuswantoro</p>
+            </div>
+          </div>
+
+          <!-- Cert 2 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="google ui ux.jpg"
+            data-title="Foundations of User Experience (UX) Design" data-issuer="Google">
+            <div class="cert-thumb">
+              <img src="google ui ux.jpg" alt="Foundations of User Experience Design - Google" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Foundations of User Experience (UX) Design</h3>
+              <p class="cert-issuer">Google</p>
+            </div>
+          </div>
+
+          <!-- Cert 3 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="machine learning capstone.jpg"
+            data-title="Machine Learning Capstone" data-issuer="IBM">
+            <div class="cert-thumb">
+              <img src="machine learning capstone.jpg" alt="Machine Learning Capstone - IBM" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Machine Learning Capstone</h3>
+              <p class="cert-issuer">IBM</p>
+            </div>
+          </div>
+
+          <!-- Cert 4 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="reggresion.jpg"
+            data-title="Supervised Machine Learning: Regression" data-issuer="IBM">
+            <div class="cert-thumb">
+              <img src="reggresion.jpg" alt="Supervised Machine Learning: Regression - IBM" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Supervised Machine Learning: Regression</h3>
+              <p class="cert-issuer">IBM</p>
+            </div>
+          </div>
+
+          <!-- Cert 5 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="data analisis.jpg"
+            data-title="Exploratory Data Analysis for Machine Learning" data-issuer="IBM / Coursera">
+            <div class="cert-thumb">
+              <img src="data analisis.jpg" alt="Exploratory Data Analysis for Machine Learning - IBM" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Exploratory Data Analysis for Machine Learning</h3>
+              <p class="cert-issuer">IBM / Coursera</p>
+            </div>
+          </div>
+
+          <!-- Cert 6 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="web python.jpg"
+            data-title="Create Your First Web App with Python and Flask" data-issuer="Coursera">
+            <div class="cert-thumb">
+              <img src="web python.jpg" alt="Web App with Python and Flask - Coursera" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Web App with Python &amp; Flask</h3>
+              <p class="cert-issuer">Coursera</p>
+            </div>
+          </div>
+
+          <!-- Cert 7 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="sertif ai.jpg"
+            data-title="AI Literacy for Everyone: Understand, Apply, Create" data-issuer="BASS Training Center">
+            <div class="cert-thumb">
+              <img src="sertif ai.jpg" alt="AI Literacy for Everyone - BASS" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">AI Literacy for Everyone</h3>
+              <p class="cert-issuer">BASS Training Center</p>
+            </div>
+          </div>
+
+          <!-- Cert 8 -->
+          <div class="cert-card cert-card-pending" tabindex="0" role="button" data-img="toefl prediction.jpg"
+            data-title="TOEFL Prediction" data-issuer="Speaking Partner by Kampung Inggris">
+            <div class="cert-thumb">
+              <img src="toefl prediction.jpg" alt="TOEFL Prediction - Sertifikat Kemampuan Bahasa Inggris"
+                loading="lazy" />
+              <div class="cert-placeholder">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="6" y="6" width="36" height="36" rx="3" />
+                  <path d="M16 24h16M24 16v16" />
                 </svg>
-                <div style="flex:1">
-                  <p class="l">LinkedIn</p>
-                  <p class="v">muhammadfahrizal290504</p>
-                </div>
-              </a>
-              <a href="https://github.com/fahrizall29" target="_blank" rel="noreferrer" class="contact-row">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path
-                    d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                <span>Gambar Menyusul</span>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">TOEFL Prediction</h3>
+              <p class="cert-issuer">Speaking Partner by Kampung Inggris</p>
+            </div>
+          </div>
+
+          <!-- Cert 9 -->
+          <div class="cert-card" tabindex="0" role="button" data-img="serti magang.jpg"
+            data-title="Internship Information System" data-issuer="Disnaker Kabupaten Batang">
+            <div class="cert-thumb">
+              <img src="serti magang.jpg" alt="Internship Information System - Disnaker Batang" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Internship Information System</h3>
+              <p class="cert-issuer">Disnaker Kabupaten Batang</p>
+            </div>
+          </div>
+
+          <!-- Cert 10: Cisco Dasar -->
+          <div class="cert-card cert-card-pending" tabindex="0" role="button" data-img="cisco dasar.jpg"
+            data-title="Cisco Dasar" data-issuer="ID Networkers">
+            <div class="cert-thumb">
+              <img src="cisco dasar.jpg" alt="Cisco Dasar - ID Networkers" loading="lazy" />
+              <div class="cert-placeholder">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="6" y="6" width="36" height="36" rx="3" />
+                  <path d="M16 24h16M24 16v16" />
                 </svg>
-                <div style="flex:1">
-                  <p class="l">GitHub</p>
-                  <p class="v">fahrizall29</p>
-                </div>
-              </a>
-              <div class="contact-row">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                  <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
-                  <circle cx="12" cy="10" r="3" />
+                <span>Gambar Menyusul</span>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Cisco Dasar</h3>
+              <p class="cert-issuer">ID Networkers</p>
+            </div>
+          </div>
+
+          <!-- Cert 11: Mikrotik Dasar -->
+          <div class="cert-card cert-card-pending" tabindex="0" role="button" data-img="Mikrotik dasar.jpg"
+            data-title="Mikrotik Dasar" data-issuer="ID Networkers">
+            <div class="cert-thumb">
+              <img src="mikrotik dasar.jpg" alt="Mikrotik Dasar - ID Networkers" loading="lazy" />
+              <div class="cert-placeholder">
+                <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                  stroke-linejoin="round">
+                  <rect x="6" y="6" width="36" height="36" rx="3" />
+                  <path d="M16 24h16M24 16v16" />
                 </svg>
-                <div style="flex:1">
-                  <p class="l">Location</p>
-                  <p class="v">Batang, Jawa Tengah, Indonesia</p>
-                </div>
+                <span>Gambar Menyusul</span>
+              </div>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Mikrotik Dasar</h3>
+              <p class="cert-issuer">ID Networkers</p>
+            </div>
+          </div>
+
+          <!-- Cert 12: TOEFL Prediction -->
+          <div class="cert-card" tabindex="0" role="button" data-img="jaringan dasar.jpg"
+            data-title="Jaringan Komputer Dasar" data-issuer="ID-Networkers">
+            <div class="cert-thumb">
+              <img src="jaringan dasar.jpg" alt="Jaringan Komputer Dasar - ID-Networkers" loading="lazy" />
+              <span class="cert-view-badge">View Certificate &nearr;</span>
+            </div>
+            <div class="cert-meta">
+              <h3 class="cert-title">Jaringan Komputer Dasar</h3>
+              <p class="cert-issuer">ID-Networkers</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- 07 / EDUCATION & STRENGTHS -->
+    <section id="education" class="section">
+      <div class="watermark-bg" aria-hidden="true">VALUES</div>
+      <div class="container">
+
+        <!-- Section Header -->
+        <div class="edu-section-header reveal-left">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> 07 / Education &amp; Strengths</p>
+          <h2 class="section-title">Pendidikan &amp;<br>Kelebihan<span class="accent-dot">.</span></h2>
+          <p class="section-desc">
+            Landasan akademis yang kokoh didukung oleh etos kerja, daya analitis, dan kemampuan komunikasi antarpribadi
+            yang adaptif.
+          </p>
+        </div>
+
+        <!-- Formal Education Card -->
+        <div class="edu-card reveal-on-scroll">
+          <div class="edu-card-left">
+            <div class="edu-institution-block">
+              <p class="edu-label-tag">Perguruan Tinggi</p>
+              <h3 class="edu-inst-name">Universitas Dian Nuswantoro</h3>
+              <p class="edu-degree-name">Sarjana Komputer (S.Kom) &mdash; S1 Sistem Informasi</p>
+              <p class="edu-faculty">Fakultas Ilmu Komputer &bull; Semarang</p>
+            </div>
+            <span class="edu-period-badge">Sep 2022 &ndash; Feb 2026</span>
+          </div>
+
+          <div class="edu-card-right">
+            <div class="edu-metric-pill">
+              <div class="edu-metric-value">
+                <span class="counter" data-target="3.54" data-decimals="2">3.54</span>
+                <span class="edu-metric-denom">/ 4.00</span>
+              </div>
+              <span class="edu-metric-label">IPK (GPA)</span>
+            </div>
+            <div class="edu-metric-pill">
+              <div class="edu-metric-value">
+                <span class="counter" data-target="503" data-decimals="0">503</span>
+              </div>
+              <span class="edu-metric-label">TOEFL ITP Score</span>
+            </div>
+            <div class="edu-metric-pill">
+              <div class="edu-metric-value edu-metric-text">2026</div>
+              <span class="edu-metric-label">Tahun Lulus</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8 Core Personal Strengths -->
+        <div class="strengths-section reveal-on-scroll">
+          <p class="strengths-label eyebrow"><span class="eyebrow-dot"></span> Core Strengths</p>
+          <div class="strengths-grid">
+            <div class="strength-item">
+              <span class="strength-num">01</span>
+              <p class="strength-text"><strong>Analytical Thinking</strong> &mdash; Terbiasa membedah permasalahan
+                kompleks menjadi komponen terukur sebelum menentukan solusi teknologi yang tepat.</p>
+            </div>
+
+            <div class="strength-item">
+              <span class="strength-num">02</span>
+              <p class="strength-text"><strong>Willingness to Learn</strong> &mdash; Proaktif dan antusias
+                mengeksplorasi teknologi baru, framework modern, serta metodologi bisnis terkini.</p>
+            </div>
+
+            <div class="strength-item">
+              <span class="strength-num">03</span>
+              <p class="strength-text"><strong>Problem Solving</strong> &mdash; Sistematis dalam mengidentifikasi akar
+                permasalahan (root cause) dan menyusun langkah perbaikan terstruktur.</p>
+            </div>
+
+            <div class="strength-item">
+              <span class="strength-num">04</span>
+              <p class="strength-text"><strong>Attention to Detail</strong> &mdash; Teliti dan presisi dalam pengolahan
+                dataset, perancangan diagram alur, serta penyusunan dokumentasi teknis.</p>
+            </div>
+
+            <div class="strength-item">
+              <span class="strength-num">05</span>
+              <p class="strength-text"><strong>Communication &amp; Teamwork</strong> &mdash; Teruji dalam koordinasi
+                lintas divisi, presentasi gagasan teknis ke non-teknis, dan manajemen kegiatan.</p>
+            </div>
+
+            <div class="strength-item">
+              <span class="strength-num">06</span>
+              <p class="strength-text"><strong>Documentation &amp; Reporting</strong> &mdash; Rapi dan konsisten
+                menyusun SOP, business requirement document (BRD), serta laporan analitis berkala.</p>
+            </div>
+
+            <div class="strength-item">
+              <span class="strength-num">07</span>
+              <p class="strength-text"><strong>Adaptability</strong> &mdash; Mampu beradaptasi cepat dengan budaya kerja
+                dinamis, standar prosedur baru, dan kebutuhan organisasi.</p>
+            </div>
+
+            <div class="strength-item">
+              <span class="strength-num">08</span>
+              <p class="strength-text"><strong>Basic IT Troubleshooting</strong> &mdash; Memahami diagnosa dasar
+                perangkat keras, software Windows, sistem operasi, serta konfigurasi jaringan LAN/Wi-Fi.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- 08 / CONTACT & CLOSING SCENE -->
+    <section id="contact" class="contact-section">
+      <div class="contact-halo" aria-hidden="true"></div>
+      <div class="container contact-grid">
+        <!-- Contact Left Statement -->
+        <div class="reveal-left">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> 08 / Let&rsquo;s Connect</p>
+          <h2 class="contact-hero-statement">LET&rsquo;S CONNECT<span class="accent-dot">.</span></h2>
+          <p class="contact-lead">
+            Saya terbuka untuk berbagai kesempatan entry-level di bidang Teknologi Informasi, Analis Sistem, Manajemen
+            Data, IT Support, maupun Creative Media. Mari berdiskusi mengenai peluang karir, proyek, atau kolaborasi
+            profesional.
+          </p>
+
+          <div class="contact-links-list">
+            <!-- Email -->
+            <a href="mailto:fahrizal55250@gmail.com" class="contact-link-row">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <div class="contact-link-meta">
+                <p class="contact-link-label">Direct Email</p>
+                <p class="contact-link-value">fahrizal55250@gmail.com</p>
+              </div>
+            </a>
+
+            <!-- WhatsApp -->
+            <a href="https://wa.me/6285803165340" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                </path>
+              </svg>
+              <div class="contact-link-meta">
+                <p class="contact-link-label">WhatsApp / Phone</p>
+                <p class="contact-link-value">+62 858 0316 5340</p>
+              </div>
+            </a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com/in/muhammadfahrizal290504" target="_blank" rel="noopener noreferrer"
+              class="contact-link-row">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                <rect x="2" y="9" width="4" height="12"></rect>
+                <circle cx="4" cy="4" r="2"></circle>
+              </svg>
+              <div class="contact-link-meta">
+                <p class="contact-link-label">LinkedIn Profile</p>
+                <p class="contact-link-value">linkedin.com/in/muhammadfahrizal290504</p>
+              </div>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/fahrizall29" target="_blank" rel="noopener noreferrer" class="contact-link-row">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path
+                  d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                </path>
+              </svg>
+              <div class="contact-link-meta">
+                <p class="contact-link-label">GitHub Repository</p>
+                <p class="contact-link-value">github.com/fahrizall29</p>
+              </div>
+            </a>
+
+            <!-- Location -->
+            <div class="contact-link-row">
+              <svg class="contact-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                <circle cx="12" cy="10" r="3"></circle>
+              </svg>
+              <div class="contact-link-meta">
+                <p class="contact-link-label">Base Location</p>
+                <p class="contact-link-value">Batang, Jawa Tengah, Indonesia</p>
               </div>
             </div>
           </div>
-          <form class="form">
-            <div class="field"><label>Name</label><input name="name" required /></div>
-            <div class="field"><label>Email</label><input name="email" type="email" required /></div>
-            <div class="field"><label>Message</label><textarea name="message" rows="5" required
-                placeholder="Tell me about the opportunity..."></textarea></div>
-            <button type="submit" class="btn btn-light">Send Message →</button>
+        </div>
+
+        <!-- Contact Right Interactive Form -->
+        <div class="contact-form-wrap reveal-right">
+          <h3 class="form-title">Kirim Pesan Langsung</h3>
+          <p class="form-subtitle">Formulir ini akan otomatis menyiapkan draft email ke inbox saya.</p>
+
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label class="form-label" for="contact-name">Nama Lengkap / Perusahaan</label>
+              <input type="text" id="contact-name" name="name" class="form-input" placeholder="Masukkan nama Anda..."
+                required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-email">Alamat Email</label>
+              <input type="email" id="contact-email" name="email" class="form-input" placeholder="nama@perusahaan.com"
+                required />
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="contact-message">Pesan / Diskusi Peluang</label>
+              <textarea id="contact-message" name="message" class="form-textarea" rows="4"
+                placeholder="Ceritakan tentang peluang karir, proyek, atau kolaborasi..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width: 100%;">
+              Kirim Pesan Sekarang <span aria-hidden="true">&rarr;</span>
+            </button>
           </form>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
+  <!-- SITE FOOTER -->
+  <footer class="site-footer">
     <div class="container footer-inner">
-      <p>© 2026 Muhammad Fahrizal. All rights reserved.</p>
-      <p>At-Tawbah : 105 "Dan katakanlah: Bekerjalah kamu, maka Allah akan melihat pekerjaanmu, begitu juga Rasul-Nya
-        dan orang-orang mukmin"</p>
+      <div>
+        <p style="color: #ffffff; font-weight: 600; margin-bottom: 0.3rem;">&copy; 2026 Muhammad Fahrizal. All rights
+          reserved.</p>
+        <p class="footer-verse">
+          QS. At-Tawbah : 105 &mdash; &ldquo;Dan katakanlah: Bekerjalah kamu, maka Allah akan melihat pekerjaanmu,
+          begitu juga Rasul-Nya dan orang-orang mukmin.&rdquo;
+        </p>
+      </div>
+
+      <button class="footer-back-to-top" aria-label="Return to top of page">
+        <span>Back to Top</span> <span aria-hidden="true">&uarr;</span>
+      </button>
     </div>
   </footer>
 
-  <!-- Lightbox Modal for Certifications -->
-  <div id="cert-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true">
-    <button class="lightbox-close" aria-label="Close lightbox">&times;</button>
+  <!-- ACCESSIBLE LIGHTBOX MODAL FOR CERTIFICATIONS -->
+  <div id="cert-lightbox" class="lightbox" role="dialog" aria-modal="true" aria-hidden="true"
+    aria-labelledby="lightbox-title">
     <div class="lightbox-content">
-      <img id="lightbox-img" src="" alt="">
+      <button class="lightbox-close" aria-label="Close Certificate View">&times;</button>
+      <div class="lightbox-img-wrap">
+        <img id="lightbox-img" src="" alt="Certificate Preview" />
+      </div>
       <div class="lightbox-caption">
-        <h3 id="lightbox-title"></h3>
-        <p id="lightbox-issuer" class="eyebrow"></p>
+        <div class="lightbox-caption-text">
+          <h3 id="lightbox-title">Certificate</h3>
+          <p id="lightbox-issuer">Issuer</p>
+        </div>
       </div>
     </div>
   </div>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Mobile Nav Toggle
-      const navToggle = document.querySelector('.nav-toggle');
-      const navLinks = document.querySelector('.nav-links');
-
-      if (navToggle && navLinks) {
-        navToggle.addEventListener('click', (e) => {
-          e.stopPropagation();
-          const isActive = navLinks.classList.toggle('active');
-          navToggle.classList.toggle('active');
-          navToggle.setAttribute('aria-expanded', isActive);
-        });
-
-        // Close menu when clicking a link
-        navLinks.querySelectorAll('a').forEach(link => {
-          link.addEventListener('click', () => {
-            navLinks.classList.remove('active');
-            navToggle.classList.remove('active');
-            navToggle.setAttribute('aria-expanded', 'false');
-          });
-        });
-
-        // Close menu when clicking outside
-        document.addEventListener('click', (e) => {
-          if (!navLinks.contains(e.target) && !navToggle.contains(e.target)) {
-            navLinks.classList.remove('active');
-            navToggle.classList.remove('active');
-            navToggle.setAttribute('aria-expanded', 'false');
-          }
-        });
-      }
-
-      // Lightbox Modal
-      const certs = document.querySelectorAll('.cert');
-      const lightbox = document.getElementById('cert-lightbox');
-      const lightboxImg = document.getElementById('lightbox-img');
-      const lightboxTitle = document.getElementById('lightbox-title');
-      const lightboxIssuer = document.getElementById('lightbox-issuer');
-      const lightboxClose = lightbox ? lightbox.querySelector('.lightbox-close') : null;
-
-      if (certs.length && lightbox && lightboxImg) {
-        certs.forEach(cert => {
-          cert.addEventListener('click', () => {
-            const imgSrc = cert.getAttribute('data-img');
-            const title = cert.querySelector('.name').textContent;
-            const issuer = cert.querySelector('.issuer').textContent;
-
-            lightboxImg.src = imgSrc;
-            lightboxImg.alt = title;
-            lightboxTitle.textContent = title;
-            lightboxIssuer.textContent = issuer;
-
-            lightbox.classList.add('active');
-            lightbox.setAttribute('aria-hidden', 'false');
-            document.body.style.overflow = 'hidden'; // prevent background scrolling
-          });
-        });
-
-        const closeLightbox = () => {
-          lightbox.classList.remove('active');
-          lightbox.setAttribute('aria-hidden', 'true');
-          document.body.style.overflow = '';
-          setTimeout(() => {
-            lightboxImg.src = '';
-          }, 300);
-        };
-
-        if (lightboxClose) {
-          lightboxClose.addEventListener('click', closeLightbox);
-        }
-
-        lightbox.addEventListener('click', (e) => {
-          if (e.target === lightbox || (e.target.classList.contains('lightbox-content') === false && !lightbox.querySelector('.lightbox-content').contains(e.target))) {
-            closeLightbox();
-          }
-        });
-
-        document.addEventListener('keydown', (e) => {
-          if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-            closeLightbox();
-          }
-        });
-      }
-
-      // Scroll Reveal Observer
-      const revealElements = document.querySelectorAll('.hero-grid > div, .section-grid, .contact-grid');
-      revealElements.forEach(el => el.classList.add('reveal'));
-
-      const revealObserver = new IntersectionObserver((entries, observer) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('reveal-active');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, {
-        threshold: 0.15,
-        rootMargin: '0px 0px -50px 0px'
-      });
-
-      revealElements.forEach(el => revealObserver.observe(el));
-
-      // Counter Stats Animation
-      const counters = document.querySelectorAll('.counter');
-
-      const animateCounter = (counter) => {
-        const target = parseFloat(counter.getAttribute('data-target'));
-        const decimals = parseInt(counter.getAttribute('data-decimals') || '0');
-        const duration = 1500;
-        const startTime = performance.now();
-
-        const update = (now) => {
-          const elapsed = now - startTime;
-          const progress = Math.min(elapsed / duration, 1);
-          const easeProgress = progress * (2 - progress); // Ease out quad
-          const value = easeProgress * target;
-
-          counter.textContent = value.toFixed(decimals);
-
-          if (progress < 1) {
-            requestAnimationFrame(update);
-          } else {
-            counter.textContent = target.toFixed(decimals);
-          }
-        };
-
-        requestAnimationFrame(update);
-      };
-
-      const eduSection = document.getElementById('education');
-      if (eduSection && counters.length) {
-        let animated = false;
-        const eduObserver = new IntersectionObserver((entries) => {
-          entries.forEach(entry => {
-            if (entry.isIntersecting && !animated) {
-              animated = true;
-              counters.forEach(counter => animateCounter(counter));
-              eduObserver.unobserve(entry.target);
-            }
-          });
-        }, { threshold: 0.2 });
-
-        eduObserver.observe(eduSection);
-      }
-
-      // Contact Form progressive enhancement
-      const contactForm = document.querySelector('.form');
-      if (contactForm) {
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const inputs = contactForm.querySelectorAll('input, textarea');
-
-        const checkFormValidity = () => {
-          let allValid = true;
-          inputs.forEach(input => {
-            if (!input.checkValidity()) {
-              allValid = false;
-            }
-          });
-          submitBtn.disabled = !allValid;
-          submitBtn.style.opacity = allValid ? '1' : '0.5';
-          submitBtn.style.cursor = allValid ? 'pointer' : 'not-allowed';
-        };
-
-        inputs.forEach(input => {
-          input.addEventListener('input', checkFormValidity);
-        });
-
-        // Run initial validity check on load
-        checkFormValidity();
-
-        contactForm.addEventListener('submit', (e) => {
-          e.preventDefault();
-
-          const n = contactForm.name.value;
-          const eVal = contactForm.email.value;
-          const m = contactForm.message.value;
-
-          const originalText = submitBtn.textContent;
-          submitBtn.textContent = 'Membuka email client...';
-          submitBtn.disabled = true;
-          submitBtn.style.opacity = '0.5';
-
-          window.location.href = 'mailto:fahrizal55250@gmail.com?subject=' +
-            encodeURIComponent('Opportunity from ' + n) +
-            '&body=' + encodeURIComponent('Halo Fahrizal,\n\n' + m + '\n\nSalam,\n' + n + '\n' + eVal);
-
-          setTimeout(() => {
-            submitBtn.textContent = originalText;
-            submitBtn.disabled = false;
-            submitBtn.style.opacity = '1';
-            checkFormValidity();
-          }, 3000);
-        });
-      }
-    });
-  </script>
-
+  <!-- MAIN INTERACTIVE LOGIC SCRIPT -->
+  <script src="js/main.js"></script>
 </body>
 
 </html>
