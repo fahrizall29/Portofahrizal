@@ -346,10 +346,10 @@ document.addEventListener('DOMContentLoaded', () => {
       const message = messageInput ? messageInput.value.trim() : '';
 
       const originalBtnText = submitBtn.textContent;
-      submitBtn.textContent = 'Membuka Email Client...';
+      submitBtn.textContent = 'Membuka aplikasi email...';
       submitBtn.disabled = true;
 
-      const subject = encodeURIComponent(`Professional Opportunity from ${name}`);
+      const subject = encodeURIComponent(`Pesan dari ${name}`);
       const body = encodeURIComponent(`Halo Fahrizal,\n\n${message}\n\nSalam,\n${name}\nEmail: ${email}`);
 
       window.location.href = `mailto:fahrizal55250@gmail.com?subject=${subject}&body=${body}`;
